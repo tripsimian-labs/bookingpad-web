@@ -1,6 +1,6 @@
 .billboard {
   background-color: #eeeeee;
-  padding: 6rem 3rem;
+  padding: 4rem 3rem 6rem;
 
   .hero {
     margin: 0 auto;
@@ -21,6 +21,11 @@
       font-size: 3.2rem;
       font-weight: 900;
       margin-top: 0;
+
+      em {
+        color: #c00005;
+        font-style: normal;
+      }
     }
 
     a {
