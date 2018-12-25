@@ -125,16 +125,16 @@ $mint: #00c086;
   margin: 0 auto;
   padding: 2rem;
   transition: all;
-  transition-delay: .4s;
-  
+  transition-delay: 0.4s;
+
   h1 {
     color: $red;
     font-size: 4.4rem;
     font-weight: 800;
     margin: 0;
-    
+
     @media screen and (max-width: 30em) {
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
   }
 
@@ -164,8 +164,8 @@ $mint: #00c086;
         background-color: rgba($color: $mint, $alpha: 0.25);
 
         @media screen and (max-width: 30em) {
-          height: 10px;
-          bottom: 8px;
+          height: 8px;
+          bottom: 6px;
         }
       }
     }
@@ -181,7 +181,7 @@ $mint: #00c086;
     display: inline-block;
     letter-spacing: 0.1rem;
     @media screen and (max-width: 30em) {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
   }
 }
