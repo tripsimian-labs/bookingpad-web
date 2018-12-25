@@ -1,4 +1,5 @@
 $red: #c00005;
+$mint: #00c086;
 
 .billboard {
   background-color: #eeeeee;
@@ -81,7 +82,7 @@ $red: #c00005;
 }
 
 .airlines {
-  min-height: 320px;
+  min-height: 480px;
   background-color: #eeeeee;
   padding: 3rem 0;
   text-align: center;
@@ -99,35 +100,100 @@ $red: #c00005;
   &::before {
     content: '';
     display: block;
-    margin-bottom: .5rem;
-    width: 3rem;
+    margin-bottom: 0.5rem;
+    width: 3.5rem;
     height: 10px;
     background-color: $red;
+
+    @media screen and (max-width: 30em) {
+      width: 2.5rem;
+      height: 8px;
+    }
   }
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
 .coming {
-  max-width: 480px;
-  margin: 5rem auto 0;
-  padding: 1rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem;
+  transition: all;
+  transition-delay: .4s;
+  
   h1 {
-    font-size: 3.6rem;
+    color: $red;
+    font-size: 4.4rem;
     font-weight: 800;
     margin: 0;
+    
+    @media screen and (max-width: 30em) {
+      font-size: 3rem;
+    }
   }
+
   h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin: .5rem 0;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    letter-spacing: -0.03rem;
+    @media screen and (max-width: 30em) {
+      font-size: 1.6rem;
+    }
+
+    em {
+      font-weight: 800;
+      font-style: normal;
+      position: relative;
+      white-space: nowrap;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        height: 12px;
+        background-color: rgba($color: $mint, $alpha: 0.25);
+
+        @media screen and (max-width: 30em) {
+          height: 10px;
+          bottom: 8px;
+        }
+      }
+    }
   }
   &-text {
-    color: #00D494;
+    color: $mint;
     font-size: 1.5rem;
     font-weight: 800;
     text-transform: uppercase;
-    margin: 3rem 0;
+    margin: 2rem 0;
     padding: 1rem 2rem;
-    border: 4px solid #00D494;
-    display: inline-block
+    border: 4px solid $mint;
+    display: inline-block;
+    letter-spacing: 0.1rem;
+    @media screen and (max-width: 30em) {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+/* The animation code */
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 4px;
   }
 }
