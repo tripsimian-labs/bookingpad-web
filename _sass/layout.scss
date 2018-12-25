@@ -118,6 +118,12 @@ $mint: #00c086;
   height: 100vh;
   align-items: center;
   justify-content: center;
+  margin-top: 0;
+
+  @media screen and (max-width: 30em) {
+    align-items: start;
+    margin-top: 3rem;
+  }
 }
 
 .coming {
@@ -144,7 +150,7 @@ $mint: #00c086;
     margin: 0.5rem 0;
     letter-spacing: -0.03rem;
     @media screen and (max-width: 30em) {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
 
     em {
@@ -172,16 +178,20 @@ $mint: #00c086;
   }
   &-text {
     color: $mint;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
     text-transform: uppercase;
     margin: 2rem 0;
     padding: 1rem 2rem;
-    border: 4px solid $mint;
+    border: 6px solid $mint;
     display: inline-block;
-    letter-spacing: 0.1rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
     @media screen and (max-width: 30em) {
       font-size: 1.2rem;
+      border-width: 4px;
+      display: block;
     }
   }
 }
