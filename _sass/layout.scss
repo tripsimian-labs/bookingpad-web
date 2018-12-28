@@ -1,6 +1,10 @@
 $red: #c00005;
 $mint: #00c086;
 
+body {
+  background-color: #E4ECF6;
+}
+
 a {
   text-decoration: none;
 }
@@ -14,10 +18,14 @@ a {
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  &--third {
+    @media screen and (min-width: 40rem) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 .billboard {
-  background-color: #eeeeee;
   padding: 4rem 3rem 6rem;
   grid-gap: 3rem;
 
@@ -42,7 +50,7 @@ a {
       font-weight: 700;
       line-height: 1.4;
       margin: 0.5rem 0 3rem;
-      letter-spacing: -0.04rem;
+      letter-spacing: -0.05rem;
 
       em {
         font-weight: 800;
@@ -58,7 +66,7 @@ a {
           left: 0;
           width: 100%;
           height: 12px;
-          background-color: rgba($color: $mint, $alpha: 0.25);
+          background-color: rgba($color: $mint, $alpha: 0.4);
         }
       }
     }
@@ -149,9 +157,7 @@ a {
   padding: 4rem 0;
   ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4rem;
-    padding: 0;
+
 
     list-style: none;
   }
@@ -160,17 +166,22 @@ a {
     font-size: 1.6rem;
     font-weight: 800;
     line-height: 1.4;
+    margin: 0.5rem 0 1rem;
   }
 }
 
 .airlines {
   min-height: 480px;
-  background-color: #eeeeee;
   padding: 3rem 0;
   text-align: center;
   h3 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 2.4rem;
+    font-weight: 700;
+
+    em {
+      font-weight: 800;
+    }
   }
 }
 
@@ -277,5 +288,23 @@ a {
       padding: 1rem;
       display: block;
     }
+  }
+}
+
+.illustration {
+  position: relative;
+  background: #f4f4f4;
+
+  .winger {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    top: -8rem;
+    left: 0;
+    width: 100%;
+    z-index: -1;
   }
 }
