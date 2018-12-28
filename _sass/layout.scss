@@ -23,6 +23,11 @@ a {
       grid-template-columns: repeat(3, 1fr);
     }
   }
+  &--quad {
+    @media screen and (min-width: 40rem) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
 
 .billboard {
@@ -174,11 +179,20 @@ a {
   text-align: center;
   h3 {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 700;
-
+    
     em {
+      font-size: 3.6rem;
       font-weight: 800;
+    }
+  }
+  ul {
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    li {
+      padding: 3rem;
     }
   }
 }
