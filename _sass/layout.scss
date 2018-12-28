@@ -1,57 +1,139 @@
 $red: #c00005;
 $mint: #00c086;
 
+a {
+  text-decoration: none;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &--half {
+    @media screen and (min-width: 40rem) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
 .billboard {
   background-color: #eeeeee;
   padding: 4rem 3rem 6rem;
+  grid-gap: 3rem;
 
-  .hero {
-    margin: 0 auto;
-    max-width: 72rem;
-    display: flex;
-    justify-content: space-between;
-
-    &__blurb {
-      margin-right: 4rem;
+  .layout {
+    max-width: 960px;
+    grid-gap: 3rem;
+    align-items: center;
+    @media screen and (min-width: 40rem) {
+      grid-template-columns: 1fr 360px;
     }
+  }
 
+  &-header {
     h1 {
-      font-weight: 700;
-      margin: 1rem 0;
+      color: $red;
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin: 0;
     }
-
     h2 {
-      font-size: 3.2rem;
-      font-weight: 900;
-      margin-top: 0;
+      font-size: 3.4rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin: 0.5rem 0 3rem;
+      letter-spacing: -0.04rem;
 
       em {
-        color: $red;
+        font-weight: 800;
         font-style: normal;
-      }
-    }
+        position: relative;
+        white-space: nowrap;
 
-    a {
-      &.button {
-        font-weight: 700;
-        background-color: $red;
-        color: white;
-        padding: 1rem 2rem;
-        border-radius: 4px;
-        text-decoration: none;
-
-        &:hover {
-          background-color: darken($color: $red, $amount: 5);
+        &::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          bottom: 4px;
+          left: 0;
+          width: 100%;
+          height: 12px;
+          background-color: rgba($color: $mint, $alpha: 0.25);
         }
       }
     }
   }
 
-  .video {
-    max-height: 320px;
+  &-video {
     background-color: black;
-    margin-top: 3rem;
+    width: 360px;
+    height: 202.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba($color: #000000, $alpha: 0.4);
   }
+
+  &-action {
+    .button {
+      border-radius: 5px;
+      background-color: $red;
+      color: white;
+      padding: 1rem 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+  }
+}
+
+.hero {
+  margin: 0 auto;
+  max-width: 72rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__blurb {
+    margin-right: 4rem;
+  }
+
+  h1 {
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-top: 0;
+
+    em {
+      color: $red;
+      font-style: normal;
+    }
+  }
+
+  a {
+    &.button {
+      font-weight: 700;
+      background-color: $red;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: darken($color: $red, $amount: 5);
+      }
+    }
+  }
+}
+
+.video {
+  max-height: 320px;
+  background-color: black;
+  margin-top: 3rem;
 }
 
 .layout {
@@ -100,9 +182,9 @@ $mint: #00c086;
   &::before {
     content: '';
     display: block;
-    margin-bottom: 0.5rem;
-    width: 3.5rem;
-    height: 12px;
+    margin-bottom: 1rem;
+    width: 2.4rem;
+    height: 8px;
     background-color: $red;
 
     @media screen and (max-width: 30em) {
@@ -195,17 +277,5 @@ $mint: #00c086;
       padding: 1rem;
       display: block;
     }
-  }
-}
-
-/* The animation code */
-@keyframes reveal {
-  0% {
-    opacity: 0;
-    top: 0;
-  }
-  100% {
-    opacity: 1;
-    top: 4px;
   }
 }
