@@ -156,10 +156,8 @@ a {
 .features {
   padding: 4rem 0;
   ul {
-    display: grid;
-
-
     list-style: none;
+    grid-gap: 4rem;
   }
 
   h3 {
