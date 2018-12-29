@@ -115,8 +115,8 @@ a {
 
 form {
   input {
-    font-size: 2rem;
-    padding: .5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
     margin: .5rem 0;
   }
 }
@@ -174,7 +174,7 @@ form {
   max-width: 72rem;
 
   &.narrow {
-    max-width: 48rem;
+    max-width: 40rem;
   }
 }
 
@@ -218,7 +218,11 @@ form {
 }
 
 .get-started {
+  background-color: whitesmoke;
   padding: 4rem 0;
+  p {
+    margin-left: 4rem;
+  }
 }
 
 .liner {
