@@ -14,17 +14,17 @@ a {
   grid-template-columns: 1fr;
 
   &--half {
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 42rem) {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   &--third {
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 42rem) {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   &--quad {
-    @media screen and (min-width: 40rem) {
+    @media screen and (min-width: 42rem) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -179,7 +179,8 @@ form {
 }
 
 .features {
-  padding: 4rem 0;
+  padding: 3rem;
+
   ul {
     list-style: none;
     grid-gap: 4rem;
@@ -363,5 +364,12 @@ form {
     li {
       margin-bottom: 3rem;
     }
+  }
+}
+
+.site-footer {
+  padding: 3rem;
+  p {
+    text-align: center;
   }
 }
