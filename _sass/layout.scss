@@ -129,13 +129,25 @@ a {
 }
 
 form {
-  input {
+  input[type="text"],
+  input[type="email"] {
     font-size: 1.6rem;
+    font-weight: 600;
     padding: 1rem;
     margin: .5rem 0;
+    border: 2px solid white;
+    &:focus {
+      border-color: #444444;
+    }
+  }
+  .button {
+    margin-top: 1rem;
   }
 }
-
+::placeholder {
+  font-weight: 300;
+  color: #888888;
+}
 .hero {
   margin: 0 auto;
   max-width: 72rem;
@@ -384,7 +396,7 @@ form {
   }
   ul {
     li {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
   }
 }
