@@ -2,7 +2,7 @@ $red: #c00005;
 $mint: #00c086;
 
 body {
-  background-color: #E4ECF6;
+  background-color: white;
 }
 
 a {
@@ -36,8 +36,13 @@ a {
 }
 
 .billboard {
+  background-image: url(/assets/images/bg-image-top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 4rem 3rem 6rem;
   grid-gap: 3rem;
+  position: relative;
+  z-index: -1;
 
   .layout {
     max-width: 960px;
@@ -120,7 +125,7 @@ form {
     font-weight: 600;
     padding: 1rem;
     margin: .5rem 0;
-    border: 2px solid white;
+    border: 2px solid #aaaaaa;
     width: 100%;
     &:focus {
       border-color: #444444;
@@ -192,7 +197,7 @@ form {
 }
 
 .features {
-  padding: 3rem;
+  padding: 3rem 3rem 6rem;
 
   ul {
     list-style: none;
@@ -208,7 +213,8 @@ form {
 }
 
 .airlines {
-  padding: 4rem 0 2rem;
+  background-color: #E9F4FF;
+  padding: 5rem 0 1rem;
   text-align: center;
   h3 {
     font-family: 'Titillium Web', sans-serif;
@@ -343,16 +349,14 @@ form {
 
 .illustration {
   position: relative;
-  background: #f4f4f4;
 
   .winger {
     display: flex;
     align-items: center;
-    display: flex;
     justify-content: center;
     overflow: hidden;
     position: absolute;
-    top: -8rem;
+    bottom: -1px;
     left: 0;
     width: 100%;
     z-index: -1;
@@ -366,7 +370,8 @@ form {
 }
 
 .get-started {
-  padding: 3rem;
+  padding: 4rem 3rem;
+  margin-bottom: 4rem;
 
   h3 {
     font-size: 1.8rem;
@@ -377,9 +382,26 @@ form {
   }
   ul {
     li {
-      margin-bottom: 3rem;
-      &.register {
-        margin-bottom: 5rem;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      padding-bottom: 2rem;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 60px;
+        left: 23px;
+        width: 1px;
+        height: 100%;
+        background-image: linear-gradient($red 20%, #888888, #ffffff);
+      }
+
+      &.start-booking {
+        &::after {
+          background-image: none;
+        }
       }
     }
   }
@@ -389,8 +411,8 @@ form {
 }
 
 .site-footer {
-  background-color: rgb(231, 242, 255);
-  padding: 3rem;
+  background-color: #E9F4FF;
+  padding: 0 3rem 3rem;
   p {
     text-align: center;
   }
