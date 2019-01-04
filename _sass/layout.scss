@@ -39,7 +39,7 @@ a {
   background-image: url(/assets/images/bg-image-top.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 4rem 3rem 6rem;
+  padding: 4rem 3rem 8rem;
   grid-gap: 3rem;
   position: relative;
   z-index: -1;
@@ -372,6 +372,10 @@ form {
 .get-started {
   padding: 4rem 3rem;
   margin-bottom: 4rem;
+  background-image: url(/assets/images/bg-image-bottom.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: right bottom;
 
   h3 {
     font-size: 1.8rem;
