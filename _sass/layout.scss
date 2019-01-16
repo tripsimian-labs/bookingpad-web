@@ -206,8 +206,8 @@ form {
 
   h3 {
     font-size: 1.6rem;
-    font-weight: 800;
-    line-height: 1.4;
+    font-weight: 600;
+    line-height: 1.3;
     margin: 0.5rem 0 1rem;
   }
 }
@@ -226,7 +226,8 @@ form {
       display: block;
     }
   }
-  ul {
+  .airlines-logos {
+    margin: 3rem 0;
     padding: 3rem;
     align-items: center;
     justify-content: center;
@@ -235,13 +236,11 @@ form {
     @media screen and (min-width: 60rem) {
       grid-template-columns: repeat(4,1fr);
     }
-    li {
-      margin: 2rem auto;
-    }
-    img {
-      width: 100%;
-      max-width: 220px;
-    }
+  }
+  img {
+    width: 100%;
+    max-width: 250px;
+    vertical-align: middle;
   }
 }
 
@@ -370,16 +369,16 @@ form {
 }
 
 .get-started {
-  padding: 4rem 3rem;
-  margin-bottom: 4rem;
-  background-image: url(/assets/images/bg-image-bottom.png);
+  padding: 6rem 3rem;
+  margin-bottom: 5rem;
+  background-image: url(/assets/images/bg-image-bottom.jpg);
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 64%;
   background-position: right bottom;
 
   h3 {
-    font-size: 1.8rem;
-    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: -.01rem;
   }
   svg {
     margin-right: 1rem;
@@ -420,4 +419,12 @@ form {
   p {
     text-align: center;
   }
+}
+
+.sharedForm .formFieldAndSubmitContainer {
+  background-color: #ffffff !important;
+}
+
+.siema {
+  margin: 4rem auto;
 }
