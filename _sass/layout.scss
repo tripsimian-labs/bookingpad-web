@@ -226,7 +226,8 @@ form {
       display: block;
     }
   }
-  ul {
+  .airlines-logos {
+    margin: 3rem 0;
     padding: 3rem;
     align-items: center;
     justify-content: center;
@@ -235,13 +236,11 @@ form {
     @media screen and (min-width: 60rem) {
       grid-template-columns: repeat(4,1fr);
     }
-    li {
-      margin: 2rem auto;
-    }
-    img {
-      width: 100%;
-      max-width: 220px;
-    }
+  }
+  img {
+    width: 100%;
+    max-width: 250px;
+    vertical-align: middle;
   }
 }
 
@@ -420,4 +419,12 @@ form {
   p {
     text-align: center;
   }
+}
+
+.sharedForm .formFieldAndSubmitContainer {
+  background-color: #ffffff !important;
+}
+
+.siema {
+  margin: 4rem auto;
 }
