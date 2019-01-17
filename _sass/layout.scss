@@ -175,7 +175,7 @@ form {
   max-width: 72rem;
 
   &.narrow {
-    max-width: 40rem;
+    max-width: 36rem;
   }
 }
 
@@ -197,7 +197,7 @@ form {
 
 .airlines {
   background-color: #E9F4FF;
-  padding: 5rem 0 1rem;
+  padding: 5rem 1rem 1rem;
   text-align: center;
   h3 {
     font-family: 'Titillium Web', sans-serif;
@@ -410,6 +410,7 @@ form {
 
 .siema {
   margin: 4rem auto;
+  padding: 0 1rem;
 }
 
 .cta {

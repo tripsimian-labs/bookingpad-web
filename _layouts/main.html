@@ -247,7 +247,11 @@
 <script src="/assets/js/siema.min.js"></script>
 <script>
   const mySiema = new Siema({
-    perPage: 4,
+    perPage: {
+      480: 2,
+      768: 3,
+      1024: 4,
+    },
     duration: 300,
     easing: 'cubic-bezier(.14,.27,.32,.84)',
     loop: true,
