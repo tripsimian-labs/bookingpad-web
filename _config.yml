@@ -16,7 +16,7 @@
 title: Bookingpad
 email: contact@bookingpad.net
 description: >-
-  Bookingpad is the most advanced NDC-ready booking tool providing 100% NDC content and fares directly from the NDC-enabled airline APIs, being these the best airlines fares you can find.
+  The most advanced NDC-ready booking tool providing 100% NDC content and fares directly from the NDC-enabled airline APIs, being these the best airlines fares you can find.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bookingpad.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Bookingpad
