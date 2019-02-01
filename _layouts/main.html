@@ -11,9 +11,7 @@
           <h2>
             The most advanced <em>NDC-ready</em> booking tool for travel agents
           </h2>
-          <div class="billboard-action">
-            <a class="button" href="#register-form">Get started</a>
-          </div>
+            <a class="button" href="https://airtable.com/shrauzHiRj3IyvH9R">Get started</a>
         </div>
         <div class="billboard-video">
           <svg
@@ -46,9 +44,8 @@
     <div class="illustration">
       <div class="winger">
           <svg viewBox="0 0 1600 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1600 0L0 167.865V180H1600V0Z" fill="white"/>
-</svg>
-
+          <path d="M1600 0L0 167.865V180H1600V0Z" fill="white"/>
+          </svg>
       </div>
     </div>
     <div class="features">
@@ -255,7 +252,11 @@
 <script src="/assets/js/siema.min.js"></script>
 <script>
   const mySiema = new Siema({
-    perPage: 4,
+    perPage: {
+      480: 2,
+      768: 3,
+      1024: 4,
+    },
     duration: 300,
     easing: 'cubic-bezier(.14,.27,.32,.84)',
     loop: true,
