@@ -227,21 +227,30 @@
       <p>An <a href="https://airgateway.com/" target="new">AirGateway</a> Product - All rights reserved ©2019</p>
     </div>
 
-<script src="/assets/js/siema.min.js"></script>
-<script>
-  const mySiema = new Siema({
-    perPage: {
-      480: 2,
-      768: 3,
-      1024: 4,
-    },
-    duration: 300,
-    easing: 'cubic-bezier(.14,.27,.32,.84)',
-    loop: true,
-  });
-  
-  // listen for keydown event
-  setInterval(() => mySiema.next(), 3000)
-</script>
+  <script src="/assets/js/siema.min.js"></script>
+    <script>
+      const mySiema = new Siema({
+        perPage: {
+          480: 2,
+          768: 3,
+          1024: 4,
+        },
+        duration: 300,
+        easing: 'cubic-bezier(.14,.27,.32,.84)',
+        loop: true,
+      });
+      
+      // listen for keydown event
+      setInterval(() => mySiema.next(), 3000)
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77281199-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-77281199-6');
+  </script>
   </body>
 </html>
