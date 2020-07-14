@@ -19,7 +19,7 @@ email: contact@bookingpad.net
 description: >- # this means to ignore newlines until "baseurl:"
   Bookingpad is the most advanced NDC-ready booking tool for travel agents.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://bookingpad.net" # the base hostname & protocol for your site, e.g. 
+url: "https://bookingpad.net" # the base hostname & protocol for your site, e.g.
 twitter_username: Bookingpad
 github_username:  AirGateway
 
@@ -29,6 +29,11 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+collections:
+  posts:
+    permalink: "/:collection/:path/"
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

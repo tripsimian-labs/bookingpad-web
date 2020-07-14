@@ -1,0 +1,14 @@
+I"r<p>Today it has been rolled out our most relevant product upgrade since the launch of Bookingpad, the ability to perform date changes on already issued orders.</p>
+
+<p>To use this feature agent needs to scroll down to the bottom buttons of an existing order and click on “Change Itinerary” button.</p>
+
+<p><img src="/assets/uploads/airgateway_ndc_booking_tool-change-itinerary-button.png" alt="Change Itinerary Button placed at the bottom of existing issued orders" title="Change Itinerary Button placed at the bottom of existing issued orders" /></p>
+
+<p>Once this is triggered, agent gets a re-shop modal window to select new date(s) for each of the trips.</p>
+
+<p><img src="/assets/uploads/airgateway_ndc_booking_tool-change-itinerary-view.png" alt="Offer Reshop modal window" title="Offer Reshop modal window" /></p>
+
+<p>Finally, the new offer including the change price is displayed to the agent who can confirm de Order change and the payment (if applicable).</p>
+
+<p><img src="/assets/uploads/orderchange-confirmation-view.png" alt="Order Dates Change confirmation window" title="Order Dates Change confirmation window" /></p>
+:ET

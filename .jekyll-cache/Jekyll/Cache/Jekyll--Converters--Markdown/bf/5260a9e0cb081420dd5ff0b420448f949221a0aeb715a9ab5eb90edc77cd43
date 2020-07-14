@@ -1,0 +1,8 @@
+I"ê<p>We have released in production the ability to request, identify, and filter adequately private fares from NDC APIs already supporting this feature.</p>
+
+<p>We know how relevant are private fares for TMCs and TOs, so we had worked hard on solving this multi-provider puzzle for doing NDC a more relevant channel for our agencies.</p>
+
+<p><img src="/assets/uploads/AirGateway_NDC_Booking_Tool-Private-Fares-NDC.png" alt="AirGateway-Bookingpad-NDC-Booking-Tool-Private_Fares" title="AirGateway-Bookingpad-NDC-Booking-Tool-Private_Fares" /></p>
+
+<p>Currently this capability is only enabled for <strong>BA</strong> and <strong>LHG.</strong> We are looking forward add more airlines to the list once they support this feature on their NDC APIs</p>
+:ET

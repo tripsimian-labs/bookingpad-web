@@ -1,0 +1,23 @@
+I"Ä<p>This week we have introduced a new feature to allow agencies to export NDC bookings into a number of industry file formats.</p>
+
+<p>This feature can be found in the top-right corner of an issued Order.</p>
+
+<p><img src="/assets/uploads/airgateway_ndc_booking_tool-export-to-file.png" alt="Feature NDC Bookings export to file" title="Feature NDC Bookings export to file" /></p>
+
+<p>We currently support these formats:</p>
+
+<ul>
+  <li>AIR (Amadeus Interface Record)</li>
+  <li>Galor (Travelbooster)</li>
+</ul>
+
+<p>We will keep adding more formats as there is a a relevant demand for them.</p>
+
+<p>This feature allows to integrate easily NDC-based bookings into existing Mid/Backoffice systems or ERPs.<br />
+For a fully-automated reporting integration we recommend modern API-based solutions that we partner with like:</p>
+
+<ul>
+  <li><a href="https://www.midoco.de/">Midoco</a></li>
+  <li><a href="https://www.proconsolution.com/">Procon Solution</a></li>
+</ul>
+:ET
