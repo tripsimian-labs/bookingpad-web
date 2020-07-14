@@ -16,10 +16,6 @@ layout: default
     </div>
   </div>
 
-  {% if page.comments %}
-  {% include disqus_comments.html %}
-  {% endif %}
-
   <div class="pagination">
     {% if page.next.url %}
     <a href="{{ page.next.url | prepend: site.url }}" class="left arrow">&#8592;</a>
