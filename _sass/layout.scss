@@ -171,8 +171,12 @@ form {
   margin: 0 auto;
   max-width: 72rem;
 
+  &.normal {
+    max-width: 48rem;
+  }
+
   &.narrow {
-    max-width: 36rem;
+    max-width: 38rem;
   }
 }
 
@@ -331,12 +335,9 @@ form {
   z-index: 1;
 
   .winger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     position: absolute;
-    bottom: -1px;
+    bottom: -8px;
     left: 0;
     width: 100%;
   }
@@ -419,6 +420,18 @@ form {
       margin-bottom: 1.5rem;
     }
   }
+
+  .post-card {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-gap: 3rem 2rem;
+
+    .post-thumbnail {
+      img {
+        border: 2px solid #f0f0f0;
+      }
+    }
+  }
 }
 
 .site-footer {
@@ -442,4 +455,53 @@ form {
   margin-left: 4rem;
   margin-top: 2.5rem;
   margin-bottom: 2rem;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  @media only screen and (min-width: 960px) {
+    max-width: 1200px;
+    min-width: 801px;
+    width: auto;
+  }
+}
+
+.site-header {
+  padding: 1rem 0;
+  border-top: 5px solid #424242;
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 55.95px;
+  position: relative;
+}
+
+.brand {
+  color: #c00005;
+  font-weight: 800;
+  margin: 0;
+}
+
+.site-title {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 54px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.site-nav {
+  float: right;
+  line-height: 54px;
+
+  .nav-trigger,
+  .menu-icon {
+    display: none;
+  }
 }

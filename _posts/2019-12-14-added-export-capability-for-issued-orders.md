@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Added Export capability for issued Orders
+thumbnail: thumb-export-file.png
 date: 2019-12-13T17:17:50.604Z
 ---
 This week we have introduced a new feature to allow agencies to export NDC bookings into a number of industry file formats.

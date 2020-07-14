@@ -101,7 +101,7 @@
   </div>
 
   <div id="register-form" class="get-started">
-    <ul class="layout narrow">
+    <ul class="layout normal">
       <li class="register">
         <div class="icon-headline">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -166,18 +166,25 @@
   </div>
   </div>
 
-  <div class="updates layout narrow">
+  <div class="updates layout normal">
     <h3>Product Updates</h3>
     <ul>
       {% for post in site.posts %}
-      <li>
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-        <p>{{ post.excerpt }}</p>
+      <li class="post-card">
+        <div class="post-thumbnail">
+          <a href="{{ post.url }}">
+            <img src="/assets/uploads/{{ post.thumbnail }}">
+          </a>
+        </div>
+        <div class="post-blurb">
+          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <p>{{ post.excerpt }}</p>
+        </div>
       </li>
       {% endfor %}
     </ul>
-  </div>
 
+  </div>
   <div class="illustration">
     <div class="winger">
       <svg viewBox="0 0 1600 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -185,6 +192,7 @@
       </svg>
     </div>
   </div>
+
   <div class="site-footer">
     <p>An <a href="https://airgateway.com/" target="new">AirGateway</a> Product - All rights reserved ©2019</p>
   </div>

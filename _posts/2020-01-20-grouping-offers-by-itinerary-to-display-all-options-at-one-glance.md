@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Grouping offers by itinerary to display all options at one glance
+thumbnail: thumb-group-itinerary.png
 date: 2020-01-16T23:31:13.635Z
 ---
 With the purpose of facilitating browsing the large amount of NDC offers provided by airlines on certain routes we have implemented a way o visualising all grouped by equal itineraries showing different cabin and fare combinations as options.
