@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing Date Changes on issued orders
+thumbnail: thumb-date-change.png
 date: 2019-10-21T19:49:56.876Z
 ---
 Today it has been rolled out our most relevant product upgrade since the launch of Bookingpad, the ability to perform date changes on already issued orders.

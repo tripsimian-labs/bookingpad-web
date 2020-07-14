@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Download PDF feature allows now selecting the information to include
+thumbnail: thumb-export-pdf.png
 date: 2019-12-06T22:43:37.488Z
 ---
 We have introduced the capability to select the information included in the download PDF feature.

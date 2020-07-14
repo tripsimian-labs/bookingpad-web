@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Introducing: Bookingpad Updates Website'
+thumbnail: thumb-intro.png
 date: 2019-10-01T15:50:07.239Z
 ---
 Welcome to our new [Bookingpad](https://bookingpad.net) updates website! See here what's new and products updates.
