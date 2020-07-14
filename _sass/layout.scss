@@ -441,10 +441,10 @@ form {
 
     .post-blurb {
       time {
-        font-size: .8rem;
+        font-size: 0.8rem;
         font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: .04rem;
+        letter-spacing: 0.04rem;
         color: #909090;
       }
     }
@@ -460,10 +460,27 @@ form {
     }
   }
   &-title {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
+    letter-spacing: -0.04rem;
   }
   p {
     margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    color: #606060;
+    margin: 2rem 0 1rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  ul {
+    margin-left: 1.4rem;
+    margin-bottom: 1.5rem;
+    li {
+      list-style-type: disc;
+      margin-bottom: 1rem;
+    }
   }
 }
 
