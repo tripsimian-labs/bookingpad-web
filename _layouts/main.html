@@ -45,127 +45,20 @@
       </div>
     </div>
   </div>
+
   <div id="regionMain">
 
-    <div class="billboard">
-      <div class="wrapper">
-        <div class="billboardGrid">
-          <div class="billboardBlurb">
-            <h3>
-              The most advanced NDC-ready booking tool for travel agents
-            </h3>
-            <a href="" class="primaryButton">Get Started</a>
-          </div>
-          <div class="billboardMedia">
-            <img src="/assets/images/videoHero.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
+    {%- include billboard.html -%}
 
     <main>
-      <div class="homeFeatures">
-        <div class="wrapper">
-          <h2 class="sectionHeading">Product Features</h2>
-          <div class="homeFeaturesGrid">
-            <div class="homeFeaturesList">
-              <div class="homeFeaturesItem">
-                <div class="homeFeaturesImg">
-                  <img src="/assets/images/imgFeat-01.svg" alt="">
-                </div>
-                <div class="homeFeaturesText">
-                  <h3>
-                    All in one tool
-                  </h3>
-                  <p>
-                    We aggregate shopping content, features, and bookings from all the NDC airlines you are authorized.
-                    All
-                    of
-                    these in one
-                    single and consistent web application.
-                  </p>
-                  <ul>
-                    <li>Example property of this feature goes here</li>
-                    <li>Another characteristics of the feature</li>
-                    <li>Perhaps a third point is needed</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="homeFeaturesItem">
-                <div class="homeFeaturesImg">
-                  <img src="/assets/images/imgFeat-02.svg" alt="">
-                </div>
-                <div class="homeFeaturesText">
-                  <h3>
-                    Modern web interface
-                  </h3>
-                  <p>
-                    NDC enables airlines to deliver rich-content and ancillary services such us paid seats, extra
-                    luggage,
-                    on-board Wifi or
-                    premium meals.
-                  </p>
-                  <ul>
-                    <li>Example property of this feature goes here</li>
-                    <li>Another characteristics of the feature</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="homeFeaturesItem">
-                <div class="homeFeaturesImg">
-                  <img src="/assets/images/imgFeat-01.svg" alt="">
-                </div>
-                <div class="homeFeaturesText">
-                  <h3>
-                    Increased value and revenue
-                  </h3>
-                  <p>
-                    By using Bookingpad, partner agents can increase your value added service and revenue by selling
-                    ancillary services such as paid seats, extra luggage, on-board Wifi or premium meals, etc...
-                  </p>
-                  <ul>
-                    <li>Example property of this feature goes here</li>
-                    <li>Another characteristics of the feature</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
 
-            <div class="homeUpdates">
-              <div class="homeUpdatesBox">
-                <h3>
-                  NEWS & UPDATES
-                </h3>
-                <ul>
-                  <li>
-                    <a href="">
-                      Requesting and Identifying Private Fares in an NDC Offer
-                    </a>
-                    <span class="updatesDate">07-02-2020</span>
-                  </li>
-                  <li>
-                    <a href="">
-                      Grouping offers by itinerary to display all options at one glance
-                    </a>
-                    <span class="updatesDate">07-02-2020</span>
-                  </li>
-                  <li>
-                    <a href="">
-                      Added Export capability for issued Orders
-                    </a>
-                    <span class="updatesDate">07-02-2020</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {%- include home_features.html -%}
+      {%- include home_airlines.html -%}
+      {%- include home_pricing.html -%}
+
     </main>
-    <footer>
-      <div class="copyrightFooter">
 
-      </div>
-    </footer>
+    {%- include footer.html -%}
+
   </div>
 </body>
