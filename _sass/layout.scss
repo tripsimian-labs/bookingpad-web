@@ -1,6 +1,7 @@
 $red: #c00005;
 $redDark: #ac0004;
 $mint: #00c086;
+$black: #2f2e41;
 
 body {
   background-color: white;
@@ -81,6 +82,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  a {
+    color: $red;
+  }
 }
 
 #region {
@@ -159,5 +164,38 @@ a {
   p {
     font-size: 1.4rem;
     margin-bottom: 1rem;
+  }
+}
+
+.homeUpdates {
+  &Box {
+    background: #fffbef;
+    border: 1px solid #596371;
+    padding: 3rem;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+
+    ul {
+      li {
+        margin-bottom: 1.1rem;
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  h3 {
+    color: $black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .updatesDate {
+    display: block;
+    color: #999999;
+    font-size: .85rem;
+    padding-top: .4rem;
   }
 }
