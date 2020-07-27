@@ -28,6 +28,7 @@ a {
 
 .wrapper {
   margin: 0 auto;
+  zoom: 1;
   @media only screen and (min-width: 960px) {
     max-width: 1200px;
     min-width: 801px;
@@ -76,16 +77,56 @@ a {
   justify-content: flex-end;
 }
 
+#region {
+  &Main {
+    width: 100%;
+  }
+}
+
 .billboard {
-  display: flex;
-  align-items: center;
+  display: block;
+  background-color: #e9f4ff;
+  padding: 1rem;
+
+  & * {
+    &::after,
+    &::before {
+      box-sizing: border-box;
+    }
+  }
+
+  &Grid {
+    @media only screen and (min-width: 960px) {
+      display: flex;
+      align-items: center;
+      padding: 2rem 1rem 2rem 3rem;
+    }
+  }
 
   &Blurb {
     h3 {
       font-size: 2rem;
+      margin-right: 2rem;
       margin-bottom: 2rem;
     }
   }
+
   &Media {
+    img {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+}
+
+.homeFeatures {
+  &Grid {
+    display: grid;
+    @media only screen and (min-width: 960px) {
+      grid-template-columns: 1fr 320px;
+    }
+  }
+  &Item {
+    margin-bottom: 2rem;
   }
 }
