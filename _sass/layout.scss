@@ -1,4 +1,5 @@
 $red: #c00005;
+$redDark: #ac0004;
 $mint: #00c086;
 
 body {
@@ -24,6 +25,11 @@ a {
   background-color: $red;
   color: white;
   padding: 0.5rem 1rem;
+
+  &:hover {
+    color: white;
+    background-color: $redDark;
+  }
 }
 
 .wrapper {
@@ -86,7 +92,7 @@ a {
 .billboard {
   display: block;
   background-color: #e9f4ff;
-  padding: 1rem;
+  padding: 2rem 1rem;
 
   & * {
     &::after,
@@ -99,7 +105,6 @@ a {
     @media only screen and (min-width: 960px) {
       display: flex;
       align-items: center;
-      padding: 2rem 1rem 2rem 3rem;
     }
   }
 
@@ -120,10 +125,14 @@ a {
 }
 
 .homeFeatures {
+  padding: 2rem 1rem;
   &Grid {
     display: grid;
+    grid-template-columns: 1fr;
     @media only screen and (min-width: 960px) {
       grid-template-columns: 1fr 320px;
+      grid-gap: 3rem;
+
     }
   }
   &Item {
