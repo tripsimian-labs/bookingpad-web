@@ -126,16 +126,38 @@ a {
 
 .homeFeatures {
   padding: 2rem 1rem;
+
   &Grid {
     display: grid;
     grid-template-columns: 1fr;
     @media only screen and (min-width: 960px) {
       grid-template-columns: 1fr 320px;
-      grid-gap: 3rem;
-
+      grid-gap: 8rem;
     }
   }
+
   &Item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-gap: 4rem;
     margin-bottom: 2rem;
+
+    ul {
+      margin-left: 1.3rem;
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
+
+  h3 {
+    color: $redDark;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
 }
