@@ -225,11 +225,11 @@ a {
 }
 
 .homePricing {
-
   &Grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
+    position: relative;
   }
 
   &Item {
@@ -254,16 +254,18 @@ a {
     }
 
     ul {
-      margin: 1rem 0;
+      margin: 1.6rem 0 1.6rem 1em;
 
       li {
         font-weight: 600;
+        list-style-type: disc;
       }
     }
 
     &.plan {
       &Pro {
-        h3, ul {
+        h3,
+        ul {
           color: $red;
         }
       }
@@ -273,6 +275,7 @@ a {
       border: 5px solid #c00005;
       box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.15);
       border-radius: 12px;
+      margin-top: -1rem;
     }
   }
 
