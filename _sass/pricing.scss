@@ -7,6 +7,9 @@
   }
 
   &Item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     border: 1px solid #aeaeae;
     box-sizing: border-box;
     border-radius: 7px;
@@ -65,5 +68,12 @@
       font-weight: 600;
       color: $black;
     }
+  }
+
+  &Cta {
+      display: flex;
+      a {
+          width: 100%;
+      }
   }
 }
