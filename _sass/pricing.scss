@@ -1,0 +1,69 @@
+.homePricing {
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    position: relative;
+  }
+
+  &Item {
+    border: 1px solid #aeaeae;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 3rem;
+
+    h3 {
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 73px;
+      letter-spacing: 0.08em;
+      color: #596371;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+
+    ul {
+      margin: 1.6rem 0 1.6rem 1em;
+
+      li {
+        font-weight: 600;
+        list-style-type: disc;
+      }
+    }
+
+    &.plan {
+      &Pro {
+        h3,
+        ul {
+          color: $red;
+        }
+      }
+    }
+
+    &.spotlight {
+      border: 5px solid #c00005;
+      box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      margin-top: -1rem;
+    }
+  }
+
+  &Head {
+    margin-bottom: 2rem;
+  }
+
+  &Rate {
+    font-size: 2rem;
+    color: $gray;
+
+    span {
+      font-weight: 600;
+      color: $black;
+    }
+  }
+}
