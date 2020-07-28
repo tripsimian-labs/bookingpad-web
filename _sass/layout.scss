@@ -2,6 +2,7 @@ $red: #c00005;
 $redDark: #ac0004;
 $mint: #00c086;
 $black: #2f2e41;
+$gray: #909090;
 
 body {
   background-color: white;
@@ -224,6 +225,7 @@ a {
 }
 
 .homePricing {
+
   &Grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -246,8 +248,17 @@ a {
       text-transform: uppercase;
     }
 
+    p {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+
     ul {
       margin: 1rem 0;
+
+      li {
+        font-weight: 600;
+      }
     }
 
     &.plan {
@@ -267,5 +278,15 @@ a {
 
   &Head {
     margin-bottom: 2rem;
+  }
+
+  &Rate {
+    font-size: 2rem;
+    color: $gray;
+
+    span {
+      font-weight: 600;
+      color: $black;
+    }
   }
 }
