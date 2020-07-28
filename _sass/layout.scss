@@ -11,6 +11,10 @@ a {
   }
 }
 
+strong {
+  font-weight: 700;
+}
+
 .primaryButton {
   display: inline-flex;
   align-items: center;
@@ -102,40 +106,7 @@ a {
   }
 }
 
-.billboard {
-  display: block;
-  background-color: #e9f4ff;
-  padding: 2rem 1rem;
 
-  & * {
-    &::after,
-    &::before {
-      box-sizing: border-box;
-    }
-  }
-
-  &Grid {
-    @media only screen and (min-width: 960px) {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  &Blurb {
-    h3 {
-      font-size: 2rem;
-      margin-right: 2rem;
-      margin-bottom: 2rem;
-    }
-  }
-
-  &Media {
-    img {
-      margin: 0 auto;
-      max-width: 100%;
-    }
-  }
-}
 
 .homeFeatures {
   padding: 2rem 1rem;
