@@ -237,7 +237,7 @@ a {
     padding: 3rem;
 
     h3 {
-      font-family: "Titillium Web", sans-serif;
+      font-family: 'Titillium Web', sans-serif;
       font-weight: 900;
       font-size: 48px;
       line-height: 73px;
@@ -247,7 +247,21 @@ a {
     }
 
     ul {
-      margin-bottom: 1rem;
+      margin: 1rem 0;
+    }
+
+    &.plan {
+      &Pro {
+        h3, ul {
+          color: $red;
+        }
+      }
+    }
+
+    &.spotlight {
+      border: 5px solid #c00005;
+      box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
     }
   }
 
