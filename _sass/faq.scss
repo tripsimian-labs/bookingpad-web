@@ -1,0 +1,62 @@
+.homeFaq {
+  padding: 2rem 1rem 6rem;
+
+  &Grid {
+    columns: 2;
+    column-gap: 4em;
+    padding: 1rem;
+  }
+
+  &Item {
+    padding: 2rem 0;
+    break-inside: avoid;
+
+    h4 {
+      font-weight: 600;
+    }
+
+    img {
+      mix-blend-mode: multiply;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  h3 {
+    color: #ac0004;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+}
+.homeUserGuide {
+  background: #fffbef;
+  border: 1px solid #596371;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 2rem 3rem;
+  margin: 3rem 0;
+
+  h4 {
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #2f2e41;
+    margin-bottom: .8rem;
+  }
+
+  p {
+    margin-bottom: .8rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+}
