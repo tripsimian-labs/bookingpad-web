@@ -1,4 +1,5 @@
 .homePricing {
+  padding: 2rem 1rem 6rem;
   &Grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -71,9 +72,9 @@
   }
 
   &Cta {
-      display: flex;
-      a {
-          width: 100%;
-      }
+    display: flex;
+    a {
+      width: 100%;
+    }
   }
 }

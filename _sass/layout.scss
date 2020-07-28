@@ -106,8 +106,6 @@ strong {
   }
 }
 
-
-
 .homeFeatures {
   padding: 2rem 1rem;
 
@@ -189,3 +187,55 @@ strong {
   }
 }
 
+.homeCustomers {
+  background-color: #e9f4ff;
+  padding: 2rem 1rem 6rem;
+
+  &Grid {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &Item {
+    padding: 2rem 1rem;
+    text-align: center;
+
+    h4 {
+      font-weight: 600;
+    }
+
+    img {
+      mix-blend-mode: multiply;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $gray;
+    }
+  }
+
+  &Blurb {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    p {
+      font-size: 1.4rem;
+      margin: 1rem auto;
+    }
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  h3 {
+    color: #ac0004;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+}
