@@ -186,3 +186,14 @@ strong {
     text-align: center;
   }
 }
+
+footer {
+  background-color: #e9f4ff;
+  padding: 3rem 1rem;
+  .copyrightFooter {
+    p {
+      color: $grayDark;
+      margin-top: 1rem;
+    }
+  }
+}

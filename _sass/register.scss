@@ -1,0 +1,68 @@
+.homeRegister {
+  padding: 2rem 1rem 6rem;
+
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+  }
+
+  &Item {
+    padding: 1rem;
+
+    &:last-child {
+      border-left: 3px solid #dee1eb;
+      padding-left: 3rem;
+    }
+  }
+
+  h3 {
+    color: #ac0004;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .primaryButton {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+}
+
+form {
+  input {
+    &[type='text'],
+    &[type='email'] {
+      font-family: 'Mukta', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: 2px solid #aaaaaa;
+      width: 100%;
+    }
+  }
+  button {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+  }
+
+  ::placeholder {
+    color: $gray;
+    font-weight: 400;
+  }
+}
+
+.qaItem {
+  margin-bottom: 2rem;
+
+  h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    font-size: 1.13rem;
+  }
+}
