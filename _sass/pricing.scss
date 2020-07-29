@@ -1,10 +1,15 @@
 .homePricing {
   padding: 2rem 1rem 6rem;
+
   &Grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
+    grid-template-columns: 1fr;
     position: relative;
+    grid-gap: 3rem;
+
+    @media only screen and (min-width: 960px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &Item {
@@ -14,13 +19,15 @@
     border: 1px solid #aeaeae;
     box-sizing: border-box;
     border-radius: 7px;
-    padding: 2rem 3rem;
+    padding: 2rem;
+    @media only screen and (min-width: 960px) {
+      padding: 2rem 3rem;
+    }
 
     h3 {
       font-family: 'Titillium Web', sans-serif;
       font-weight: 900;
       font-size: 48px;
-      line-height: 73px;
       letter-spacing: 0.08em;
       color: #596371;
       text-transform: uppercase;

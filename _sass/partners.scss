@@ -1,9 +1,18 @@
 .homePartners {
-  padding: 2rem 1rem 6rem;
+  padding: 2rem 1rem 4rem;
+  @media only screen and (min-width: 960px) {
+    padding-bottom: 6rem;
+
+  }
 
   &Grid {
     display: flex;
     justify-content: space-between;
+    flex-flow: column nowrap;
+
+    @media only screen and (min-width: 960px) {
+      flex-flow: row nowrap;
+    }
   }
 
   &Item {
@@ -26,7 +35,7 @@
 
   &Blurb {
     text-align: center;
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
 
     p {
       font-size: 1.4rem;

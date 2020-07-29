@@ -21,10 +21,11 @@ strong {
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 9px;
   cursor: pointer;
   background-color: $red;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.87rem 1rem;
 
   &:hover {
     color: white;
@@ -34,6 +35,7 @@ strong {
 
 .wrapper {
   margin: 0 auto;
+  padding: 0 1rem;
   zoom: 1;
   @media only screen and (min-width: 960px) {
     max-width: 1200px;
@@ -44,10 +46,15 @@ strong {
 
 .primaryNavMenu {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
+  line-height: 2;
+
   @media only screen and (min-width: 760px) {
     flex-flow: row nowrap;
     justify-content: flex-start;
+    line-height: 1;
   }
 
   &Item {
@@ -55,7 +62,8 @@ strong {
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: .04rem;
+    letter-spacing: 0.04rem;
+
     @media only screen and (min-width: 760px) {
       display: flex;
       margin-right: 1rem;
@@ -73,15 +81,18 @@ strong {
 
 #siteHeader {
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   background-color: white;
+  padding: 1rem;
+  border-radius: 11px;
+  position: relative;
+  justify-content: space-between;
 
   @media only screen and (min-width: 960px) {
-    position: relative;
+    flex-flow: row nowrap;
     min-height: 48px;
-    justify-content: space-between;
-    padding: .5rem 1rem;
-    border-radius: 11px;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -99,9 +110,14 @@ strong {
   letter-spacing: 0.1em;
   color: #2f2e41;
   text-transform: uppercase;
-  padding: 0.8rem 0 0.8rem 1rem;
-  margin: 3rem 0 4rem;
+  padding: 0.4rem 0 0.4rem 1rem;
+  margin: 2rem 0;
   border-left: 5px solid $red;
+
+  @media only screen and (min-width: 960px) {
+    padding: 0.8rem 0 0.8rem 1rem;
+    margin: 3rem 0 4rem;
+  }
 }
 
 .siteFeatures {
@@ -121,77 +137,6 @@ strong {
   }
 }
 
-.homeFeatures {
-  padding: 2rem 1rem;
-
-  &Grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    @media only screen and (min-width: 960px) {
-      grid-template-columns: 1fr 320px;
-      grid-gap: 8rem;
-    }
-  }
-
-  &Item {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    grid-gap: 4rem;
-    margin-bottom: 4rem;
-
-    ul {
-      margin-left: 1.3rem;
-      li {
-        list-style-type: disc;
-      }
-    }
-  }
-
-  h3 {
-    color: $redDark;
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-
-  p {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.homeUpdates {
-  &Box {
-    background: #fffbef;
-    border: 1px solid #596371;
-    padding: 3rem;
-    box-sizing: border-box;
-    box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 7px;
-
-    ul {
-      li {
-        margin-bottom: 1.1rem;
-        a {
-          font-size: 1rem;
-        }
-      }
-    }
-  }
-  h3 {
-    color: $black;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-  }
-
-  .updatesDate {
-    display: block;
-    color: #999999;
-    font-size: 0.85rem;
-    padding-top: 0.4rem;
-  }
-}
-
 .homeAirlines {
   display: block;
   background-color: #e9f4ff;
@@ -199,6 +144,9 @@ strong {
 
   &Table {
     text-align: center;
+    img {
+      max-width: 100%;
+    }
   }
 }
 

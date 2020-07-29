@@ -1,7 +1,11 @@
 .billboard {
   display: block;
   background-color: #e9f4ff;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 4rem;
+
+  @media only screen and (min-width: 960px) {
+    padding-bottom: 2rem;
+  }
 
   & * {
     &::after,
@@ -11,19 +15,32 @@
   }
 
   &Grid {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: column-reverse;
     @media only screen and (min-width: 960px) {
-      display: flex;
+      flex-flow: row;
       align-items: center;
+      flex-direction: row;
     }
   }
 
   &Blurb {
+    text-align: center;
+
+    @media only screen and (min-width: 960px) {
       width: 44%;
-      box-sizing: content-box;
+      text-align: left;
+    }
     h3 {
-      font-size: 2.5rem;
-      margin-right: 2rem;
-      margin-bottom: 2rem;
+      font-size: 2rem;
+      margin-right: 0;
+      margin-bottom: 1rem;
+      @media only screen and (min-width: 960px) {
+        margin-right: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
     }
   }
 
@@ -33,4 +50,8 @@
       max-width: 100%;
     }
   }
+  .primaryButton {
+    padding: .5rem 2rem;
+  }
 }
+
