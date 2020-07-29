@@ -51,6 +51,11 @@ strong {
   }
 
   &Item {
+    font-family: Titillium Web;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .04rem;
     @media only screen and (min-width: 760px) {
       display: flex;
     }
@@ -60,21 +65,29 @@ strong {
   }
 }
 
+#regionHeader {
+  background-color: #e9f4ff;
+  padding-top: 1rem;
+}
+
 #siteHeader {
   display: flex;
   align-items: center;
+  background-color: white;
 
   @media only screen and (min-width: 960px) {
     position: relative;
     min-height: 48px;
-    max-height: 68px;
     justify-content: space-between;
+    padding: .5rem 1rem;
+    border-radius: 11px;
   }
 }
 
 #siteName {
   display: flex;
   align-items: center;
+  line-height: 1;
 }
 
 .sectionHeading {
