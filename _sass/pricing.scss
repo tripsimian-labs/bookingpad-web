@@ -14,7 +14,7 @@
     border: 1px solid #aeaeae;
     box-sizing: border-box;
     border-radius: 7px;
-    padding: 3rem;
+    padding: 2rem 3rem;
 
     h3 {
       font-family: 'Titillium Web', sans-serif;
@@ -32,12 +32,26 @@
     }
 
     ul {
-      margin: 1.6rem 0 1.6rem 1em;
+      margin: 1.6rem 0;
+      color: #596371;
 
       li {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
         font-weight: 600;
-        list-style-type: disc;
+        padding: .3rem 0;
+
+        span {
+          padding-left: .7rem;
+        }
       }
+    }
+
+    .primaryButton {
+      font-size: 1.4rem;
+      background-color: #596371;
+      padding: 1rem;
     }
 
     &.plan {
@@ -45,6 +59,26 @@
         h3,
         ul {
           color: $red;
+
+          li {
+            list-style-image: url('/assets/images/bulletRed.svg');
+          }
+        }
+        .primaryButton {
+          background-color: $red;
+        }
+      }
+      &Biz {
+        border-color: $blue;
+        h3,
+        ul {
+          color: $blue;
+          li {
+            list-style-image: url('/assets/images/bulletBlue.svg');
+          }
+        }
+        .primaryButton {
+          background-color: $blue;
         }
       }
     }
@@ -55,6 +89,10 @@
       border-radius: 12px;
       margin-top: -1rem;
     }
+  }
+
+  &Blurb {
+    margin-bottom: 2rem;
   }
 
   &Head {
@@ -75,6 +113,7 @@
     display: flex;
     a {
       width: 100%;
+      border-radius: 9px;
     }
   }
 }
