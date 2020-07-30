@@ -37,12 +37,14 @@
       margin-bottom: 1.5rem;
       font-size: 2.3rem;
       border-top: none;
+      padding-top: 0;
     }
   }
 
   .primaryButton {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: 1rem;
+    padding: .5rem 2rem;
   }
 }
 
@@ -55,7 +57,8 @@ form {
       font-weight: 600;
       padding: 0.5rem;
       margin: 0.5rem 0;
-      border: 2px solid #aaaaaa;
+      border: 2px solid #596371;
+      border-radius: 5px;
       width: calc(100% - 0.5rem);
     }
   }

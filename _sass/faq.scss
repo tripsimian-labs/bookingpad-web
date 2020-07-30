@@ -52,14 +52,13 @@
   @media only screen and (min-width: 960px) {
     margin: 3rem 0;
     padding: 2rem 3rem;
-
   }
 
   h4 {
     font-family: Titillium Web;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: #2f2e41;
@@ -72,5 +71,13 @@
 
   a {
     font-size: 1rem;
+  }
+}
+
+.iconTitle {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 0.75rem;
   }
 }
