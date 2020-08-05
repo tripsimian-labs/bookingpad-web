@@ -115,6 +115,7 @@ collections:
         name: "faqs"
         widget: "list"
         allow_add: true
+        minimize_collapsed: true
         fields:
           - label: "FAQ 1"
             name: "faq1"
