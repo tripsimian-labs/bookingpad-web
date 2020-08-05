@@ -113,7 +113,8 @@ collections:
       - file: "_data/faqs.yml"
         label: "FAQ Section"
         name: "faqs"
-        widget: "object"
+        widget: "list"
+        allow_add: true
         fields:
           - label: "FAQ 1"
             name: "faq1"
