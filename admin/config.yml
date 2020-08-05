@@ -56,4 +56,9 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Text", name: "button", widget: "string" }
-          - { label: "Feature List", name: "feature_list", widget: "list" }
+          - {
+              label: "Feature List",
+              name: "feature_list",
+              widget: "list",
+              allow_add: true
+            }
