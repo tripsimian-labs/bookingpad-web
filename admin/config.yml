@@ -114,11 +114,22 @@ collections:
         label: "FAQ Section"
         name: "faqs"
         widget: "object"
-        allow_add: true
         fields:
-          - label: "Questions"
-            name: "question"
-            field: { label: "Question", name: "question", widget: "string" }
-          - label: "Answer"
-            name: "answer"
-            field: { label: "Answer", name: "answer", widget: "text" }
+          - label: "FAQ 1"
+            name: "faq1"
+            widget: "object"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+          - label: "FAQ 2"
+            name: "faq2"
+            widget: "object"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+          - label: "FAQ 3"
+            name: "faq3"
+            widget: "object"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
