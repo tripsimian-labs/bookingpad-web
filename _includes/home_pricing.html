@@ -3,19 +3,19 @@
         <h2 class="sectionHeading">Plan & Pricing</h2>
         <div class="homePricingGrid">
             <div class="homePricingItem">
-
                 <div class="homePricingBlurb">
                     <div class="homePricingHead">
                         <h3>Basic</h3>
                         <div class="homePricingRate">
-                            <span>59€</span> /month
+                            <span>{{ site.data.pricing.basic.price }}</span> /month
                         </div>
                     </div>
                     <div class="homeFeaturesText">
                         <p>
-                            For agency that needs most. All Pro features plus...
+                            {{ site.data.pricing.basic.text }}
                         </p>
                         <ul>
+                            {% for item in site.data.pricing.basic.features %}
                             <li>
                                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -23,28 +23,9 @@
                                         d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
                                         fill="#596371" />
                                 </svg>
-                                <span>
-                                    Amazing feature one
-                                </span>
+                                <span>{{ item.text }}</span>
                             </li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#596371" />
-                                </svg>
-                                <span>Feature two is sleek</span>
-                            </li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#596371" />
-                                </svg>
-                                <span>Superduper feat 3</span>
-                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -58,59 +39,24 @@
                     <div class="homePricingHead">
                         <h3>Pro</h3>
                         <div class="homePricingRate">
-                            <span>309€</span> /month
+                            <span>{{ site.data.pricing.pro.price }}</span> /month
                         </div>
                     </div>
                     <div class="homePricingText">
                         <p>
-                            For agency that needs more. All Basic features plus...
+                            {{ site.data.pricing.pro.text }}
                         </p>
                         <ul>
+                            {% for item in site.data.pricing.pro.features %}
                             <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#c00005" />
+                                        fill="#596371" />
                                 </svg>
-                                <span>Amazing feature one</span>
+                                <span>{{ item.text }}</span>
                             </li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#c00005" />
-                                </svg>
-                                <span>Feature two is sleek</span>
-                            </li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#c00005" />
-                                </svg>
-                                <span>Superduper feat 3</span>
-                            </li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#c00005" />
-                                </svg>
-                                <span>Fourth cool feature</span>
-                            </li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#c00005" />
-                                </svg>
-                                <span>Number 5 offering</span>
-                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -123,62 +69,24 @@
                     <div class="homePricingHead">
                         <h3>Business</h3>
                         <div class="homePricingRate">
-                            <span>899€</span> /month
+                            <span>{{ site.data.pricing.business.price }}</span> /month
                         </div>
                     </div>
                     <div class="homePricingText">
                         <p>
-                            For agency that needs most. All Pro features plus...
+                            {{ site.data.pricing.business.text }}
                         </p>
                         <ul>
+                            {% for item in site.data.pricing.business.features %}
                             <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#4E6E9B" />
+                                        fill="#596371" />
                                 </svg>
-                                <span>Amazing feature one</span></li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#4E6E9B" />
-                                </svg>
-                                <span>Feature two is sleek</span></li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#4E6E9B" />
-                                </svg>
-                                <span>Superduper feat 3</span></li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#4E6E9B" />
-                                </svg>
-                                <span>Fourth cool feature</span></li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#4E6E9B" />
-                                </svg>
-                                <span>Number 5 offering</span></li>
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#4E6E9B" />
-                                </svg>
-                                <span>Cutting-edge sixth</span></li>
+                                <span>{{ item.text }}</span>
+                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>

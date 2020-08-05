@@ -54,7 +54,7 @@ collections:
               - { label: "Button", name: "button", widget: "string" }
       - file: "_data/features.yml"
         label: "Features Section"
-        name: "feature1"
+        name: "features"
         fields:
           - label: "Feature 1"
             name: "feature1"
@@ -74,3 +74,40 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "markdown" }
+      - file: "_data/features.yml"
+        label: "Features Section"
+        name: "pricing"
+        fields:
+          - label: "Basic"
+            name: "basic"
+            widget: "object"
+            fields:
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                allow_add: true
+                field: { label: "Text", name: "text", widget: "string" }
+          - label: "Pro"
+            name: "pro"
+            widget: "object"
+            fields:
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                allow_add: true
+                field: { label: "Text", name: "text", widget: "string" }
+          - label: "Business"
+            name: "business"
+            widget: "object"
+            fields:
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                allow_add: true
+                field: { label: "Text", name: "text", widget: "string" }
