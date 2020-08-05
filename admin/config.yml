@@ -50,7 +50,7 @@ collections:
             name: "billboard"
             widget: "object"
             fields:
-              - { label: "Title", name: "title", widget: "markdown" }
+              - { label: "Tagline", name: "body", widget: "markdown" }
               - { label: "Button", name: "button", widget: "string" }
   - name: "features"
     label: "Features"
