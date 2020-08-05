@@ -67,11 +67,13 @@ collections:
               - { label: "Text", name: "text", widget: "markdown" }
           - label: "Feature 2"
             name: "feature2"
+            widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "markdown" }
           - label: "Feature 3"
             name: "feature3"
+            widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "markdown" }
