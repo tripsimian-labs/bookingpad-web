@@ -16,7 +16,6 @@ collections:
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-
   - name: "pages"
     label: "Pages"
     editor:
@@ -111,3 +110,15 @@ collections:
                 widget: "list"
                 allow_add: true
                 field: { label: "Text", name: "text", widget: "string" }
+      - file: "_data/faqs.yml"
+        label: "FAQ Section"
+        name: "faqs"
+        widget: "object"
+        allow_add: true
+        fields:
+          - label: "Questions"
+            name: "question"
+            field: { label: "Question", name: "question", widget: "string" }
+          - label: "Answer"
+            name: "answer"
+            field: { label: "Answer", name: "answer", widget: "text" }
