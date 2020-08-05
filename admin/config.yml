@@ -38,7 +38,7 @@ collections:
         name: 'hero'
         file: '_data/hero.yml'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Title', name: 'title', widget: 'markdown' }
           - { label: 'Button', name: 'button', widget: 'string' }
   - name: 'features'
     label: 'Features'
