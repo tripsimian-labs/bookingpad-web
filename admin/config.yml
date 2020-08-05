@@ -52,9 +52,6 @@ collections:
             fields:
               - { label: "Tagline", name: "body", widget: "markdown" }
               - { label: "Button", name: "button", widget: "string" }
-  - name: "features"
-    label: "Features"
-    files:
       - file: "_data/features.yml"
         label: "Features Section"
         name: "feature1"
