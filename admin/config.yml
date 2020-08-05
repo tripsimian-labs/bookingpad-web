@@ -83,7 +83,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Price", name: "price", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Description", name: "description", widget: "text" }
               - label: "Features"
                 name: "features"
                 widget: "list"
@@ -94,7 +94,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Price", name: "price", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Description", name: "description", widget: "text" }
               - label: "Features"
                 name: "features"
                 widget: "list"
@@ -105,7 +105,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Price", name: "price", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Description", name: "description", widget: "text" }
               - label: "Features"
                 name: "features"
                 widget: "list"
