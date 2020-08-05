@@ -3,16 +3,14 @@
     <div class="wrapper">
         <div class="billboardGrid">
             <div class="billboardBlurb">
-                {% for item in site.data.hero.items %}
                 <h3>
-                    {{ item.title }}
+                    {{ site.data.hero.title }}
                 </h3>
-                <a href="" class="primaryButton">{{ item.button }}</a>
+                <a href="" class="primaryButton">{{ site.data.hero.button }}</a>
             </div>
             <div class="billboardMedia">
                 <img src="/assets/images/videoHero.png" alt="">
             </div>
-            {% endfor %}
         </div>
     </div>
 </div>
