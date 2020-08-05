@@ -1,63 +1,75 @@
 backend:
   name: git-gateway
   branch: v2020
-media_folder: 'assets/uploads'
+media_folder: "assets/uploads"
 collections:
-  - name: 'Posts'
-    label: 'Posts'
-    folder: '_posts/'
+  - name: "Posts"
+    label: "Posts"
+    folder: "_posts/"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: 'pages'
-    label: 'Pages'
+  - name: "pages"
+    label: "Pages"
     editor:
       preview: false
     files:
-      - label: 'About Page'
-        name: 'about'
-        file: 'about.md'
+      - label: "About Page"
+        name: "about"
+        file: "about.md"
         fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
-          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'index'
-    label: 'Index'
-    editor:
-      preview: false
+          - {
+              label: "Title",
+              name: "title",
+              widget: "hidden",
+              default: "about",
+            }
+          - {
+              label: "Layout",
+              name: "layout",
+              widget: "hidden",
+              default: "about",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+  - name: "index"
+    label: "Index"
     files:
-      - label: 'Hero Section'
-        name: 'hero'
-        file: '_data/hero.yml'
+      - file: "_data/hero.yml"
+        label: "Hero Section"
+        name: "hero"
         fields:
-          - { label: 'Title', name: 'title', widget: 'markdown' }
-          - { label: 'Button', name: 'button', widget: 'string' }
-  - name: 'features'
-    label: 'Features'
+          - label: "Billboard"
+            name: "billboard"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "markdown" }
+              - { label: "Button", name: "button", widget: "string" }
+  - name: "features"
+    label: "Features"
     files:
-      - label: 'Feature 1'
-        name: 'feature1'
-        file: '_data/features.yml'
+      - label: "Feature 1"
+        name: "feature1"
+        file: "_data/features.yml"
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Text', name: 'text', widget: 'markdown' }
-      - label: 'Feature 2'
-        name: 'feature2'
-        file: '_data/features.yml'
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "markdown" }
+      - label: "Feature 2"
+        name: "feature2"
+        file: "_data/features.yml"
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Text', name: 'text', widget: 'markdown' }
-      - label: 'Feature 3'
-        name: 'feature3'
-        file: '_data/features.yml'
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "markdown" }
+      - label: "Feature 3"
+        name: "feature3"
+        file: "_data/features.yml"
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Text', name: 'text', widget: 'markdown' }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "markdown" }
