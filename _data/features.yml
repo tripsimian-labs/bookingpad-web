@@ -1,9 +1,9 @@
 feature1:
-  title: All in one toolbelt
+  title: All in one tool
   image: /assets/images/imgFeat-01.svg
   text: We aggregate shopping content, features, and bookings from all the NDC
-    airlines you are authorized. All of these in **one single and consistent web
-    application.**
+    airlines you are authorized. All of these in one single and consistent web
+    application.
 feature2:
   title: Modern web interface
   image: /assets/images/imgFeat-02.svg
