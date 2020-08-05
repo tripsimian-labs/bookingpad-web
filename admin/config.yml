@@ -55,21 +55,23 @@ collections:
   - name: "features"
     label: "Features"
     files:
-      - label: "Feature 1"
+      - file: "_data/features.yml"
+        label: "Features Section"
         name: "feature1"
-        file: "_data/features.yml"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "markdown" }
-      - label: "Feature 2"
-        name: "feature2"
-        file: "_data/features.yml"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "markdown" }
-      - label: "Feature 3"
-        name: "feature3"
-        file: "_data/features.yml"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "markdown" }
+          - label: "Feature 1"
+            name: "feature1"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "markdown" }
+          - label: "Feature 2"
+            name: "feature2"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "markdown" }
+          - label: "Feature 3"
+            name: "feature3"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "markdown" }
