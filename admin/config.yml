@@ -34,10 +34,9 @@ collections:
     editor:
       preview: false
     files:
-      - label: 'Home Page'
-        name: 'home'
-        file: 'index.md'
+      - label: 'Hero Section'
+        name: 'hero'
+        file: '_data/hero.yml'
         fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'home' }
-          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'main' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Title', name: 'title', widget: 'markdown' }
+          - { label: 'Button', name: 'button', widget: 'string' }
