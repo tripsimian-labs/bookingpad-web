@@ -6,15 +6,54 @@
                 {% for item in site.data.features %}
                 <div class="homeFeaturesItem">
                     <div class="homeFeaturesImg">
-                        <img src="{{ item.image }}" alt="">
+                        <img src="/assets/images/imgFeat-01.svg" alt="">
                     </div>
                     <div class="homeFeaturesText">
                         <h3>
-                            {{ item.title }}
+                            {{ site.data.features.feature1.title }}
                         </h3>
                         <p>
-                            {{ item.text }}
+                            {{ site.data.features.feature1.text }}
                         </p>
+                        <ul>
+                            <li>Example property of this feature goes here</li>
+                            <li>Another characteristics of the feature</li>
+                            <li>Perhaps a third point is needed</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="homeFeaturesItem">
+                    <div class="homeFeaturesImg">
+                        <img src="/assets/images/imgFeat-02.svg" alt="">
+                    </div>
+                    <div class="homeFeaturesText">
+                        <h3>
+                            {{ site.data.features.feature2.title }}
+                        </h3>
+                        <p>
+                            {{ site.data.features.feature2.text }}
+                        </p>
+                        <ul>
+                            <li>Example property of this feature goes here</li>
+                            <li>Another characteristics of the feature</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="homeFeaturesItem">
+                    <div class="homeFeaturesImg">
+                        <img src="/assets/images/imgFeat-01.svg" alt="">
+                    </div>
+                    <div class="homeFeaturesText">
+                        <h3>
+                            {{ site.data.features.feature3.title }}
+                        </h3>
+                        <p>
+                            {{ site.data.features.feature3.text }}
+                        </p>
+                        <ul>
+                            <li>Example property of this feature goes here</li>
+                            <li>Another characteristics of the feature</li>
+                        </ul>
                     </div>
                 </div>
                 {% endfor %}
