@@ -160,3 +160,33 @@ footer {
     }
   }
 }
+
+table {
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 100%;
+  margin-bottom: 3rem;
+
+  th {
+    background-color: #2f2e41;
+    color: white;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+  }
+
+  td {
+    padding: 0.8rem 0.3rem;
+    vertical-align: middle;
+    line-height: 1;
+
+    svg {
+      opacity: .7;
+    }
+  }
+
+  tr {
+    &:nth-child(even) {
+      background-color: rgba(255,255,255,.5);
+    }
+  }
+}
