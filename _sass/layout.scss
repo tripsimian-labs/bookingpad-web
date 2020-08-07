@@ -180,13 +180,33 @@ table {
     line-height: 1;
 
     svg {
-      opacity: .7;
+      opacity: 0.6;
     }
   }
 
   tr {
     &:nth-child(even) {
-      background-color: rgba(255,255,255,.5);
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+  col:first-child {
+    background-color: #cfe6fd;
+  }
+}
+
+.table-legend {
+  margin-bottom: 4rem;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    li {
+      display: flex;
+      align-items:  center;
+      font-size: .9rem;
+      padding: .3rem 0;
+      svg {
+        margin-right: 0.5rem;
+      }
     }
   }
 }
