@@ -59,4 +59,17 @@
     {%- include footer.html -%}
 
   </div>
+  <script src="/assets/js/lightgallery.js"></script>
+  <script src="/assets/js/lg-thumbnail.js"></script>
+
+  <script>
+    lightGallery(document.getElementById('lightgallery'), {
+      thumbnail: true,
+      animateThumb: true,
+      showThumbByDefault: false,
+      mode: 'lg-slide',
+      download: false
+    });
+  </script>
+
 </body>
