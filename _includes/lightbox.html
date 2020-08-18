@@ -1,0 +1,28 @@
+<div class="billboard">
+    <div class="wrapper">
+        <div class="billboardGrid">
+            <div class="billboardBlurb">
+                <h3>
+                    {{ site.data.hero.billboard.body }}
+                </h3>
+                <a href="" class="primaryButton">{{ site.data.hero.billboard.button }}</a>
+            </div>
+            <div class="billboardMedia">
+                <div class="ss-gallery">
+                    <ul id="lightgallery" class="photo-gallery">
+                        {% for screenshot in site.data.screenshots %}
+                        <li
+                            data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800"
+                            data-src="/assets/img/{{ screenshot.image }}"
+                            data-sub-html="<h4>{{ screenshot.title }}</h4><p>{{ screenshot.description }}</p>">
+                            <a href="">
+                                <img class="img-responsive" src="/assets/img/{{ screenshot.thumb }}" alt="Screenshot image of {{ screenshot.title }}">
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
