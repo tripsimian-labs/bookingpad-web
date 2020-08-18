@@ -20,6 +20,7 @@ collections:
     name: "hero"
     files:
     - label: "Hero Section"
+      name: "hero"
       file: "_data/hero.yml"
       fields:
         - label: "Billboard"
@@ -32,6 +33,7 @@ collections:
     name: "gallery"
     files:
       - label: Gallery Section
+        name: "gallery"
         file: "_data/gallery.yml"
         fields:
           - label: "Gallery Items"
@@ -46,6 +48,7 @@ collections:
     name: "features"
     files:
       - label: "Features Section"
+        name: "features"
         file: "_data/features.yml"
         fields:
           - label: "Feature 1"
@@ -71,6 +74,7 @@ collections:
     name: "pricing"
     files:
       - label: "Pricing Section"
+        name: "pricing"
         file: "_data/pricing.yml"
         fields:
           - label: "Basic"
@@ -110,6 +114,7 @@ collections:
     name: "customers"
     files:
       - label: "Customers Section"
+        name: "customers"
         file: "_data/customers.yml"
         fields:
           - label: "Customers Items"
@@ -123,6 +128,7 @@ collections:
     name: "partners"
     files:
       - label: "Partners Section"
+        name: "partners"
         file: "_data/partners.yml"
         fields:
           - label: "Partners"
@@ -136,6 +142,7 @@ collections:
     name: "faqs"
     files:
       - label: "FAQ Section"
+        name: "faqs"
         file: "_data/faqs.yml"
         widget: "list"
         allow_add: true
