@@ -9,7 +9,7 @@ pro:
   price: 309€
   description: For agency that needs more. All Basic features plus...
   features:
-    - text: Amazing feature one
+    - Amazing feature number one
     - text: Feature two is sleek
     - text: Superduper feat 3
     - text: Fourth cool feature
