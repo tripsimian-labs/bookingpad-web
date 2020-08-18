@@ -1,10 +1,10 @@
 items:
   - name: Corporate Travel Management
-    logo: /assets/images/logoCTM.png
-    country: US
+    logo: /assets/uploads/logoctm.png
+    country: USA
   - name: ATG Business Travel Management
-    logo: /assets/images/logoATG.png
-    country: US
+    logo: /assets/uploads/logoatg.png
+    country: USA
   - name: ATLAS Travel & Technology Group
-    logo: /assets/images/logoATLAS.png
-    country: US
+    logo: /assets/uploads/logoatlas.png
+    country: USA
