@@ -57,12 +57,13 @@ collections:
         fields:
           - label: "Gallery"
             name: "gallery"
+            create: true
             widget: "object"
             fields:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Thumbnail", name: "thumb", widget: "image" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Descriptiom", name: "description", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
       - file: "_data/features.yml"
         label: "Features Section"
         name: "features"
