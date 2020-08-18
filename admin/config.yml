@@ -51,19 +51,18 @@ collections:
             fields:
               - { label: "Tagline", name: "body", widget: "markdown" }
               - { label: "Button", name: "button", widget: "string" }
-      - file: "_data/screenshots.yml"
+      - file: "_data/gallery.yml"
         label: "Gallery Section"
         name: "gallery"
-        widget: "list"
         fields:
-          - label: "Gallery"
-            name: "gallery"
-            widget: "object"
+          - label: "Gallery Items"
+            name: "items"
+            widget: "list"
             fields:
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Thumbnail", name: "thumb", widget: "image" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "string" }
+                - { label: Image, name: image, widget: image }
+                - { label: Thumbnail, name: thumb, widget: image }
+                - { label: Title, name: title, widget: string }
+                - { label: Description, name: description, widget: string }
       - file: "_data/features.yml"
         label: "Features Section"
         name: "features"
