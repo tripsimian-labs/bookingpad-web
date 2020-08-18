@@ -3,8 +3,8 @@ backend:
   branch: v2020
 media_folder: "assets/uploads"
 collections:
-  - name: "Posts"
-    label: "Posts"
+  - label: "Updates"
+    name: "posts"
     folder: "_posts/"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -16,56 +16,37 @@ collections:
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
-    editor:
-      preview: false
+  - label: "Hero"
+    name: "hero"
     files:
-      - label: "About Page"
-        name: "about"
-        file: "about.md"
-        fields:
-          - {
-              label: "Title",
-              name: "title",
-              widget: "hidden",
-              default: "about",
-            }
-          - {
-              label: "Layout",
-              name: "layout",
-              widget: "hidden",
-              default: "about",
-            }
-          - { label: "Body", name: "body", widget: "markdown" }
-  - name: "index"
-    label: "Index"
+    - label: "Hero Section"
+      file: "_data/hero.yml"
+      fields:
+        - label: "Billboard"
+          name: "billboard"
+          widget: "object"
+          fields:
+            - { label: "Tagline", name: "body", widget: "markdown" }
+            - { label: "Button", name: "button", widget: "string" }
+  - label: "Gallery"
+    name: "gallery"
     files:
-      - file: "_data/hero.yml"
-        label: "Hero Section"
-        name: "hero"
-        fields:
-          - label: "Billboard"
-            name: "billboard"
-            widget: "object"
-            fields:
-              - { label: "Tagline", name: "body", widget: "markdown" }
-              - { label: "Button", name: "button", widget: "string" }
-      - file: "_data/gallery.yml"
-        label: "Gallery Section"
-        name: "gallery"
+      - label: Gallery Section
+        file: "_data/gallery.yml"
         fields:
           - label: "Gallery Items"
             name: "items"
             widget: "list"
             fields:
-                - { label: Image, name: image, widget: image }
-                - { label: Thumbnail, name: thumb, widget: image }
-                - { label: Title, name: title, widget: string }
-                - { label: Description, name: description, widget: string }
-      - file: "_data/features.yml"
-        label: "Features Section"
-        name: "features"
+              - { label: Image, name: image, widget: image }
+              - { label: Thumbnail, name: thumb, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: string }
+  - label: "Features"
+    name: "features"
+    files:
+      - label: "Features Section"
+        file: "_data/features.yml"
         fields:
           - label: "Feature 1"
             name: "feature1"
@@ -85,16 +66,19 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "markdown" }
-      - file: "_data/pricing.yml"
-        label: "Pricing Section"
-        name: "pricing"
+
+  - label: "Pricing"
+    name: "pricing"
+    files:
+      - label: "Pricing Section"
+        file: "_data/pricing.yml"
         fields:
           - label: "Basic"
             name: "basic"
             widget: "object"
             fields:
               - { label: "Price", name: "price", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Description", name: "description", widget: "text"}
               - label: "Features"
                 name: "features"
                 widget: "list"
@@ -105,7 +89,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Price", name: "price", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Description", name: "description", widget: "text"}
               - label: "Features"
                 name: "features"
                 widget: "list"
@@ -116,37 +100,43 @@ collections:
             widget: "object"
             fields:
               - { label: "Price", name: "price", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Description", name: "description", widget: "text"}
               - label: "Features"
                 name: "features"
                 widget: "list"
                 allow_add: true
                 field: { label: "Text", name: "text", widget: "string" }
-      - file: "_data/customers.yml"
-        label: "Customers Section"
-        name: "customers"
+  - label: "Customers"
+    name: "customers"
+    files:
+      - label: "Customers Section"
+        file: "_data/customers.yml"
         fields:
           - label: "Customers Items"
             name: "items"
             widget: "list"
             fields:
-                - { label: Logo, name: logo, widget: image }
-                - { label: Customer Name, name: name, widget: string }
-                - { label: Country, name: country, widget: string }
-      - file: "_data/partners.yml"
-        label: "Partners Section"
-        name: "partners"
+              - { label: Logo, name: logo, widget: image }
+              - { label: Customer Name, name: name, widget: string }
+              - { label: Country, name: country, widget: string }
+  - label: "Partners"
+    name: "partners"
+    files:
+      - label: "Partners Section"
+        file: "_data/partners.yml"
         fields:
           - label: "Partners"
             name: "items"
             widget: "list"
             fields:
-                - { label: Logo, name: logo, widget: image }
-                - { label: Partner's Name, name: name, widget: string }
-                - { label: Sector, name: sector, widget: string }
-      - file: "_data/faqs.yml"
-        label: "FAQ Section"
-        name: "faqs"
+              - { label: Logo, name: logo, widget: image }
+              - { label: Partner's Name, name: name, widget: string }
+              - { label: Sector, name: sector, widget: string }
+  - label: "FAQ"
+    name: "faqs"
+    files:
+      - label: "FAQ Section"
+        file: "_data/faqs.yml"
         widget: "list"
         allow_add: true
         minimize_collapsed: true
@@ -168,4 +158,4 @@ collections:
             widget: "object"
             fields:
               - { label: "Question", name: "question", widget: "string" }
-              - { label: "Answer", name: "answer", widget: "text" }
+              - { label: "Answer", name: "answer", widget: "text"}
