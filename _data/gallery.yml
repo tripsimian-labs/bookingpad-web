@@ -4,3 +4,7 @@ items:
     title: Fading EmberLight
     description: Classic view from Rigwood Jetty on Coniston Water an old   archive
       shot similar to an old post but a little later on.
+  - image: /assets/uploads/AirGateway_NDC_Booking_Tool-Private-Fares-NDC.png
+    thumb: /assets/uploads/airgateway_ndc_booking_tool-export-to-file.png
+    title: The Awesome Example
+    description: This is a gallery item posted from up the CMS
