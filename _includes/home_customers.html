@@ -7,22 +7,13 @@
             <a href="#">See all our customers</a>
         </div>
         <div class="homeCustomersGrid">
+            {% for item in site.data.customers.items %}
             <div class="homeCustomersItem">
-                <img src="/assets/images/logoCTM.png" alt="">
-                <h4>Corporate Travel Management</h4>
-                <p>USA</p>
+                <img src="{{ item.logo }}" alt="">
+                <h4>{{ item.name }}</h4>
+                <p>{{ item.country }}</p>
             </div>
-            <div class="homeCustomersItem">
-                <img src="/assets/images/logoATG.png" alt="">
-                <h4>ATG Business Travel Management</h4>
-                <p>USA</p>
-            </div>
-            <div class="homeCustomersItem">
-                <img src="/assets/images/logoATLAS.png" alt="">
-                <h4>ATLAS Travel & Technology Group</h4>
-                <p>USA</p>
-            </div>
+            {% endfor %}
         </div>
-
     </div>
 </div>
