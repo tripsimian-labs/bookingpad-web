@@ -133,6 +133,17 @@ collections:
                 - { label: Logo, name: logo, widget: image }
                 - { label: Customer Name, name: name, widget: string }
                 - { label: Country, name: country, widget: string }
+      - file: "_data/partners.yml"
+        label: "Partners Section"
+        name: "partners"
+        fields:
+          - label: "Partners"
+            name: "items"
+            widget: "list"
+            fields:
+                - { label: Logo, name: logo, widget: image }
+                - { label: Partner's Name, name: name, widget: string }
+                - { label: Sector, name: sector, widget: string }
       - file: "_data/faqs.yml"
         label: "FAQ Section"
         name: "faqs"

@@ -7,21 +7,13 @@
             <a href="#">See all our partners</a>
         </div>
         <div class="homePartnersGrid">
+            {% for item in site.data.partners.items %}
             <div class="homePartnersItem">
-                <img src="/assets/images/logoUmbrella.png" alt="">
-                <h4>Umbrella</h4>
-                <p>Travel Management</p>
+                <img src="{{ item.logo }}" alt="Logo of {{ item.name }}">
+                <h4>{{ item.name }}</h4>
+                <p>{{ item.sector }}</p>
             </div>
-            <div class="homePartnersItem">
-                <img src="/assets/images/logoMidoco.png" alt="">
-                <h4>Midoco</h4>
-                <p>Mid/Back-Office</p>
-            </div>
-            <div class="homePartnersItem">
-                <img src="/assets/images/logoBBT.png" alt="">
-                <h4>BookingBuilder Technologies</h4>
-                <p>Point-of-Sale</p>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

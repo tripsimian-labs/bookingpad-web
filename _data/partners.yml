@@ -1,0 +1,10 @@
+items:
+  - name: Umbrella
+    logo: /assets/images/logoUmbrella.png
+    sector: Travel Management
+  - name: Midoco
+    logo: /assets/images/logoMidoco.png
+    sector: Mid/Back-Office
+  - name: BookingBuilder Technologies
+    logo: /assets/images/logoBBT.png
+    sector: Point-of-Sale
