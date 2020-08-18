@@ -2,10 +2,10 @@
     <ul id="lightgallery">
         {% for item in site.data.gallery.items %}
         <li data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800"
-            data-src="/assets/img/{{ item.image }}"
+            data-src="{{ item.image }}"
             data-sub-html="<h4>{{ item.title }}</h4><p>{{ item.description }}</p>">
             <a href="">
-                <img class="img-responsive" src="/assets/img/{{ item.thumb }}"
+                <img class="img-responsive" src="{{ item.thumb }}"
                     alt="Image of {{ item.title }}">
             </a>
         </li>
