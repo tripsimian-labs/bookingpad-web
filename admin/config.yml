@@ -54,7 +54,7 @@ collections:
       - file: "_data/screenshots.yml"
         label: "Gallery Section"
         name: "gallery"
-        create: true
+        widget: "list"
         fields:
           - label: "Gallery"
             name: "gallery"
