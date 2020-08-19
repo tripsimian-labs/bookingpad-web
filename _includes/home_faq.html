@@ -2,20 +2,12 @@
     <div class="wrapper">
         <h2 class="sectionHeading">FAQ</h2>
         <div class="homeFaqGrid">
+            {% for item in site.data.faqs.items %}
             <div class="homeFaqItem">
-                <h3>{{ site.data.faqs.faq1.question }}</h3>
-                <p>{{ site.data.faqs.faq1.answer }}</p>
-                <a href="#">See all Bookingpad features >s</a>
+                <h3>{{ item.question }}</h3>
+                <p>{{ item.answer }}</p>
             </div>
-            <div class="homeFaqItem">
-                <h3>{{ site.data.faqs.faq2.question }}</h3>
-                <p>{{ site.data.faqs.faq2.answer }}</p>
-                <a href="#">See what our customers say ></a>
-            </div>
-            <div class="homeFaqItem">
-                <h3>{{ site.data.faqs.faq3.question }}</h3>
-                <p>{{ site.data.faqs.faq3.answer }}</p>
-            </div>
+            {% endfor %}
 
             <a href="#">See all FAQs ></a>
             <div class="homeUserGuide">

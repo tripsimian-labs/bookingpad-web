@@ -3,6 +3,7 @@
         <h2 class="sectionHeading">Product Features</h2>
         <div class="homeFeaturesGrid">
             <div class="homeFeaturesList">
+
                 {% for item in site.data.features.items %}
                 <div class="homeFeaturesItem">
                     <div class="homeFeaturesImg">
@@ -13,50 +14,11 @@
                             {{ item.title }}
                         </h3>
                         <p>
-                            {{ item.text }}
+                            {{ item.description }}
                         </p>
-                        <ul>
-                            <li>Example property of this feature goes here</li>
-                            <li>Another characteristics of the feature</li>
-                            <li>Perhaps a third point is needed</li>
-                        </ul>
                     </div>
                 </div>
                 {% endfor %}
-                <div class="homeFeaturesItem">
-                    <div class="homeFeaturesImg">
-                        <img src="/assets/images/imgFeat-02.svg" alt="">
-                    </div>
-                    <div class="homeFeaturesText">
-                        <h3>
-                            {{ site.data.features.feature2.title }}
-                        </h3>
-                        <p>
-                            {{ site.data.features.feature2.text }}
-                        </p>
-                        <ul>
-                            <li>Example property of this feature goes here</li>
-                            <li>Another characteristics of the feature</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="homeFeaturesItem">
-                    <div class="homeFeaturesImg">
-                        <img src="/assets/images/imgFeat-01.svg" alt="">
-                    </div>
-                    <div class="homeFeaturesText">
-                        <h3>
-                            {{ site.data.features.feature3.title }}
-                        </h3>
-                        <p>
-                            {{ site.data.features.feature3.text }}
-                        </p>
-                        <ul>
-                            <li>Example property of this feature goes here</li>
-                            <li>Another characteristics of the feature</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
 
             <div class="homeUpdates">
