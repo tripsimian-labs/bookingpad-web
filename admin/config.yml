@@ -27,8 +27,8 @@ collections:
     widget: "list"
     fields:
       - { label: "Plan Name", name: "title", widget: "string" }
-      - { label: "Monthly Price", name: "price_monthly", widget: "string" }
-      - { label: "Yearly Price", name: "price_yearly", widget: "string" }
+      - { label: "Pricing Option 1", name: "price_main", widget: "string" }
+      - { label: "Pricing Option 2", name: "price_secondary", widget: "string" }
       - { label: "Description", name: "body", widget: "markdown"}
 
   - label: "Customers"

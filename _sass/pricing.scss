@@ -106,7 +106,7 @@
   }
 
   &Rate {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: $gray;
 
     span {
@@ -121,5 +121,11 @@
       width: 100%;
       border-radius: 9px;
     }
+  }
+}
+
+.digit {
+  &Big {
+    font-size: 2.2rem;
   }
 }
