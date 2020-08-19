@@ -1,5 +1,5 @@
 ---
-title: Pro
+title: Business
 price_main: 500€ / month
 price_secondary: 1€ / order issued
 ---
