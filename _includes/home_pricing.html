@@ -2,17 +2,19 @@
     <div class="wrapper">
         <h2 class="sectionHeading">Plan & Pricing</h2>
         <div class="homePricingGrid">
+            {% for plan in site.plans %}
             <div class="homePricingItem">
                 <div class="homePricingBlurb">
                     <div class="homePricingHead">
-                        <h3>Basic</h3>
+                        <h3>{{ plan.title }}</h3>
                         <div class="homePricingRate">
-                            <span>{{ site.data.pricing.basic.price }}</span> /month
+                            <span>{{ plan.price_monthly }}</span> /month
+                            <span>{{ plan.price_yearly }}</span> /year
                         </div>
                     </div>
                     <div class="homeFeaturesText">
                         <p>
-                            {{ site.data.pricing.basic.text }}
+                            {{ plan.content }}
                         </p>
                         <ul>
                             {% for item in site.data.pricing.basic.features %}
@@ -33,67 +35,7 @@
                     <a href="#" class="primaryButton">Get Started</a>
                 </div>
             </div>
-            <div class="homePricingItem planPro spotlight">
-                <div class="homePricingBlurb">
-
-                    <div class="homePricingHead">
-                        <h3>Pro</h3>
-                        <div class="homePricingRate">
-                            <span>{{ site.data.pricing.pro.price }}</span> /month
-                        </div>
-                    </div>
-                    <div class="homePricingText">
-                        <p>
-                            {{ site.data.pricing.pro.text }}
-                        </p>
-                        <ul>
-                            {% for item in site.data.pricing.pro.features %}
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#596371" />
-                                </svg>
-                                <span>{{ item.text }}</span>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-                <div class="homePricingCta">
-                    <a href="#" class="primaryButton" class="primaryButton">Get Started</a>
-                </div>
-            </div>
-            <div class="homePricingItem planBiz">
-                <div class="homePricingBlurb">
-                    <div class="homePricingHead">
-                        <h3>Business</h3>
-                        <div class="homePricingRate">
-                            <span>{{ site.data.pricing.business.price }}</span> /month
-                        </div>
-                    </div>
-                    <div class="homePricingText">
-                        <p>
-                            {{ site.data.pricing.business.text }}
-                        </p>
-                        <ul>
-                            {% for item in site.data.pricing.business.features %}
-                            <li>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M8.83331 0.833252C4.41731 0.833252 0.833313 4.41725 0.833313 8.83325C0.833313 13.2493 4.41731 16.8333 8.83331 16.8333C13.2493 16.8333 16.8333 13.2493 16.8333 8.83325C16.8333 4.41725 13.2493 0.833252 8.83331 0.833252ZM7.23331 12.8333L3.23331 8.83325L4.36131 7.70525L7.23331 10.5693L13.3053 4.49725L14.4333 5.63325L7.23331 12.8333Z"
-                                        fill="#596371" />
-                                </svg>
-                                <span>{{ item.text }}</span>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-                <div class="homePricingCta">
-                    <a href="#" class="primaryButton">Get Started</a>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

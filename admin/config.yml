@@ -16,6 +16,21 @@ collections:
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Plans & Pricing"
+    name: "plans"
+    folder: "_plans/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Plan Name", name: "title", widget: "string" }
+      - { label: "Monthly Price", name: "price_monthly", widget: "string" }
+      - { label: "Yearly Price", name: "price_yearly", widget: "string" }
+      - { label: "Description", name: "body", widget: "markdown"}
+
   - label: "Customers"
     name: "customers"
     folder: "_customers/"
@@ -30,6 +45,7 @@ collections:
       - { label: "Logo", name: "logo", widget: "image" }
       - { label: "Country", name: "country", widget: "string" }
       - { label: "Description", name: "body", widget: "markdown" }
+
   - label: "Partners"
     name: "partners"
     folder: "_partners/"
@@ -85,46 +101,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Text", name: "text", widget: "markdown" }
-  - label: "Pricing"
-    name: "pricing"
-    files:
-      - label: "Pricing Section"
-        name: "pricing"
-        file: "_data/pricing.yml"
-        fields:
-          - label: "Basic"
-            name: "basic"
-            widget: "object"
-            fields:
-              - { label: "Price", name: "price", widget: "string" }
-              - { label: "Description", name: "description", widget: "text"}
-              - label: "Features"
-                name: "features"
-                widget: "list"
-                allow_add: true
-                field: { label: "Text", name: "text", widget: "string" }
-          - label: "Pro"
-            name: "pro"
-            widget: "object"
-            fields:
-              - { label: "Price", name: "price", widget: "string" }
-              - { label: "Description", name: "description", widget: "text"}
-              - label: "Features"
-                name: "features"
-                widget: "list"
-                allow_add: true
-                field: { label: "Text", name: "text", widget: "string" }
-          - label: "Business"
-            name: "business"
-            widget: "object"
-            fields:
-              - { label: "Price", name: "price", widget: "string" }
-              - { label: "Description", name: "description", widget: "text"}
-              - label: "Features"
-                name: "features"
-                widget: "list"
-                allow_add: true
-                field: { label: "Text", name: "text", widget: "string" }
+
   - label: "FAQ"
     name: "faqs"
     files:
