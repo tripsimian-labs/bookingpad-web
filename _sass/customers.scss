@@ -3,17 +3,16 @@
   padding: 2rem 1rem 4rem;
 
   @media only screen and (min-width: 960px) {
-
     padding-bottom: 6rem;
   }
 
   &Grid {
     display: flex;
     justify-content: space-between;
-    flex-flow: column nowrap;
+    flex-flow: column-reverse nowrap;
 
     @media only screen and (min-width: 960px) {
-      flex-flow: row nowrap;
+      flex-flow: row-reverse nowrap;
     }
   }
 
