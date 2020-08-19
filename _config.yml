@@ -37,6 +37,10 @@ collections:
     layout: "post"
   plans:
     output: false
+    order:
+      - basic.md
+      - pro.md
+      - business.md
   customers:
     output: false
   partners:
