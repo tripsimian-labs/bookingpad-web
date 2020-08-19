@@ -1,11 +1,11 @@
 ---
 title: Medium
-price_main: 1€ / booking issued
+price_main: 1€ / order issued
 price_secondary: 150€ / month / agency (IATA number)
 ---
-For agency that needs most. All Pro features plus...
+For the agency that needs the most.
 
-* Up to 50 agent accounts
+* Unlimited agent accounts
 * OMS Orders monitoring system (disruptions alerts)
 
-  Wadus
+  Background Tasks (3rd parties reporting)
