@@ -16,6 +16,20 @@ collections:
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Customers"
+    name: "customers"
+    folder: "_customers/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: Logo, name: logo, widget: image }
+      - { label: Customer Name, name: name, widget: string }
+      - { label: Country, name: country, widget: string }
+      - { label: "Description", name: "body", widget: "markdown" }
+
   - label: "Hero"
     name: "hero"
     files:
