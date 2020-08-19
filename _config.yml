@@ -35,6 +35,10 @@ collections:
     permalink: "/:collection/:path/"
     output: true
     layout: "post"
+  customers:
+    output: false
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

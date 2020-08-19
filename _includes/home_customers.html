@@ -7,11 +7,11 @@
             <a href="#">See all our customers</a>
         </div>
         <div class="homeCustomersGrid">
-            {% for item in site.data.customers.items %}
+            {% for customer in site.customers %}
             <div class="homeCustomersItem">
-                <img src="{{ item.logo }}" alt="">
-                <h4>{{ item.name }}</h4>
-                <p>{{ item.country }}</p>
+                <img src="{{ customer.logo }}" alt="">
+                <h4>{{ customer.name }}</h4>
+                <p>{{ customer.country }}</p>
             </div>
             {% endfor %}
         </div>
