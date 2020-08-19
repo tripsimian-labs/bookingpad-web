@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Corporate  Travel  Management
+title: Corporate Travel Management
 logo: /assets/uploads/logoctm.png
 country: US
 ---
