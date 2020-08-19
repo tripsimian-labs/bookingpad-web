@@ -111,20 +111,7 @@ collections:
                 widget: "list"
                 allow_add: true
                 field: { label: "Text", name: "text", widget: "string" }
-  - label: "Customers"
-    name: "customers"
-    files:
-      - label: "Customers Section"
-        name: "customers"
-        file: "_data/customers.yml"
-        fields:
-          - label: "Customers"
-            name: "items"
-            widget: "list"
-            fields:
-              - { label: Logo, name: logo, widget: image }
-              - { label: Customer Name, name: name, widget: string }
-              - { label: Country, name: country, widget: string }
+
   - label: "Partners"
     name: "partners"
     files:
