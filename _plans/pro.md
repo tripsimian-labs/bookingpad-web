@@ -7,7 +7,5 @@ For the agency that needs the most.
 
 * Unlimited agent accounts
 * OMS Orders monitoring system (disruptions alerts)
-
-  Background Tasks (3rd parties reporting)
-
-  API Access for B2C integrations, automated shopping/issuance/cancellations and more
+* Background Tasks (3rd parties reporting)
+* API Access for B2C integrations, automated shopping/issuance/cancellations and more
