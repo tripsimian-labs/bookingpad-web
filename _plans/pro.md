@@ -1,12 +1,13 @@
 ---
-title: Pro
-price_main: 250€ / month
-price_secondary: 1€ / order issued
+title: Premium
+price_main: 1€ / order issued
+price_secondary: 250€ / month / IATA agency number
 ---
-For agency that needs more. All Basic features plus...
+For the agency that needs the most.
 
-* Amazing feature number one
-* Feature two is sleek
-* Superduper feat 3
-* Fourth cool feature
-* Number 5 offering
+* Unlimited agent accounts
+* OMS Orders monitoring system (disruptions alerts)
+
+  Background Tasks (3rd parties reporting)
+
+  API Access for B2C integrations, automated shopping/issuance/cancellations and more
