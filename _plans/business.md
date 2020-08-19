@@ -1,13 +1,11 @@
 ---
-title: Business
-price_main: 500€ / month
-price_secondary: 1€ / order issued
+title: Medium
+price_main: 1€ / booking issued
+price_secondary: 150€ / month / agency (IATA number)
 ---
 For agency that needs most. All Pro features plus...
 
-* Amazing feature number one
-* Feature two is sleek
-* Superduper feat 3
-* Fourth cool feature
-* Number 5 offering
-* Cutting-edge sixth
+* Up to 50 agents accounts
+* Orders monitoring service handling disruptions
+
+  Wadus
