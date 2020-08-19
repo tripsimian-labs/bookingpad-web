@@ -42,7 +42,6 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Partner Name", name: "title", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
-      - { label: "Country", name: "country", widget: "string" }
       - { label: Sector, name: sector, widget: string }
       - { label: "Description", name: "body", widget: "markdown" }
   - label: "Hero"

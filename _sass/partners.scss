@@ -8,10 +8,10 @@
   &Grid {
     display: flex;
     justify-content: space-between;
-    flex-flow: column nowrap;
+    flex-flow: column-reverse nowrap;
 
     @media only screen and (min-width: 960px) {
-      flex-flow: row nowrap;
+      flex-flow: row-reverse nowrap;
     }
   }
 
