@@ -7,11 +7,11 @@
             <a href="#">See all our partners</a>
         </div>
         <div class="homePartnersGrid">
-            {% for item in site.data.partners.items %}
+            {% for partner in site.partners %}
             <div class="homePartnersItem">
-                <img src="{{ item.logo }}" alt="Logo of {{ item.name }}">
-                <h4>{{ item.name }}</h4>
-                <p>{{ item.sector }}</p>
+                <img src="{{ partner.logo }}" alt="Logo of {{ partner.name }}">
+                <h4>{{ partner.name }}</h4>
+                <p>{{ partner.sector }}</p>
             </div>
             {% endfor %}
         </div>

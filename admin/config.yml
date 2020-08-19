@@ -30,7 +30,21 @@ collections:
       - { label: "Logo", name: "logo", widget: "image" }
       - { label: "Country", name: "country", widget: "string" }
       - { label: "Description", name: "body", widget: "markdown" }
-
+  - label: "Partners"
+    name: "partners"
+    folder: "_partners/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Partner Name", name: "title", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image" }
+      - { label: "Country", name: "country", widget: "string" }
+      - { label: Sector, name: sector, widget: string }
+      - { label: "Description", name: "body", widget: "markdown" }
   - label: "Hero"
     name: "hero"
     files:
@@ -112,21 +126,6 @@ collections:
                 widget: "list"
                 allow_add: true
                 field: { label: "Text", name: "text", widget: "string" }
-
-  - label: "Partners"
-    name: "partners"
-    files:
-      - label: "Partners Section"
-        name: "partners"
-        file: "_data/partners.yml"
-        fields:
-          - label: "Partners"
-            name: "items"
-            widget: "list"
-            fields:
-              - { label: Logo, name: logo, widget: image }
-              - { label: Partner's Name, name: name, widget: string }
-              - { label: Sector, name: sector, widget: string }
   - label: "FAQ"
     name: "faqs"
     files:

@@ -37,8 +37,8 @@ collections:
     layout: "post"
   customers:
     output: false
-
-
+  partners:
+    output: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
