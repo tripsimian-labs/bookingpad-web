@@ -1,7 +1,7 @@
 ---
 title: Premium
 price_main: 1€ / order issued
-price_secondary: 250€ / month / IATA agency number
+price_secondary: 250€ / month / agency
 ---
 For the agency that needs the most.
 
