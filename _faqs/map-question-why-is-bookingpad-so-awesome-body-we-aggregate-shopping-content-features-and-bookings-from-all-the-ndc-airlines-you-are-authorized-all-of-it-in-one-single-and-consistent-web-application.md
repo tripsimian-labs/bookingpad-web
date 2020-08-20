@@ -1,4 +1,4 @@
 ---
-question: Why is Bookingpad so awesome?
+question: How does it boost my travel agency?
 ---
-**We aggregate shopping content,** features, and bookings **from all the NDC airlines you are authorized**. All of it in one single and consistent web application.
+By using Bookingpad, partner agents can **increase your value added service and revenue** by selling ancillary services such as paid seats, extra luggage, on-board Wifi or premium meals, etc..
