@@ -74,6 +74,7 @@ collections:
       - { label: "Logo", name: "logo", widget: "image" }
       - { label: Sector, name: sector, widget: string }
       - { label: "Description", name: "body", widget: "markdown" }
+
   - label: "Hero"
     name: "hero"
     files:
@@ -104,29 +105,12 @@ collections:
 
   - label: "FAQ"
     name: "faqs"
-    files:
-      - label: "FAQ Section"
-        name: "faqs"
-        file: "_data/faqs.yml"
-        widget: "list"
-        allow_add: true
-        minimize_collapsed: true
-        fields:
-          - label: "FAQ 1"
-            name: "faq1"
-            widget: "object"
-            fields:
-              - { label: "Question", name: "question", widget: "string" }
-              - { label: "Answer", name: "answer", widget: "text" }
-          - label: "FAQ 2"
-            name: "faq2"
-            widget: "object"
-            fields:
-              - { label: "Question", name: "question", widget: "string" }
-              - { label: "Answer", name: "answer", widget: "text" }
-          - label: "FAQ 3"
-            name: "faq3"
-            widget: "object"
-            fields:
-              - { label: "Question", name: "question", widget: "string" }
-              - { label: "Answer", name: "answer", widget: "text"}
+    folder: "_faqs/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Question", name: "question", widget: "string" }
+      - { label: "Answer", name: "body", widget: "markdown" }

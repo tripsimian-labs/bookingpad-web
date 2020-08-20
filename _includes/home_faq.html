@@ -2,10 +2,10 @@
     <div class="wrapper">
         <h2 class="sectionHeading">FAQ</h2>
         <div class="homeFaqGrid">
-            {% for item in site.data.faqs.items %}
+            {% for faq in site.faqs %}
             <div class="homeFaqItem">
                 <h3>{{ item.question }}</h3>
-                <p>{{ item.answer }}</p>
+                <div>{{ item.answer }}</div>
             </div>
             {% endfor %}
 
