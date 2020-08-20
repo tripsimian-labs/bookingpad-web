@@ -9,4 +9,4 @@ For the agency that needs the most.
 * Shopping, Booking, and Servicing
 * OMS Orders monitoring system (disruptions alerts)
 * Background Tasks (3rd parties reporting)
-* API Access for B2C integrations, automated shopping/issuance/cancellations and more
+* API Access for B2C integrations, automated shopping /issuance /cancellations and more

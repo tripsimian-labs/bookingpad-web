@@ -3,7 +3,7 @@
         <h2 class="sectionHeading">Plan & Pricing</h2>
         <div class="homePricingGrid">
             {% for plan in site.plans %}
-            <div class="homePricingItem">
+            <div class="homePricingItem {% if plan.title == "Medium" %}planPro spotlight{% elsif plan.title == "Premium" %}planBiz{% endif %} ">
                 <div class="homePricingBlurb">
                     <div class="homePricingHead">
                         <h3>{{ plan.title }}</h3>
