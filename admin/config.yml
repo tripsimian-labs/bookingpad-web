@@ -112,5 +112,5 @@ collections:
       preview: false
     widget: "list"
     fields:
-      - { label: "Question", name: "question", widget: "string" }
+      - { label: "Question", name: "title", widget: "string" }
       - { label: "Answer", name: "body", widget: "markdown" }
