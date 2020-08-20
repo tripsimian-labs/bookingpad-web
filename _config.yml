@@ -35,6 +35,8 @@ collections:
     permalink: "/:collection/:path/"
     output: true
     layout: "post"
+  gallery:
+    output: false
   plans:
     output: false
     order:

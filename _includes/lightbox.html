@@ -1,6 +1,6 @@
 <div class="lightbox">
     <ul id="lightgallery">
-        {% for item in site.data.gallery.items %}
+        {% for item in site.gallery %}
         <li data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800"
             data-src="{{ item.image }}"
             data-sub-html="<h4>{{ item.title }}</h4><p>{{ item.description }}</p>">

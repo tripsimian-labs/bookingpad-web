@@ -17,6 +17,20 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
 
+  - label: "Gallery"
+    name: "gallery"
+    folder: "_gallery/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Thumbnail", name: "thumb", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "body", widget: "markdown" }
+
   - label: "Plans & Pricing"
     name: "plans"
     folder: "_plans/"
@@ -73,21 +87,7 @@ collections:
           fields:
             - { label: "Tagline", name: "body", widget: "markdown" }
             - { label: "Button", name: "button", widget: "string" }
-  - label: "Gallery"
-    name: "gallery"
-    files:
-      - label: Gallery Section
-        name: "gallery"
-        file: "_data/gallery.yml"
-        fields:
-          - label: "Gallery Items"
-            name: "items"
-            widget: "list"
-            fields:
-              - { label: Image, name: image, widget: image }
-              - { label: Thumbnail, name: thumb, widget: image }
-              - { label: Title, name: title, widget: string }
-              - { label: Description, name: description, widget: string }
+
   - label: "Features"
     name: "features"
     files:
