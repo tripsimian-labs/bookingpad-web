@@ -120,3 +120,18 @@ collections:
       - { label: "Answer", name: "body", widget: "markdown" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+
+  - label: "Airlines"
+    name: "airlines"
+    folder: "_airlines/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Provider Name", name: "title", widget: "string" }
+      - { label: "Provider Code", name: "provider", widget: "string",  pattern: ['.{2,}', "Must have 2 characters"] }
+      - { label: "Shopping", name: "shopping", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
