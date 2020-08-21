@@ -59,7 +59,6 @@ collections:
       - { label: "Feature Image", name: "image", widget: "image" }
       - { label: "Permalink", name: "permalink", widget: "string", required: false }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-
   - label: "Plans & Pricing"
     name: "plans"
     folder: "_plans/"
@@ -73,7 +72,6 @@ collections:
       - { label: "Pricing Option 1", name: "price_main", widget: "string" }
       - { label: "Pricing Option 2", name: "price_secondary", widget: "string" }
       - { label: "Description", name: "body", widget: "markdown"}
-
   - label: "Customers"
     name: "customers"
     folder: "_customers/"
