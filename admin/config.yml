@@ -133,5 +133,6 @@ collections:
       - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", options: ["Available", "Under Development"]  }
       - { label: "Pre-Sale Services", name: "presale", widget: "select", options: ["Seat selection", "Extra Baggage"]  }
       - { label: "Post-Sale Services", name: "postsale", widget: "select", options: ["Seat selection", "Extra Baggage", "Special Meal"]  }
+      - { label: "Allow change flight dates", name: "changes", widget: "select", options: ["Yes", "No"]  }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
