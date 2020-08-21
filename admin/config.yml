@@ -133,5 +133,9 @@ collections:
       - { label: "Provider Name", name: "title", widget: "string" }
       - { label: "Provider Code", name: "provider", widget: "string",  pattern: ['.{2,}', "Must have 2 characters"] }
       - { label: "Shopping", name: "shopping", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Booking", name: "booking", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Ticketing", name: "ticketing", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", multiple: true,  options: ["Seat Selection", "Extra Baggage"]  }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
