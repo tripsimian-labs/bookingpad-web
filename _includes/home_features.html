@@ -4,17 +4,17 @@
         <div class="homeFeaturesGrid">
             <div class="homeFeaturesList">
 
-                {% for item in site.data.features.items %}
+                {% for feature in site.features %}
                 <div class="homeFeaturesItem">
                     <div class="homeFeaturesImg">
-                        <img src="{{ item.image }}" alt="">
+                        <img src="{{ feature.image }}" alt="">
                     </div>
                     <div class="homeFeaturesText">
                         <h3>
-                            {{ item.title }}
+                            {{ feature.title }}
                         </h3>
                         <p>
-                            {{ item.description }}
+                            {{ feature.content }}
                         </p>
                     </div>
                 </div>
