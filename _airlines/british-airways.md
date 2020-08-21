@@ -1,4 +1,5 @@
 ---
+date_change: true
 title: British Airways
 provider: BA
 shopping: Available
@@ -12,7 +13,7 @@ postsale:
   - Seat selection
   - Extra Baggage
   - Special Meal
-date_change: true
+date_changes: true
 fqtv: true
 fares:
   - Public Fares
