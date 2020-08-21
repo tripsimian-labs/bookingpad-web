@@ -59,6 +59,7 @@ collections:
     fields:
       - { label: "Feature Title", name: "title", widget: "string" }
       - { label: "Feature Description", name: "body", widget: "markdown" }
+      - { label: "Feature Image", name: "image", widget: "image" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
 
   - label: "Plans & Pricing"
