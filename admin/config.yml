@@ -95,6 +95,7 @@ collections:
   - label: "Features"
     name: "features"
     folder: "_features/"
+    create: true
     slug: "{{slug}}"
     editor:
       preview: false
