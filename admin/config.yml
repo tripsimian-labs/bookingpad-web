@@ -131,5 +131,6 @@ collections:
       - { label: "Booking", name: "booking", widget: "select", options: ["Available", "Under Development"]  }
       - { label: "Ticketing", name: "ticketing", widget: "select", options: ["Available", "Under Development"]  }
       - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Pre-Sale Services", name: "presale", widget: "select", options: ["Seat selection", "Extra Baggage"]  }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
