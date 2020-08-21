@@ -9,16 +9,17 @@ presale:
   - Seat selection
   - Extra Baggage
 postsale:
+  - Seat selection
   - Extra Baggage
   - Special Meal
-changes: Yes
-fqtv: Yes
+date_change: true
+fqtv: true
 fares:
   - Public Fares
   - Private Fares
 fop:
   - BSP
-  - Credit card payment
+  - Credit Card
 date: 2020-08-21T10:03:04.980Z
 layout: post
 ---
