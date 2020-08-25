@@ -26,7 +26,7 @@ collections:
       fields:
         - label: "Billboard"
           name: "billboard"
-          widget: "list"
+          widget: "object"
           fields:
             - { label: "Tagline", name: "body", widget: "markdown" }
             - { label: "Subtext", name: "subtext", widget: "string" }
