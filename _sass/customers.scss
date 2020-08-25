@@ -13,6 +13,7 @@
 
     @media only screen and (min-width: 960px) {
       flex-flow: row-reverse nowrap;
+      align-items: baseline;
     }
   }
 
@@ -26,6 +27,8 @@
 
     img {
       mix-blend-mode: multiply;
+      min-width: 140px;
+      max-width: 160px;
     }
 
     p {

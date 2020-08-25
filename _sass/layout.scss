@@ -102,6 +102,15 @@ strong {
   line-height: 1;
 }
 
+.linkRegister {
+  a {
+    text-transform: uppercase;
+    color: $red;
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+}
+
 .sectionHeading {
   font-style: normal;
   font-weight: bold;
