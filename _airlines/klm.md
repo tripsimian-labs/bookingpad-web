@@ -6,13 +6,13 @@ booking: Available
 ticketing: Available
 cancel_refund: Available
 presale:
+  - None
 postsale: Seat selection
 date_change: true
 fqtv: false
 fares: Public Fares
 fop:
   - BSP
-  - Credit Card
-date: 2020-08-25T10:014:04.980Z
+date: 2020-08-25T15:49:45.526Z
 layout: post
 ---
