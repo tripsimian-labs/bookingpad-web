@@ -9,6 +9,7 @@ presale:
   - None
 postsale:
   - Seat selection
+  - Extra Baggage
 date_change: false
 fqtv: false
 fares:

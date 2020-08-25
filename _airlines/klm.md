@@ -4,7 +4,7 @@ provider: KL
 shopping: Available
 booking: Available
 ticketing: Available
-cancel_refund: Available
+cancel_refund: Not Available
 presale:
   - None
 postsale:
@@ -14,6 +14,6 @@ fqtv: false
 fares: Public Fares
 fop:
   - BSP
-date: 2020-08-25T15:49:45.526Z
+date: 2020-08-25T15:45:45.526Z
 layout: post
 ---
