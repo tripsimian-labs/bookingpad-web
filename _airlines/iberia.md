@@ -11,7 +11,7 @@ presale:
 postsale:
   - Seat selection
   - Extra Baggage
-date_changes: true
+date_change: true
 fqtv: true
 fares:
   - Public Fares

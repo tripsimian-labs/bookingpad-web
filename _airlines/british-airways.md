@@ -12,7 +12,7 @@ postsale:
   - Seat selection
   - Extra Baggage
   - Special Meal
-date_changes: true
+date_change: true
 fqtv: true
 fares:
   - Public Fares
