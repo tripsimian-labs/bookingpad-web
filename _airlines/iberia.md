@@ -1,6 +1,6 @@
 ---
-title: British Airways
-provider: BA
+title: Iberia
+provider: IB
 shopping: Available
 booking: Available
 ticketing: Available
@@ -11,7 +11,6 @@ presale:
 postsale:
   - Seat selection
   - Extra Baggage
-  - Special Meal
 date_changes: true
 fqtv: true
 fares:
@@ -20,6 +19,6 @@ fares:
 fop:
   - BSP
   - Credit Card
-date: 2020-08-21T10:03:04.980Z
+date: 2020-08-25T10:03:04.980Z
 layout: post
 ---
