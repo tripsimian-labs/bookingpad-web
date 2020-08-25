@@ -1,3 +1,6 @@
 billboard:
   button: Get Started
-  body: The most advanced NDC-ready Booking Tool for managed travel agencies!
+  body: |
+    The most advanced NDC-ready Booking Tool for travel consultants.
+
+    What If we add some smaller text here?
