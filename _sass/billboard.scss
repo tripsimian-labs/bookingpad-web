@@ -32,28 +32,24 @@
     line-height: 1.2;
 
     @media only screen and (min-width: 960px) {
-      width: 56%;
+      width: 55%;
       text-align: left;
     }
     h3 {
       font-size: 2rem;
       font-weight: 500;
-      margin-right: 0;
       margin-bottom: 1rem;
       margin-top: 1.5rem;
       @media only screen and (min-width: 960px) {
-        margin-right: 2rem;
         font-size: 2.5rem;
       }
     }
     h4 {
       font-size: 1.5rem;
       font-weight: 400;
-      margin-right: 0;
       margin-bottom: 2rem;
       @media only screen and (min-width: 960px) {
         font-size: 1.6rem;
-        margin-right: 2rem;
       }
     }
   }
