@@ -7,7 +7,8 @@ ticketing: Available
 cancel_refund: Available
 presale:
   - None
-postsale: Seat selection
+postsale:
+  - Seat selection
 date_change: true
 fqtv: false
 fares: Public Fares
