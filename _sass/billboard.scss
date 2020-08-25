@@ -18,18 +18,21 @@
     display: flex;
     flex-flow: column nowrap;
     flex-direction: column-reverse;
+
     @media only screen and (min-width: 960px) {
       flex-flow: row;
       align-items: center;
       flex-direction: row;
+      justify-content: space-between;
     }
   }
 
   &Blurb {
     text-align: center;
+    line-height: 1.2;
 
     @media only screen and (min-width: 960px) {
-      width: 64%;
+      width: 56%;
       text-align: left;
     }
     h3 {
@@ -40,6 +43,16 @@
       @media only screen and (min-width: 960px) {
         margin-right: 2rem;
         font-size: 2.5rem;
+      }
+    }
+    h4 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-right: 0;
+      margin-bottom: 1rem;
+      @media only screen and (min-width: 960px) {
+        font-size: 1.8rem;
+        margin-right: 2rem;
         margin-bottom: 2rem;
       }
     }
