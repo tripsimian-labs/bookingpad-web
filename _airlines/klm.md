@@ -9,7 +9,7 @@ presale:
   - None
 postsale:
   - Seat selection
-date_change: true
+date_change: false
 fqtv: false
 fares: Public Fares
 fop:
