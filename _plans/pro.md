@@ -1,6 +1,6 @@
 ---
-title: Large Agency
-price_main: 450€ / month / agency
+title: Large
+price_main: 450€ / month
 price_secondary: 1€ / order issued
 ---
 Suitable for large-scale agencies of up to 250 agent desktops.
