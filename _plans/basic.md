@@ -1,9 +1,14 @@
 ---
-title: Basic
-price_main: 1€ / order issued
-price_secondary: NO monthly fee
+title: Small Agency
+price_main: NO monthly fee
+price_secondary: 1€ / order issued
 ---
-Suitable for small agencies that don't want to incur fixed costs.
+Suitable for small agencies.
 
 * Up to 5 agent accounts
-* Shopping, Booking, and Servicing
+
+Add-ons
+
+* On-demand Umbrella Profiles (50€/mo)
+* Reporting to Mid/Backoffice (50€/mo)
+
