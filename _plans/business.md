@@ -1,6 +1,6 @@
 ---
-title: Medium Agency
-price_main: 150€ / month / agency
+title: Medium
+price_main: 150€ / mo
 price_secondary: 1€ / order issued
 ---
 Suitable for medium-sized agencies of up to 50 agent desktops.
