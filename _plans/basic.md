@@ -1,9 +1,9 @@
 ---
-title: Small Agency
-price_main: NO monthly fee
+title: Small
+price_main: NO monthly fees
 price_secondary: 1€ / order issued
 ---
-Suitable for small agencies.
+Suitable for small agencies of up to 5 agent desktops.
 
 * Up to 5 agent accounts
 
