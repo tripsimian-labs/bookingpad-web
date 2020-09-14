@@ -1,11 +1,13 @@
 ---
-title: Medium
-price_main: 1€ / order issued
-price_secondary: 150€ / month / agency
+title: Medium Agency
+price_main: 150€ / month / agency
+price_secondary: 1€ / order issued
 ---
-For the medium size agency that needs more control and 3rd parties reporting.
+Suitable for medium-sized agencies of up to 50 agent desktops.
 
 * Up to 50 agent accounts
-* Shopping, Booking, and Servicing
-* OMS Orders monitoring system (disruptions alerts)
-* Background Tasks (3rd parties reporting)
+
+Add-ons
+
+* On-demand Umbrella Profiles (250€/mo)
+* Reporting to Mid/Backoffice (250€/mo)
