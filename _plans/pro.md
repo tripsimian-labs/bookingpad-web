@@ -1,12 +1,14 @@
 ---
-title: Premium
-price_main: 1€ / order issued
-price_secondary: 250€ / month / agency
+title: Large Agency
+price_main: 450€ / month / agency
+price_secondary: 1€ / order issued
 ---
-For the agency that needs the most.
+Suitable for large-scale agencies of up to 250 agent desktops.
 
-* Unlimited agent accounts
-* Shopping, Booking, and Servicing
-* OMS Orders monitoring system (disruptions alerts)
-* Background Tasks (3rd parties reporting)
-* API Access for B2C integrations, automated shopping /issuance /cancellations and more
+* Up to 250 agent accounts
+
+Add-ons
+
+* On-demand Umbrella Profiles (450€/mo)
+* Reporting to Mid/Backoffice (450€/mo)
+
