@@ -2,12 +2,12 @@
   padding: 2rem 1rem 4rem;
   @media only screen and (min-width: 960px) {
     padding-bottom: 6rem;
-
   }
 
   &Grid {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     flex-flow: column-reverse nowrap;
 
     @media only screen and (min-width: 960px) {
@@ -25,6 +25,8 @@
 
     img {
       mix-blend-mode: multiply;
+      min-width: 140px;
+      max-width: 160px;
     }
 
     p {
