@@ -1,30 +1,143 @@
 backend:
   name: git-gateway
-  branch: master
-media_folder: 'assets/uploads'
+  branch: v2020
+media_folder: "assets/uploads"
 collections:
-  - name: 'Posts'
-    label: 'Posts'
-    folder: '_posts/'
+  - label: "Updates"
+    name: "posts"
+    folder: "_posts/"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'pages'
-    label: 'Pages'
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Hero"
+    name: "hero"
+    files:
+    - label: "Hero Section"
+      name: "hero"
+      file: "_data/hero.yml"
+      fields:
+        - label: "Billboard"
+          name: "billboard"
+          widget: "object"
+          fields:
+            - { label: "Tagline", name: "body", widget: "markdown" }
+            - { label: "Subtext", name: "subtext", widget: "string" }
+            - { label: "Button", name: "button", widget: "string" }
+
+  - label: "Gallery"
+    name: "gallery"
+    folder: "_gallery/"
+    create: true
+    slug: "{{slug}}"
     editor:
       preview: false
-    files:
-      - label: 'About Page'
-        name: 'about'
-        file: '_pages/about.md'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
-          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+    widget: "list"
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Thumbnail", name: "thumb", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "body", widget: "markdown" }
+
+  - label: "Features"
+    name: "features"
+    folder: "_features/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Feature Title", name: "title", widget: "string" }
+      - { label: "Feature Description", name: "body", widget: "markdown" }
+      - { label: "Feature Image", name: "image", widget: "image" }
+      - { label: "Permalink", name: "permalink", widget: "string", required: false }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+
+  - label: "Airlines"
+    name: "airlines"
+    folder: "_airlines/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Provider Name", name: "title", widget: "string" }
+      - { label: "Provider Code", name: "provider", widget: "string",  pattern: ['.{2,}', "Must have 2 characters"] }
+      - { label: "Shopping", name: "shopping", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Booking", name: "booking", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Ticketing", name: "ticketing", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Pre-Sale Services", name: "presale", widget: "select", multiple: true, options: ["Seat selection", "Extra Baggage", "None"], hint: "Select all that applies" }
+      - { label: "Post-Sale Services", name: "postsale", widget: "select", multiple: true, options: ["Seat selection", "Extra Baggage", "Special Meal", "None"], hint: "Select all that applies" }
+      - { label: "Allow change of flight dates", name: "date_change", widget: "boolean" }
+      - { label: "FQTV Card", name: "fqtv", widget: "boolean"  }
+      - { label: "Fare Types", name: "fares", widget: "select", multiple: true, options: ["Public Fares", "Private Fares"], hint: "Select all that applies" }
+      - { label: "FoP", name: "fop", widget: "select", multiple: true, options: ["BSP", "Credit Card"], hint: "Select all that applies" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+
+  - label: "Plans & Pricing"
+    name: "plans"
+    folder: "_plans/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Plan Name", name: "title", widget: "string" }
+      - { label: "Pricing Option 1", name: "price_main", widget: "string" }
+      - { label: "Pricing Option 2", name: "price_secondary", widget: "string" }
+      - { label: "Description", name: "body", widget: "markdown"}
+  - label: "Customers"
+    name: "customers"
+    folder: "_customers/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Customer Name", name: "title", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image" }
+      - { label: "Country", name: "country", widget: "string" }
+      - { label: "Description", name: "body", widget: "markdown" }
+
+  - label: "Partners"
+    name: "partners"
+    folder: "_partners/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Partner Name", name: "title", widget: "string" }
+      - { label: "Logo", name: "logo", widget: "image" }
+      - { label: Sector, name: sector, widget: string }
+      - { label: "Description", name: "body", widget: "markdown" }
+
+  - label: "FAQ"
+    name: "faqs"
+    folder: "_faqs/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Question", name: "title", widget: "string" }
+      - { label: "Answer", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }

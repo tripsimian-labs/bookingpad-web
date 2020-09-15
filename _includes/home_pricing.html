@@ -1,0 +1,30 @@
+<div id="pricing" class="homePricing">
+    <div class="wrapper">
+        <h2 class="sectionHeading">Plan & Pricing</h2>
+        <div class="homePricingGrid">
+            {% for plan in site.plans %}
+            <div class="homePricingItem {% if plan.title == "Medium" %}planPro spotlight{% elsif plan.title == "Premium" %}planBiz{% endif %} ">
+                <div class="homePricingBlurb">
+                    <div class="homePricingHead">
+                        <h3>{{ plan.title }}</h3>
+                        <div class="homePricingRate digitBig">
+                            <span>{{ plan.price_main }}</span>
+                        </div>
+                        <div class="homePricingRate ">
+                            <span>{{ plan.price_secondary }}</span>
+                        </div>
+                    </div>
+                    <div class="homeFeaturesText">
+                        <p>
+                            {{ plan.content }}
+                        </p>
+                    </div>
+                </div>
+                <div class="homePricingCta">
+                    <a href="#" class="primaryButton">Get Started</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

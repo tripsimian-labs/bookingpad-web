@@ -1,0 +1,14 @@
+<div class="lightbox">
+    <ul id="lightgallery">
+        {% for item in site.gallery %}
+        <li data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800"
+            data-src="{{ item.image }}"
+            data-sub-html="<h4>{{ item.title }}</h4><p>{{ item.content }}</p>">
+            <a href="">
+                <img class="img-responsive" src="{{ item.thumb }}"
+                    alt="Image of {{ item.title }}">
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

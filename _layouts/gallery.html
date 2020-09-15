@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+{%- include head.html -%}
+
+<body>
+
+  <div id="regionHeader">
+    <div class="wrapper">
+      <div id="siteHeader">
+        <div id="siteName">
+          <a href="" class="siteLogo">
+            <img src="/assets/images/logoBookingpad.svg" alt="">
+          </a>
+        </div>
+        <div class="siteNavigation">
+          <nav role="navigation">
+            <ul class="primaryNavMenu">
+              <li class="primaryNavMenuItem">
+                <a href="">Features</a>
+              </li>
+              <li class="primaryNavMenuItem">
+                <a href="">Airlines</a>
+              </li>
+              <li class="primaryNavMenuItem">
+                <a href="">Customers</a>
+              </li>
+              <li class="primaryNavMenuItem">
+                <a href="">Partners</a>
+              </li>
+              <li class="primaryNavMenuItem">
+                <a href="">Pricing</a>
+              </li>
+              <li class="primaryNavMenuItem">
+                <a href="">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="regionMain">
+
+    {%- include lightbox.html -%}
+
+    <main>
+
+    </main>
+
+    {%- include footer.html -%}
+
+  </div>
+  <script src="/assets/js/lightgallery.js"></script>
+  <script src="/assets/js/lg-thumbnail.js"></script>
+
+  <script>
+    lightGallery(document.getElementById('lightgallery'), {
+      thumbnail: true,
+      animateThumb: true,
+      showThumbByDefault: false,
+      mode: 'lg-slide',
+      download: false
+    });
+  </script>
+
+</body>

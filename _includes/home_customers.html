@@ -1,0 +1,19 @@
+<div id="customers" class="homeCustomers">
+    <div class="wrapper">
+        <h2 class="sectionHeading">Customers</h2>
+        <div class="homeCustomersBlurb">
+            <h3>Our amazing happy customers</h3>
+            <p>Sample text only: We work hard to deliver the best for our customers.</p>
+            <a href="#">See all our customers</a>
+        </div>
+        <div class="homeCustomersGrid">
+            {% for customer in site.customers %}
+            <div class="homeCustomersItem">
+                <img src="{{ customer.logo }}" alt="">
+                <h4>{{ customer.name }}</h4>
+                <p>{{ customer.country }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

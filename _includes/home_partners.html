@@ -1,0 +1,19 @@
+<div id="partners" class="homePartners">
+    <div class="wrapper">
+        <h2 class="sectionHeading">Partners</h2>
+        <div class="homePartnersBlurb">
+            <h3>Our magnificent partners</h3>
+            <p>Sample text: We work hard to work with our partners.</p>
+            <a href="#">See all our partners</a>
+        </div>
+        <div class="homePartnersGrid">
+            {% for partner in site.partners %}
+            <div class="homePartnersItem">
+                <img src="{{ partner.logo }}" alt="Logo of {{ partner.name }}">
+                <h4>{{ partner.name }}</h4>
+                <p>{{ partner.sector }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

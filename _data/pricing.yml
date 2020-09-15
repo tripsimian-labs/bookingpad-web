@@ -1,0 +1,26 @@
+basic:
+  price: 49€
+  description: For agency's basic needs. Some features include...
+  features:
+    - text: Amazing feature one
+    - text: Feature two is sleek
+    - text: Superduper feat 3
+pro:
+  price: 309€
+  description: For agency that needs more. All Basic features plus...
+  features:
+    - Amazing feature number one
+    - text: Feature two is sleek
+    - text: Superduper feat 3
+    - text: Fourth cool feature
+    - text: Number 5 offering
+business:
+  price: 899€
+  description: For agency that needs most. All Pro features plus...
+  features:
+    - text: Amazing feature one
+    - text: Feature two is sleek
+    - text: Superduper feat 3
+    - text: Fourth cool feature
+    - text: Number 5 offering
+    - text: Cutting-edge sixth

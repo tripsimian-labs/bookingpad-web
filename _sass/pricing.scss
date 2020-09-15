@@ -1,0 +1,131 @@
+.homePricing {
+  padding: 2rem 1rem 6rem;
+
+  &Grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    grid-gap: 3rem;
+
+    @media only screen and (min-width: 960px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &Item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    border: 1px solid #aeaeae;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 2rem;
+    @media only screen and (min-width: 960px) {
+      padding: 2rem 3rem;
+    }
+
+    h3 {
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      letter-spacing: 0.08em;
+      color: #596371;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+
+    ul {
+      margin: 1.5rem 0 1rem 1.6rem;
+      color: #596371;
+      list-style-image: url('/assets/images/bulletGray.svg');
+
+      li {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+
+        span {
+          padding-left: 0.7rem;
+        }
+      }
+    }
+
+    .primaryButton {
+      font-size: 1.3rem;
+      background-color: #596371;
+    }
+
+    &.plan {
+      &Pro {
+        h3 {
+          color: $red;
+        }
+        ul {
+          color: $red;
+          vertical-align: middle;
+          list-style-image: url('/assets/images/bulletRed.svg');
+
+        }
+        .primaryButton {
+          background-color: $red;
+        }
+      }
+      &Biz {
+        border-color: $blue;
+        h3,
+        ul {
+          color: $blue;
+          li {
+            list-style-image: url('/assets/images/bulletBlue.svg');
+          }
+        }
+        .primaryButton {
+          background-color: $blue;
+        }
+      }
+    }
+
+    &.spotlight {
+      border: 5px solid #c00005;
+      box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      margin-top: -1rem;
+    }
+  }
+
+  &Blurb {
+    margin-bottom: 2rem;
+  }
+
+  &Head {
+    margin-bottom: 2rem;
+  }
+
+  &Rate {
+    font-size: 1.3rem;
+    color: $gray;
+
+    span {
+      font-weight: 600;
+      color: $black;
+    }
+  }
+
+  &Cta {
+    display: flex;
+    a {
+      width: 100%;
+      border-radius: 9px;
+    }
+  }
+}
+
+.digit {
+  &Big {
+    font-size: 1.8rem;
+  }
+}

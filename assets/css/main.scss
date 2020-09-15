@@ -1,8 +1,23 @@
 ---
 ---
+$red: #c00005;
+$redDark: #ac0004;
+$blue: #4E6E9B;
+$mint: #00c086;
+$black: #2f2e41;
+$gray: #909090;
+$grayDark: #606060;
+
 @charset "utf-8";
 @import "reset";
-@import "animation";
 @import "typography";
+@import "register";
+@import "faq";
+@import "partners";
+@import "customers";
+@import "pricing";
+@import "features";
+@import "gallery";
+@import "billboard";
 @import "layout";
-@import "tachyons";
+
