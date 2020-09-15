@@ -7,7 +7,7 @@ Suitable for medium-sized agencies of up to 50 agent desktops.
 
 * Up to 50 agent accounts
 
-##### Add-ons
+#### Add-ons
 
 * On-demand Umbrella Profiles (250€/mo)
 * Reporting to Mid/Backoffice (250€/mo)
