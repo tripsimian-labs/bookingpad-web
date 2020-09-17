@@ -1,6 +1,6 @@
 <div id="airlines" class="homeAirlines">
     <div class="wrapper">
-        <h2 class="sectionHeading">Airlines</h2>
+        <h2 class="sectionHeading">Airlines and Providers</h2>
         <div class="homeAirlinesTable">
             <div class="tableWrapper">
                 <table>
@@ -19,7 +19,7 @@
                     </colgroup>
                     <thead>
                         <tr>
-                            <th>Provider</th>
+                            <th>Airline</th>
                             <th>Shopping</th>
                             <th>Booking</th>
                             <th>Ticketing</th>
@@ -35,7 +35,7 @@
                     <tbody>
                         {% for airline in site.airlines %}
                         <tr>
-                            <td class="provider"><strong>{{ airline.provider }}</strong></td>
+                            <td class="airline"><strong>{{ airline.provider }}</strong></td>
                             <td class="shopping">
                                 {% if airline.shopping == "Available" %}
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -284,7 +284,13 @@
                             </td>
                             <td class="payment">
                                 {% if airline.fop contains 'Cash' and airline.fop contains 'Credit Card' %}
-                                <span>Cash</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 17H13V16H14C14.55 16 15 15.55 15 15V12C15 11.45 14.55 11 14 11H11V10H15V8H13V7H11V8H10C9.45 8 9 8.45 9 9V12C9 12.55 9.45 13 10 13H13V14H9V16H11V17ZM20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V6H20V18Z"
+                                        fill="black" />
+                                </svg>
+
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -292,7 +298,13 @@
                                         fill="black" />
                                 </svg>
                                 {% elsif airline.fop contains 'Cash' %}
-                                <span>Cash</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 17H13V16H14C14.55 16 15 15.55 15 15V12C15 11.45 14.55 11 14 11H11V10H15V8H13V7H11V8H10C9.45 8 9 8.45 9 9V12C9 12.55 9.45 13 10 13H13V14H9V16H11V17ZM20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V6H20V18Z"
+                                        fill="black" />
+                                </svg>
+
                                 {% elsif airline.fop contains 'Credit Card' %}
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -309,6 +321,9 @@
                     </tbody>
                 </table>
             </div>
+
+            {%- include providers_table.html -%}
+
             <div class="table-legend">
                 <ul>
                     <li>
@@ -355,14 +370,6 @@
                     </li>
                     <li>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V12H20V18ZM20 8H4V6H20V8Z"
-                                fill="black" />
-                        </svg>
-                        <span>Credit card payment</span>
-                    </li>
-                    <li>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.904 13.0506L13.7827 15.1719L19.7789 21.1681L21.9002 19.0468L15.904 13.0506Z"
                                 fill="black" />
                             <path
@@ -372,14 +379,28 @@
 
                         <span>Under development</span>
                     </li>
-
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11 17H13V16H14C14.55 16 15 15.55 15 15V12C15 11.45 14.55 11 14 11H11V10H15V8H13V7H11V8H10C9.45 8 9 8.45 9 9V12C9 12.55 9.45 13 10 13H13V14H9V16H11V17ZM20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V6H20V18Z"
+                                fill="black" />
+                        </svg>
+                        <span>Cash Payment (BSP/ARC)</span>
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V12H20V18ZM20 8H4V6H20V8Z"
+                                fill="black" />
+                        </svg>
+                        <span>Credit card payment</span>
+                    </li>
                     <li>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM4 12C4 11.39 4.08 10.79 4.21 10.22L8.99 15V16C8.99 17.1 9.89 18 10.99 18V19.93C7.06 19.43 4 16.07 4 12ZM17.89 17.4C17.63 16.59 16.89 16 15.99 16H14.99V13C14.99 12.45 14.54 12 13.99 12H7.99V10H9.99C10.54 10 10.99 9.55 10.99 9V7H12.99C14.09 7 14.99 6.1 14.99 5V4.59C17.92 5.77 20 8.65 20 12C20 14.08 19.19 15.98 17.89 17.4Z"
                                 fill="black" />
                         </svg>
-
                         <span>Public</span>
                     </li>
                     <li>
@@ -389,6 +410,15 @@
                                 fill="black" />
                         </svg>
                         <span>Private</span>
+                    </li>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 7H16V5L14 3H10L8 5V7H4C2.9 7 2 7.9 2 9V14C2 14.75 2.4 15.38 3 15.73V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V15.72C21.59 15.37 22 14.73 22 14V9C22 7.9 21.1 7 20 7ZM10 5H14V7H10V5ZM4 9H20V14H15V11H9V14H4V9ZM13 15H11V13H13V15ZM19 19H5V16H9V17H15V16H19V19Z"
+                                fill="black" />
+                        </svg>
+
+                        <span>Corporate</span>
                     </li>
                 </ul>
             </div>

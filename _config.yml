@@ -50,6 +50,8 @@ collections:
     permalink: "/:collection/:path/"
   airlines:
     output: false
+  providers:
+    output: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

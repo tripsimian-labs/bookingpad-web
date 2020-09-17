@@ -85,6 +85,30 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
 
+  - label: "Providers"
+    name: "providers"
+    folder: "_providers/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    widget: "list"
+    fields:
+      - { label: "Provider Name", name: "title", widget: "string" }
+      - { label: "Provider Description", name: "description", widget: "string" }
+      - { label: "Shopping", name: "shopping", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Booking", name: "booking", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Ticketing", name: "ticketing", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Pre-Sale Services", name: "presale", widget: "select", multiple: true, options: ["Seats", "Baggage", "None"], hint: "Select all that applies" }
+      - { label: "Post-Sale Services", name: "postsale", widget: "select", multiple: true, options: ["Seats", "Baggage", "Meals", "None"], hint: "Select all that applies" }
+      - { label: "Allow change of flight dates", name: "date_change", widget: "boolean" }
+      - { label: "FQTV Card", name: "fqtv", widget: "boolean"  }
+      - { label: "Fare Types", name: "fares", widget: "select", multiple: true, options: ["Public", "Private", "Corporate"], hint: "Select all that applies" }
+      - { label: "FoP", name: "fop", widget: "select", multiple: true, options: ["Cash", "Credit Card"], hint: "Select all that applies" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+
   - label: "Plans & Pricing"
     name: "plans"
     folder: "_plans/"
