@@ -6,19 +6,21 @@ booking: Available
 ticketing: Available
 cancel_refund: Available
 presale:
-  - Seat selection
-  - Extra Baggage
+  - Seats
+  - Baggage
+  - Meals
 postsale:
-  - Seat selection
-  - Extra Baggage
-  - Special Meal
+  - Seats
+  - Baggage
+  - Meals
 date_change: true
 fqtv: true
 fares:
-  - Public Fares
-  - Private Fares
+  - Public
+  - Private
+  - Corporate
 fop:
-  - BSP
+  - Cash
   - Credit Card
 date: 2020-08-21T10:03:04.980Z
 layout: post

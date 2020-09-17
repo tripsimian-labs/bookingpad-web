@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Requesting and Identifying Private Fares in an NDC Offer
+title: Requesting and Identifying Private in an NDC Offer
 thumbnail: thumb-private-fares.png
 date: 2020-02-07T14:22:44.397Z
 ---
-We have released in production the ability to request, identify, and filter adequately private fares from NDC APIs already supporting this feature.
+We have released in production the ability to request, identify, and filter adequately Private from NDC APIs already supporting this feature.
 
-We know how relevant are private fares for TMCs and TOs, so we had worked hard on solving this multi-provider puzzle for doing NDC a more relevant channel for our agencies.
+We know how relevant are Private for TMCs and TOs, so we had worked hard on solving this multi-provider puzzle for doing NDC a more relevant channel for our agencies.
 
 ![AirGateway-Bookingpad-NDC-Booking-Tool-Private_Fares](/assets/uploads/AirGateway_NDC_Booking_Tool-Private-Fares-NDC.png "AirGateway-Bookingpad-NDC-Booking-Tool-Private_Fares")
 

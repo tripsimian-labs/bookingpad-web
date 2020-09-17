@@ -8,12 +8,12 @@ cancel_refund: Not Available
 presale:
   - None
 postsale:
-  - Seat selection
+  - Seats
 date_change: false
 fqtv: false
-fares: Public Fares
+fares: Public
 fop:
-  - BSP
+  - Cash
 date: 2020-08-25T15:45:45.526Z
 layout: post
 ---
