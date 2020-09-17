@@ -6,10 +6,17 @@ booking: Available
 ticketing: Available
 cancel_refund: Available
 presale:
-postsale: Seat selection
+  - Extra Baggage
+  - Seat selection
+postsale:
+  - Extra Baggage
+  - Special Meal
+  - Seat selection
 date_change: true
-fqtv: false
-fares: Public Fares
+fqtv: true
+fares:
+  - Public Fares
+  - Private Fares
 fop:
   - BSP
   - Credit Card
