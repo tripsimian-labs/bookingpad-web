@@ -69,6 +69,7 @@ table {
             display: block;
             font-size: 0.85rem;
             margin-top: 0.4rem;
+            line-height: 1.2;
           }
         }
 
@@ -94,8 +95,8 @@ table {
     grid-template-columns: 1fr;
     width: 100%;
     @media only screen and (min-width: 960px) {
-      width: 67%;
-      grid-template-columns: repeat(3, 1fr);
+      width: 80%;
+      grid-template-columns: repeat(4, 1fr);
     }
     li {
       display: flex;
