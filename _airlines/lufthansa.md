@@ -5,7 +5,7 @@ shopping: Available
 booking: Available
 ticketing: Available
 cancel_refund: Available
-presale:
+ancillaries:
   - Seats
   - Baggage
   - Meals
@@ -22,6 +22,6 @@ fares:
 fop:
   - Cash
   - Credit Card
-date: 2020-08-25T10:04:04.980Z
+date: 2020-01-01T00:00:03.000Z
 layout: post
 ---

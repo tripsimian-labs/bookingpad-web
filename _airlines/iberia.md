@@ -1,11 +1,12 @@
 ---
+pos: 2
 title: Iberia
 provider: IB
 shopping: Available
 booking: Available
 ticketing: Available
 cancel_refund: Available
-presale:
+ancillaries:
   - Seats
   - Baggage
 postsale:
@@ -20,6 +21,6 @@ fares:
 fop:
   - Cash
   - Credit Card
-date: 2020-08-25T10:03:04.980Z
+date: 2020-01-01T00:00:02.000Z
 layout: post
 ---

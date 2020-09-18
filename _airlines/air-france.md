@@ -5,7 +5,7 @@ shopping: Available
 booking: Available
 ticketing: Available
 cancel_refund: Not Available
-presale:
+ancillaries:
 postsale:
   - Seats
 date_change: false
@@ -13,6 +13,8 @@ fqtv: false
 fares: Public
 fop:
   - Cash
-date: 2020-08-25T10:13:04.980Z
+status: cert
+status_hint: Awaiting certification process
+date: 2020-01-01T00:00:12.000Z
 layout: post
 ---

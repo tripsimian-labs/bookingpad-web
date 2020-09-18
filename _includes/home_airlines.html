@@ -15,17 +15,15 @@
                         <col>
                         <col>
                         <col>
-                        <col>
                     </colgroup>
                     <thead>
                         <tr>
                             <th>Airline</th>
                             <th>Shopping</th>
-                            <th>Booking</th>
+                            <th>Booking on-hold</th>
                             <th>Ticketing</th>
                             <th>Cancel &amp; Refund</th>
-                            <th>Pre-Sale Services</th>
-                            <th>Post-Sale Services</th>
+                            <th>Ancillaries</th>
                             <th>Changes</th>
                             <th>FQTV Card</th>
                             <th>Fares</th>
@@ -123,8 +121,8 @@
                                 </svg>
                                 {% endif %}
                             </td>
-                            <td class="presale">
-                                {% if airline.presale contains 'Seats' and airline.presale contains 'Baggage' %}
+                            <td class="ancillaries">
+                                {% if airline.ancillaries contains 'Seats' and airline.ancillaries contains 'Baggage' %}
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -137,14 +135,14 @@
                                         d="M9.5 18H8V9H9.5V18ZM12.75 18H11.25V9H12.75V18ZM16 18H14.5V9H16V18ZM17 6H15V3C15 2.45 14.55 2 14 2H10C9.45 2 9 2.45 9 3V6H7C5.9 6 5 6.9 5 8V19C5 20.1 5.9 21 7 21C7 21.55 7.45 22 8 22C8.55 22 9 21.55 9 21H15C15 21.55 15.45 22 16 22C16.55 22 17 21.55 17 21C18.1 21 19 20.1 19 19V8C19 6.9 18.1 6 17 6ZM10.5 3.5H13.5V6H10.5V3.5ZM17 19H7V8H17V19Z"
                                         fill="black" />
                                 </svg>
-                                {% elsif airline.presale contains 'Seats' %}
+                                {% elsif airline.ancillaries contains 'Seats' %}
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M7.59 5.41C6.81 4.63 6.81 3.36 7.59 2.58C8.37 1.8 9.64 1.8 10.42 2.58C11.2 3.36 11.2 4.63 10.42 5.41C9.63 6.2 8.37 6.2 7.59 5.41ZM6 16V7H4V16C4 18.76 6.24 21 9 21H15V19H9C7.34 19 6 17.66 6 16ZM20 20.07L14.93 15H11.5V11.32C12.9 12.47 15.1 13.48 17 13.48V11.32C15.34 11.34 13.39 10.45 12.33 9.27999L10.93 7.73C10.74 7.52 10.5 7.35 10.24 7.23C9.95 7.09 9.62 7 9.28 7H9.25C8.01 7 7 8.01 7 9.25V15C7 16.66 8.34 18 10 18H15.07L18.57 21.5L20 20.07Z"
                                         fill="black" />
                                 </svg>
-                                {% elsif airline.presale contains 'Baggage' %}
+                                {% elsif airline.ancillaries contains 'Baggage' %}
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -155,7 +153,7 @@
                                 —
                                 {% endif %}
                             </td>
-                            <td class="postsale">
+                            <!-- <td class="postsale">
                                 {% if airline.postsale contains 'Seats' and airline.postsale contains 'Baggage' and airline.postsale contains 'Meals'  %}
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -225,7 +223,7 @@
                                 {% else %}
                                 —
                                 {% endif %}
-                            </td>
+                            </td> -->
                             <td class="date-change">
                                 {% if airline.date_change == true %}
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -377,7 +375,7 @@
                                 fill="black" />
                         </svg>
 
-                        <span>Under development</span>
+                        <span>Work in Progress</span>
                     </li>
                     <li>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

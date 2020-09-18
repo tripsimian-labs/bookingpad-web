@@ -5,14 +5,11 @@ shopping: Available
 booking: Available
 ticketing: Available
 cancel_refund: Available
-presale:
-  - Seats
-  - Baggage
-postsale:
+ancillaries:
   - Seats
   - Baggage
 date_change: true
-fqtv: false
+fqtv: true
 fares:
   - Public
   - Private
@@ -20,6 +17,8 @@ fares:
 fop:
   - Cash
   - Credit Card
-date: 2020-08-25T10:11:04.980Z
+status: live
+status_hint: 
+date: 2020-01-01T00:00:07.000Z
 layout: post
 ---

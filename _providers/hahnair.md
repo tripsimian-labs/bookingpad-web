@@ -1,20 +1,19 @@
 ---
-title: Swiss
-provider: LX
+title: Hahn Air
+site: https://www.hahnair.com/
+description: Provides Access to 365+ carriers through location-based distribution agreements
 shopping: Available
 booking: Available
 ticketing: Available
 cancel_refund: Available
 ancillaries:
-  - Baggage
   - Seats
-  - Meals
+  - Baggage
 postsale:
   - Seats
-  - Meals
   - Baggage
 date_change: true
-fqtv: true
+fqtv: false
 fares:
   - Public
   - Private
@@ -22,6 +21,7 @@ fares:
 fop:
   - Cash
   - Credit Card
-date: 2020-01-01T00:00:04.000Z
+status: live
+date: 2020-09-25T10:11:04.980Z
 layout: post
 ---

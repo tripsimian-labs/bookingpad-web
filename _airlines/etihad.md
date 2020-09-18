@@ -5,12 +5,14 @@ shopping: Under Development
 booking: Under Development
 ticketing: Under Development
 cancel_refund: Under Development
-presale:
+ancillaries:
 postsale:
 date_change: false
 fqtv: false
 fares:
 fop:
-date: 2020-08-25T15:48:56.218Z
+status: cert
+status_hint: Awaiting certification process
+date: 2020-01-01T00:00:15.000Z
 layout: post
 ---

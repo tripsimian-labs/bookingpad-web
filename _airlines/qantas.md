@@ -5,7 +5,7 @@ shopping: Under Development
 booking: Under Development
 ticketing: Under Development
 cancel_refund: Under Development
-presale:
+ancillaries:
 postsale:
 date_change: false
 fqtv: false
