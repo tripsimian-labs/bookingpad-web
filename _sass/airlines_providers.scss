@@ -94,9 +94,11 @@ table {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+    @media only screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
     @media only screen and (min-width: 960px) {
-      width: 80%;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
     li {
       display: flex;
@@ -115,8 +117,12 @@ table {
 
   td {
     &.provider {
-      width: 25%;
+      width: auto;
       padding: 1rem 0.5rem;
+
+      @media only screen and (min-width: 960px) {
+        width: 25%;
+      }
     }
   }
 }

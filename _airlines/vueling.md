@@ -1,10 +1,10 @@
 ---
 title: Vueling
 provider: VY
-shopping: Under Development
-booking: Under Development
-ticketing: Under Development
-cancel_refund: Under Development
+shopping:
+booking:
+ticketing:
+cancel_refund:
 ancillaries:
 postsale:
 date_change: false
