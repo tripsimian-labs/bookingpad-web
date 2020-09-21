@@ -82,6 +82,7 @@ collections:
       - { label: "FQTV Card", name: "fqtv", widget: "boolean"  }
       - { label: "Fare Types", name: "fares", widget: "select", multiple: true, options: ["Public", "Private", "Corporate"], hint: "Select all that applies" }
       - { label: "FoP", name: "fop", widget: "select", multiple: true, options: ["Cash", "Credit Card"], hint: "Select all that applies" }
+      - { label: "Status", name: "status", widget: "select", options: ["Live", "Certification", "In Progress"], hint: "Select current status" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
 
@@ -106,6 +107,7 @@ collections:
       - { label: "FQTV Card", name: "fqtv", widget: "boolean"  }
       - { label: "Fare Types", name: "fares", widget: "select", multiple: true, options: ["Public", "Private", "Corporate"], hint: "Select all that applies" }
       - { label: "FoP", name: "fop", widget: "select", multiple: true, options: ["Cash", "Credit Card"], hint: "Select all that applies" }
+      - { label: "Status", name: "status", widget: "select", options: ["Live", "Certification", "In Progress"], hint: "Select current status" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
 

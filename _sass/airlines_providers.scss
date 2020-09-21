@@ -94,15 +94,18 @@ table {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+    @media only screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
     @media only screen and (min-width: 960px) {
-      width: 80%;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
     li {
       display: flex;
       align-items: center;
       font-size: 0.9rem;
       padding: 0.3rem 0;
+      opacity: 0.6;
       svg {
         margin-right: 0.5rem;
       }
@@ -112,4 +115,15 @@ table {
 
 .tableProviders {
   margin-top: 3rem;
+
+  td {
+    &.provider {
+      width: auto;
+      padding: 1rem 0.5rem;
+
+      @media only screen and (min-width: 960px) {
+        width: 25%;
+      }
+    }
+  }
 }

@@ -4,7 +4,7 @@ site: https://www.tripstack.com/products/lcc/
 description: Provides Access to 175+ low-cost carriers globally.
 shopping: Available
 booking: Available
-ticketing: N/A
+ticketing:
 cancel_refund:
 ancillaries:
   - Seats
@@ -15,7 +15,7 @@ fares:
   - Public
 fop:
   - Credit Card
-status: live
+status: Live
 date: 2020-08-25T10:11:04.980Z
 layout: post
 ---
