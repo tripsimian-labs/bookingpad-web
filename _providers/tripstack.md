@@ -15,7 +15,7 @@ fares:
   - Public
 fop:
   - Credit Card
-status: live
+status: Live
 date: 2020-08-25T10:11:04.980Z
 layout: post
 ---

@@ -112,4 +112,11 @@ table {
 
 .tableProviders {
   margin-top: 3rem;
+
+  td {
+    &.provider {
+      width: 25%;
+      padding: 1rem 0.5rem;
+    }
+  }
 }
