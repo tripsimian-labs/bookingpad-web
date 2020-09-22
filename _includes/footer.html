@@ -6,16 +6,20 @@
 </footer>
 <script src="/assets/js/siema.min.js"></script>
 <script>
-  const mySiema = new Siema({
-    perPage: {
-      480: 2,
-      768: 3,
-      1024: 4,
-    },
-    duration: 300,
-    easing: 'cubic-bezier(.14,.27,.32,.84)',
-    loop: true,
-  });
+  const siemas = document.querySelectorAll('.siema');
+  for (const siema of siemas) {
+    new Siema({
+      selector: siema,
+      perPage: {
+        480: 2,
+        768: 3,
+        1024: 4,
+      },
+      duration: 300,
+      easing: 'cubic-bezier(.14,.27,.32,.84)',
+      loop: true,
+    });
+  }
   // listen for keydown event
-  setInterval(() => mySiema.next(), 3000)
+    setInterval(() => mySiema.next(), 3000)
 </script>
