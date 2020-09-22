@@ -1,27 +1,85 @@
----
-layout: default
----
-<article class="layout narrow">
-  <div class="post">
-    <div class="post-info">
-      {% if page.date %}
-      <time datetime="{{ page.date }}">{{ page.date | date: "%d %B %Y" }}</time>
-      {% endif %}
-    </div>
+<!DOCTYPE html>
+<html>
+{%- include head.html -%}
 
-    <h1 class="post-title">{{ page.title }}</h1>
-    <div class="post-line"></div>
-    <div class="post-body">
-      {{ content }}
+<body class="postArticle">
+
+  <div id="regionHeader">
+    <div class="wrapper">
+      <div id="siteHeader">
+        <div id="siteName">
+          <a href="/" class="siteLogo">
+            <img src="/assets/images/logoBookingpad.svg" alt="">
+          </a>
+        </div>
+        <div class="siteNavigation">
+          <nav role="navigation">
+            <ul class="primaryNavMenu">
+              <li class="primaryNavMenuItem">
+                <a href="#features">Features</a>
+              </li>
+              <li class="primaryNavMenuItem">
+                <a href="#airlines">Airlines</a>
+              </li>
+              <li class="primaryNavMenuItem">
+                <a href="#customers">Customers</a>
+              </li>
+              <li class="primaryNavMenuItem">
+                <a href="#partners">Partners</a>
+              </li>
+              <li class="primaryNavMenuItem">
+                <a href="#pricins">Pricing</a>
+              </li>
+              <li class="primaryNavMenuItem">
+                <a href="#faq">FAQ</a>
+              </li>
+            </ul>
+
+          </nav>
+        </div>
+        <div class="linkRegister">
+          <a href="#register">Register</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="pagination">
-    {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.url }}" class="left arrow">&#8592;</a>
-    {% endif %}
-    {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.url }}" class="right arrow">&#8594;</a>
-    {% endif %}
+  <div id="regionMain">
+
+
+    <div class="post">
+      <div class="wrapper">
+        <div class="post-info">
+          {% if page.date %}
+          <time datetime="{{ page.date }}">{{ page.date | date: "%d %B %Y" }}</time>
+          {% endif %}
+        </div>
+
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-line"></div>
+        <div class="post-body">
+          {{ content }}
+        </div>
+
+        {% if page.comments %}
+        {% include disqus_comments.html %}
+        {% endif %}
+
+        <div class="pagination">
+          {% if page.next.url %}
+          <a href="{{ page.next.url }}" class="left arrow">&#8592;</a>
+          {% endif %}
+          {% if page.previous.url %}
+          <a href="{{ page.previous.url }}" class="right arrow">&#8594;</a>
+          {% endif %}
+
+          <a href="#" class="top">Top</a>
+        </div>
+      </div>
+    </div>
+
+
+    {%- include footer.html -%}
+
   </div>
-</article>
+</body>
