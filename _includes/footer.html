@@ -4,3 +4,18 @@
     <p>An <a href="https://airgateway.com/" target="new">AirGateway</a> Product - All rights reserved ©2020</p>
   </div>
 </footer>
+<script src="/assets/js/siema.min.js"></script>
+<script>
+  const mySiema = new Siema({
+    perPage: {
+      480: 2,
+      768: 3,
+      1024: 4,
+    },
+    duration: 300,
+    easing: 'cubic-bezier(.14,.27,.32,.84)',
+    loop: true,
+  });
+  // listen for keydown event
+  setInterval(() => mySiema.next(), 3000)
+</script>

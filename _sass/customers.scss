@@ -29,6 +29,11 @@
       mix-blend-mode: multiply;
       min-width: 140px;
       max-width: 160px;
+      filter: grayscale(1);
+
+      &:hover {
+        filter: grayscale(0);
+      }
     }
 
     p {
