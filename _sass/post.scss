@@ -3,16 +3,8 @@
   padding: 3rem 0;
 
   &Article {
-      #regionHeader {
-          padding-bottom: 1rem;
-      }
-  }
-
-  .wrapper {
-    @media only screen and (min-width: 960px) {
-      max-width: 800px;
-      min-width: 641px;
-      width: auto;
+    #regionHeader {
+      padding-bottom: 1rem;
     }
   }
 
@@ -23,6 +15,7 @@
     text-align: center;
 
     time {
+      color: #b0b0b0;
       text-transform: uppercase;
     }
   }
@@ -97,7 +90,8 @@
 
 .pagination {
   border-top: 0.5px solid #e5e5e5;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  margin-top: 4rem;
   position: relative;
   text-align: center;
 
@@ -132,5 +126,70 @@
 
   .right {
     right: 0;
+  }
+}
+
+.catalogue {
+  &-desc {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  &-item {
+    border-bottom: 1px solid #e5e5e5;
+    display: block;
+    padding: 2rem 0;
+
+    &:hover {
+      color: #202020;
+    }
+
+    &:hover .catalogue-line,
+    &:focus .catalogue-line {
+      width: 5rem;
+      border-color: $redDark;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &-time {
+    color: #b0b0b0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  &-title {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+
+  &-line {
+    transition: all 0.3s ease-out;
+    border-top: 0.2rem solid #202020;
+    display: block;
+    width: 2rem;
+  }
+
+  .sectionHeading {
+    @media only screen and (min-width: 960px) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+main {
+  .wrapper {
+    @media only screen and (min-width: 960px) {
+      max-width: 800px;
+      min-width: 641px;
+      width: auto;
+    }
   }
 }

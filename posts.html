@@ -1,27 +1,37 @@
 ---
 layout: default
+body-class: postArticle
 ---
 
+<div id="regionMain">
+    <div class="wrapper">
+        <div class="catalogue">
+            <h2 class="sectionHeading">Product News & Updates</h2>
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" class="catalogue-item">
+                <div>
+                    <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%d %B %Y" }}</time>
+                    <h1 class="catalogue-title">{{ post.title }}</h1>
+                    <div class="catalogue-line"></div>
 
-<div class="updates layout normal">
-    <h3>Product Updates</h3>
-    <ul>
-        {% assign posts = site.posts %}
-        {% for post in posts %}
-        <li class="post-card">
-            <div class="post-thumbnail">
-                <a href="{{ post.url }}">
-                    <img src="/assets/uploads/{{ post.thumbnail }}">
-                </a>
-            </div>
-            <div class="post-blurb">
-                {% if post.date %}
-                <time datetime="{{ post.date }}">{{ post.date | date: "%d %B %Y" }}</time>
+                    <p class="catalogue-desc">
+                        {{ post.content | strip_html | truncatewords: 30 }}
+                    </p>
+
+                </div>
+            </a>
+            {% endfor %}
+
+            <div class="pagination">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
                 {% endif %}
-                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                <p>{{ post.excerpt }}</p>
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+                {% endif %}
+
+                <span>{{ paginator.page }}</span>
             </div>
-        </li>
-        {% endfor %}
-    </ul>
+        </div>
+    </div>
 </div>
