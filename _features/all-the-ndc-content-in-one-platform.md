@@ -7,5 +7,6 @@ NDC doesn't mean de-aggregated distribution nor one screen or shopping GUI for e
 
 * Shopping for **published, private, negotiated, tour-operator, and corporate fares.**
 * Pre and Post-booking **seats and ancillary services addition**.
-* **Order cancellations**, including voiding and refunds.
-* **Order Itinerary and dates changes** (This feature can be limited in some airlines NDC systems).
+* **Order cancellations**, including expiration, voids, and refunds.
+* **Itinerary and dates changes**
+* **Cabin/class Upgrades or downgrades**
