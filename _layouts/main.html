@@ -4,61 +4,19 @@
 
 <body>
 
-  <div id="regionHeader">
-    <div class="wrapper">
-      <div id="siteHeader">
-        <div id="siteName">
-          <a href="/" class="siteLogo">
-            <img src="/assets/images/logoBookingpad.svg" alt="">
-          </a>
-        </div>
-        <div class="siteNavigation">
-          <nav role="navigation">
-            <ul class="primaryNavMenu">
-              <li class="primaryNavMenuItem">
-                <a href="#features">Features</a>
-              </li>
-              <li class="primaryNavMenuItem">
-                <a href="#airlines">Airlines</a>
-              </li>
-              <li class="primaryNavMenuItem">
-                <a href="#customers">Customers</a>
-              </li>
-              <li class="primaryNavMenuItem">
-                <a href="#partners">Partners</a>
-              </li>
-              <li class="primaryNavMenuItem">
-                <a href="#pricins">Pricing</a>
-              </li>
-              <li class="primaryNavMenuItem">
-                <a href="#faq">FAQ</a>
-              </li>
-            </ul>
-
-          </nav>
-        </div>
-        <div class="linkRegister">
-          <a href="#register">Register</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  {%- include site_header.html -%}
 
   <div id="regionMain">
 
     {%- include billboard.html -%}
 
-    <main>
-
-      {%- include home_features.html -%}
-      {%- include home_airlines.html -%}
-      {%- include home_pricing.html -%}
-      {%- include home_customers.html -%}
-      {%- include home_partners.html -%}
-      {%- include home_faq.html -%}
-      {%- include home_register.html -%}
-
-    </main>
+    {%- include home_features.html -%}
+    {%- include home_airlines.html -%}
+    {%- include home_pricing.html -%}
+    {%- include home_customers.html -%}
+    {%- include home_partners.html -%}
+    {%- include home_faq.html -%}
+    {%- include home_register.html -%}
 
     {%- include footer.html -%}
 

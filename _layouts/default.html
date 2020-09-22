@@ -2,57 +2,20 @@
 <html>
 {%- include head.html -%}
 
-<body {% if page.body-class %}class="{{ page.body-class }}"{% endif %}>
+<body>
 
-  <div id="regionHeader">
-    <div class="wrapper">
-      <div id="siteHeader">
-        <div id="siteName">
-          <a href="/" class="siteLogo">
-            <img src="/assets/images/logoBookingpad.svg" alt="">
-          </a>
-        </div>
-        <div class="siteNavigation">
-          <nav role="navigation">
-            <ul class="primaryNavMenu">
-              <li class="primaryNavMenuItem">
-                <a href="#features">Features</a>
-              </li>
-              <li class="primaryNavMenuItem">
-                <a href="#airlines">Airlines</a>
-              </li>
-              <li class="primaryNavMenuItem">
-                <a href="#customers">Customers</a>
-              </li>
-              <li class="primaryNavMenuItem">
-                <a href="#partners">Partners</a>
-              </li>
-              <li class="primaryNavMenuItem">
-                <a href="#pricins">Pricing</a>
-              </li>
-              <li class="primaryNavMenuItem">
-                <a href="#faq">FAQ</a>
-              </li>
-            </ul>
+  {%- include site_header.html -%}
 
-          </nav>
-        </div>
-        <div class="linkRegister">
-          <a href="#register">Register</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <main>
+    {{- content -}}
+  </main>
+  {%- include footer.html -%}
 
-    <main>
-      {{- content -}}
-    </main>
-        {%- include footer.html -%}
+  {%- include google-analytics.html -%}
 
-    {%- include google-analytics.html -%}
+  <!-- Smallchat widget -->
+  <script src="https://embed.small.chat/TGUH8GJN6GH3833Y0Y.js" async></script>
+  <!-- Smallchat widget -->
+</body>
 
-      <!-- Smallchat widget -->
-      <script src="https://embed.small.chat/TGUH8GJN6GH3833Y0Y.js" async></script>
-      <!-- Smallchat widget -->
-  </body>
 </html>
