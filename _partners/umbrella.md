@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Umbrella
-logo: /assets/uploads/logoumbrella.png
+logo: /assets/uploads/umbrella-logo.png
 country: Switzerland
 sector: Traveler Profile Management
 ---
