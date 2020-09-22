@@ -57,6 +57,11 @@
     .primaryButton {
       font-size: 1.3rem;
       background-color: #596371;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: $black;
+      }
     }
 
     &.plan {
@@ -68,10 +73,13 @@
           color: $red;
           vertical-align: middle;
           list-style-image: url('/assets/images/bulletRed.svg');
-
         }
         .primaryButton {
           background-color: $red;
+
+          &:hover {
+            background-color: $redDark;
+          }
         }
       }
       &Biz {
@@ -85,6 +93,10 @@
         }
         .primaryButton {
           background-color: $blue;
+
+          &:hover {
+            background-color: $blueDark;
+          }
         }
       }
     }
