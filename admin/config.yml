@@ -72,12 +72,11 @@ collections:
     fields:
       - { label: "Provider Name", name: "title", widget: "string" }
       - { label: "Provider Code", name: "provider", widget: "string",  pattern: ['.{2,}', "Must have 2 characters"] }
-      - { label: "Shopping", name: "shopping", widget: "select", options: ["Available", "Under Development"]  }
-      - { label: "Booking", name: "booking", widget: "select", options: ["Available", "Under Development"]  }
-      - { label: "Ticketing", name: "ticketing", widget: "select", options: ["Available", "Under Development"]  }
-      - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", options: ["Available", "Under Development"]  }
-      - { label: "Pre-Sale Services", name: "ancillaries", widget: "select", multiple: true, options: ["Seats", "Baggage", "None"], hint: "Select all that applies" }
-      - { label: "Post-Sale Services", name: "postsale", widget: "select", multiple: true, options: ["Seats", "Baggage", "Meals", "None"], hint: "Select all that applies" }
+      - { label: "Shopping", name: "shopping", widget: "select", options: ["N/A", "Available", "Under Development"]  }
+      - { label: "Booking", name: "booking", widget: "select", options: ["N/A", "Available", "Under Development"]  }
+      - { label: "Ticketing", name: "ticketing", widget: "select", options: ["N/A", "Available", "Under Development"]  }
+      - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", options: ["N/A", "Available", "Under Development"]  }
+      - { label: "Ancillaries", name: "ancillaries", widget: "select", multiple: true, options: ["Seats", "Baggage", "None"], hint: "Select all that applies" }
       - { label: "Allow change of flight dates", name: "date_change", widget: "boolean" }
       - { label: "FQTV Card", name: "fqtv", widget: "boolean"  }
       - { label: "Fare Types", name: "fares", widget: "select", multiple: true, options: ["Public", "Private", "Corporate"], hint: "Select all that applies" }
@@ -97,10 +96,10 @@ collections:
     fields:
       - { label: "Provider Name", name: "title", widget: "string" }
       - { label: "Provider Description", name: "description", widget: "string" }
-      - { label: "Shopping", name: "shopping", widget: "select", options: ["Available", "Under Development"]  }
-      - { label: "Booking", name: "booking", widget: "select", options: ["Available", "Under Development"]  }
-      - { label: "Ticketing", name: "ticketing", widget: "select", options: ["Available", "Under Development"]  }
-      - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", options: ["Available", "Under Development"]  }
+      - { label: "Shopping", name: "shopping", widget: "select", options: ["N/A", "Available", "Under Development"]  }
+      - { label: "Booking", name: "booking", widget: "select", options: ["N/A", "Available", "Under Development"]  }
+      - { label: "Ticketing", name: "ticketing", widget: "select", options: ["N/A", "Available", "Under Development"]  }
+      - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", options: ["N/A", "Available", "Under Development"]  }
       - { label: "Pre-Sale Services", name: "ancillaries", widget: "select", multiple: true, options: ["Seats", "Baggage", "None"], hint: "Select all that applies" }
       - { label: "Post-Sale Services", name: "postsale", widget: "select", multiple: true, options: ["Seats", "Baggage", "Meals", "None"], hint: "Select all that applies" }
       - { label: "Allow change of flight dates", name: "date_change", widget: "boolean" }

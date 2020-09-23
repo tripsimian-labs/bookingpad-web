@@ -23,6 +23,6 @@ fop:
   - Credit Card
 date: 2020-01-01T00:00:06.000Z
 layout: post
-status: live
-status_hint:
+status: Live
+status_hint: 
 ---

@@ -17,8 +17,8 @@ fares:
 fop:
   - Cash
   - Credit Card
-status: live
-status_hint: 
-date: 2020-01-01T00:00:07.001Z
+status: cert
+status_hint: Certification in progress
+date: 2020-01-01T00:00:10.001Z
 layout: post
 ---
