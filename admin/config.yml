@@ -100,8 +100,7 @@ collections:
       - { label: "Booking", name: "booking", widget: "select", options: ["N/A", "Available", "Under Development"]  }
       - { label: "Ticketing", name: "ticketing", widget: "select", options: ["N/A", "Available", "Under Development"]  }
       - { label: "Cancel & Refund", name: "cancel_refund", widget: "select", options: ["N/A", "Available", "Under Development"]  }
-      - { label: "Pre-Sale Services", name: "ancillaries", widget: "select", multiple: true, options: ["Seats", "Baggage", "None"], hint: "Select all that applies" }
-      - { label: "Post-Sale Services", name: "postsale", widget: "select", multiple: true, options: ["Seats", "Baggage", "Meals", "None"], hint: "Select all that applies" }
+      - { label: "Ancillaries", name: "ancillaries", widget: "select", multiple: true, options: ["Seats", "Baggage", "None"], hint: "Select all that applies" }
       - { label: "Allow change of flight dates", name: "date_change", widget: "boolean" }
       - { label: "FQTV Card", name: "fqtv", widget: "boolean"  }
       - { label: "Fare Types", name: "fares", widget: "select", multiple: true, options: ["Public", "Private", "Corporate"], hint: "Select all that applies" }
