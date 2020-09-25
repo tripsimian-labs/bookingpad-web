@@ -15,10 +15,11 @@ We currently support these formats:
 * AIR (Amadeus Interface Record)
 * Galor (Travelbooster)
 
-We will keep adding more formats as there is a a relevant demand for them.
+We will keep adding more formats as there is relevant demand for them.
 
 This feature allows to integrate easily NDC-based bookings into existing Mid/Backoffice systems or ERPs.\
-For a fully-automated reporting integration we recommend modern API-based solutions that we partner with like:
+For a fully-automated reporting integration we recommend modern Webservice-based solutions that we partner with like:
 
 * [Midoco](https://www.midoco.de/)
 * [Procon Solution](https://www.proconsolution.com/)
+* [Cornerstone](https://ciswired.com/) (in progress)
