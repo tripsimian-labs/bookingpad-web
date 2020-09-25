@@ -6,14 +6,18 @@
             <p>Our valuable customers that have joined our journey to a differentiated Travel Tech strategy</p>
             <!-- <a href="#">See all our customers</a> -->
         </div>
-        <div class="homeCustomersGridx siema">
-            {% for customer in site.customers %}
-            <div class="homeCustomersItem">
-                <img src="{{ customer.logo }}" alt="">
-                <h4>{{ customer.name }}</h4>
-                <p>{{ customer.country }}</p>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for customer in site.customers %}
+                    <li class="homeCustomersItem splide__slide">
+                        <img src="{{ customer.logo }}" alt="">
+                        <h4>{{ customer.name }}</h4>
+                        <p>{{ customer.country }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
-            {% endfor %}
         </div>
     </div>
 </div>
