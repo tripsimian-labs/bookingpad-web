@@ -1,12 +1,28 @@
 .lg-img-wrap {
   img {
     &.lg-image {
+      @media only screen and (min-width: 780px) {
+        max-height: 100vh;
+      }
       @media only screen and (min-width: 960px) {
-        max-width: 80%;
+        max-height: 80vh;
       }
       @media only screen and (min-width: 1200px) {
-        max-width: 72%;
+        max-height: 81vh;
       }
+    }
+  }
+}
+
+.lg-sub-html {
+  h4 {
+    @media only screen and (min-width: 780px) and (max-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+  p {
+    @media only screen and (min-width: 780px) and (max-width: 1024px)  {
+      font-size: 12px;
     }
   }
 }
