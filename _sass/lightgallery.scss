@@ -1,0 +1,12 @@
+.lg-img-wrap {
+  img {
+    &.lg-image {
+      @media only screen and (min-width: 960px) {
+        max-width: 80%;
+      }
+      @media only screen and (min-width: 1200px) {
+        max-width: 72%;
+      }
+    }
+  }
+}
