@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fello Travel
-logo: /assets/uploads/fello_stacked_small_pink_blue.jpg
+logo: /assets/uploads/logo-fello.png
 country: UK
 ---
 Tada

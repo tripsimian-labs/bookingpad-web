@@ -26,13 +26,12 @@
     }
 
     img {
-      mix-blend-mode: multiply;
-      min-width: 120px;
-      max-width: 140px;
-      filter: grayscale(1);
 
+      min-width: 120px;
+      max-width: 180px;
+      opacity: .8;
       &:hover {
-        filter: grayscale(0);
+        opacity: 1;
       }
     }
 
