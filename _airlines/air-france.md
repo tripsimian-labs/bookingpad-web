@@ -1,20 +1,22 @@
 ---
 title: Air France
 provider: AF
-shopping: Available
-booking: Available
 ticketing: Available
-cancel_refund: Not Available
-ancillaries:
-postsale:
-  - Seats
 date_change: false
-fqtv: false
-fares: Public
+fares:
+  - Public
 fop:
   - Cash
-status: cert
-status_hint: Awaiting airline certification process
+postsale:
+  - Seats
+shopping: Available
+booking: Available
+cancel_refund: Available
+ancillaries:
+  - None
+fqtv: false
+status: Certification
 date: 2020-01-01T00:00:12.000Z
 layout: post
+status_hint: Awaiting airline certification process
 ---
