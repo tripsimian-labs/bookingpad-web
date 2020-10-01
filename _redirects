@@ -1,0 +1,13 @@
+# Redirect domain aliases to primary domain
+https://bookingpad.net/* https://bookingpad.info/:splat 301!
+http://bookingpad.net/* https://bookingpad.info/:splat 301!
+https://www.bookingpad.net/* https://bookingpad.info/:splat 301!
+http://www.bookingpad.net/* https://bookingpad.info/:splat 301!
+https://bookingpad.pro/* https://bookingpad.info/:splat 301!
+http://bookingpad.pro/* https://bookingpad.info/:splat 301!
+https://www.bookingpad.pro/* https://bookingpad.info/:splat 301!
+http://www.bookingpad.pro/* https://bookingpad.info/:splat 301!
+https://bookingpad.work/* https://bookingpad.info/:splat 301!
+http://bookingpad.work/* https://bookingpad.info/:splat 301!
+https://www.bookingpad.work/* https://bookingpad.info/:splat 301!
+http://www.bookingpad.work/* https://bookingpad.info/:splat 301!
