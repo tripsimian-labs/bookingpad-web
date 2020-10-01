@@ -121,6 +121,7 @@ collections:
       - { label: "Plan Name", name: "title", widget: "string" }
       - { label: "Pricing Option 1", name: "price_main", widget: "string" }
       - { label: "Pricing Option 2", name: "price_secondary", widget: "string" }
+      - { label: "Add-ons", name: "addons", widget: "markdown"}
       - { label: "Description", name: "body", widget: "markdown"}
   - label: "Customers"
     name: "customers"
@@ -134,6 +135,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Customer Name", name: "title", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
+      - { label: "URL", name: "url", widget: "string" }
       - { label: "Country", name: "country", widget: "string" }
       - { label: "Description", name: "body", widget: "markdown" }
 
@@ -149,6 +151,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Partner Name", name: "title", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
+      - { label: "URL", name: "url", widget: "string" }
       - { label: Sector, name: sector, widget: string }
       - { label: "Description", name: "body", widget: "markdown" }
 
@@ -162,6 +165,7 @@ collections:
     widget: "list"
     fields:
       - { label: "Question", name: "title", widget: "string" }
+      - { label: "Short", name: "short", widget: "string" }
       - { label: "Answer", name: "body", widget: "markdown" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
