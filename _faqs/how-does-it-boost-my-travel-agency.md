@@ -1,6 +1,6 @@
 ---
 title: How does NDC and Bookingpad can help a TMC?
-short: NDC was created by IATA to disrupt existing airline distribution technology (mostly GDS-based) bringing new ways to shop, book, and service airline content
+short: NDC was created by IATA to disrupt existing airline distribution technology (mostly GDS-based) bringing new ways to shop, book, and service airline content.
 date: 2020-08-20T16:48:53.646Z
 ---
 NDC was created by IATA to disrupt existing airline distribution technology (mostly GDS-based) bringing new ways to shop, book, and service airline content. Using Bookingpad agencies can **increase their value-added service and revenue** in multiple ways:
