@@ -164,8 +164,8 @@ collections:
       preview: false
     widget: "list"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "faq" }
       - { label: "Question", name: "title", widget: "string" }
       - { label: "Short", name: "short", widget: "string" }
       - { label: "Answer", name: "body", widget: "markdown" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
