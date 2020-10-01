@@ -5,7 +5,8 @@
             {% for faq in site.faqs %}
             <div class="homeFaqItem">
                 <h3>{{ faq.title }}</h3>
-                <div>{{ faq.content }}</div>
+                <div>{{ faq.short }}</div>
+                <p><a href="{{faq.url}}">View more</a></p>
             </div>
             {% endfor %}
 
