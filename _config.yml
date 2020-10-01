@@ -34,6 +34,10 @@ collections:
     permalink: "/:collection/:path/"
     output: true
     layout: "post"
+  faqs:
+    permalink: "/:collection/:path/"
+    output: true
+    layout: "post"
   gallery:
     output: false
   features:
@@ -49,9 +53,6 @@ collections:
     output: false
   partners:
     output: false
-  faqs:
-    output: true
-    permalink: "/:collection/:path/"
   airlines:
     output: false
   providers:

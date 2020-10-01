@@ -1,4 +1,5 @@
 ---
+layout: faq
 title: How is Bookingpad different to the so called airline Agency Portals?
 date: 2020-08-20T16:49:17.894Z
 ---

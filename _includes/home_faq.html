@@ -4,7 +4,7 @@
         <div class="homeFaqGrid">
             {% for faq in site.faqs %}
             <div class="homeFaqItem">
-                <h3>{{ faq.title }}</h3>
+                <h3><a href="{{faq.url}}">{{ faq.title }}</a></h3>
                 <div>{{ faq.short }}</div>
                 <p><a href="{{faq.url}}">View more</a></p>
             </div>

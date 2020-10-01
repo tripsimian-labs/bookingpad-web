@@ -1,4 +1,5 @@
 ---
+layout: faq
 title: Do I need to sign a commercial agreement with each airline?
 short: YES! For IATA accredited agencies this is actually a prerequisite from the airlines when working with NDC under the "direct distribution" paradigm.
 date: 2020-08-20T16:49:30.661Z

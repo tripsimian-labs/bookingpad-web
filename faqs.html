@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div id="regionMain">
+    <div class="wrapper">
+        <div class="catalogue">
+            <h2 class="sectionHeading">Frequently Asked Questions</h2>
+            {% for faq in site.faqs %}
+            <a href="{{ faq.url }}" class="catalogue-item">
+                <div>
+                    <time datetime="{{ faq.date }}" class="catalogue-time">{{ faq.date | date: "%d %B %Y" }}</time>
+                    <h1 class="catalogue-title">{{ faq.title }}</h1>
+                    <div class="catalogue-line"></div>
+
+                    <p class="catalogue-desc">
+                        {{ faq.content | strip_html | truncatewords: 30 }}
+                    </p>
+
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
