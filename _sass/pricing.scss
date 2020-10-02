@@ -134,6 +134,12 @@
       border-radius: 9px;
     }
   }
+
+  &FooterMessage {
+    div, h2 {
+      padding-top: 60px;
+    }
+  }
 }
 
 .digit {
