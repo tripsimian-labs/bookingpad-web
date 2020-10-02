@@ -15,14 +15,32 @@
 }
 
 .lg-sub-html {
+  @media only screen and (min-width: 780px) {
+    padding: 16px 70px;
+  }
   h4 {
     @media only screen and (min-width: 780px) and (max-width: 1024px) {
       font-size: 16px;
     }
   }
   p {
-    @media only screen and (min-width: 780px) and (max-width: 1024px)  {
+    @media only screen and (min-width: 780px) and (max-width: 1024px) {
       font-size: 12px;
     }
   }
+}
+
+ul {
+  &#lightgallery {
+    li {
+      display: none;
+      &:first-child {
+        display: unset;
+      }
+    }
+  }
+}
+
+.lightbox {
+  line-height: 0;
 }

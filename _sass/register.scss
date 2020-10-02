@@ -32,13 +32,12 @@
     font-weight: 600;
     margin: 1rem 0;
     padding-top: 2rem;
-    border-top: 3px solid #e9f4ff;
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
 
     @media only screen and (min-width: 960px) {
       margin-bottom: 1.5rem;
       font-size: 2.3rem;
       border-top: none;
-      padding-top: 0;
     }
 
     &.registerFormTitle {

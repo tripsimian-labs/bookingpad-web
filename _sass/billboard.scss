@@ -1,10 +1,10 @@
 .billboard {
   display: block;
   background-color: #e9f4ff;
-  padding: 2rem 1rem 4rem;
+  padding: 1rem 1rem 3rem;
 
   @media only screen and (min-width: 960px) {
-    padding-bottom: 3rem;
+    padding-top: 2rem;
   }
 
   & * {
@@ -15,32 +15,32 @@
   }
 
   &Grid {
-    display: flex;
-    flex-flow: column nowrap;
-    flex-direction: column-reverse;
+    display: grid;
+    grid-template-columns: 1fr;
 
     @media only screen and (min-width: 960px) {
-      flex-flow: row;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-between;
-      grid-gap: 2rem;
+      grid-template-columns: 1fr 720px;
+      grid-column-gap: 3rem;
     }
   }
 
   &Blurb {
     text-align: center;
-    line-height: 1.2;
+    margin-bottom: 2rem;
+    order: 1;
 
     @media only screen and (min-width: 960px) {
-      width: 55%;
       text-align: left;
+      margin-bottom: 0;
+      order: 0;
     }
     h3 {
       font-size: 2rem;
       font-weight: 500;
       margin-bottom: 1rem;
       margin-top: 1.5rem;
+      line-height: 1.2;
+
       @media only screen and (min-width: 960px) {
         font-size: 2.5rem;
       }
@@ -62,7 +62,6 @@
 
     img {
       margin: 0 auto;
-      max-width: 100%;
       width: 100%;
       border-radius: 5px;
       border: 1px solid white;
