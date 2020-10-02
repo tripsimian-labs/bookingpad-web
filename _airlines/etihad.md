@@ -1,18 +1,25 @@
 ---
 title: Etihad
 provider: EY
-shopping:
-booking:
-ticketing:
-cancel_refund:
-ancillaries:
-postsale:
-date_change: false
-fqtv: false
+ticketing: Available
+date_change: true
 fares:
+  - Public
+  - Private
+  - Corporate
 fop:
-status: cert
-status_hint: Awaiting certification process
+  - Cash
+  - Credit Card
+postsale: null
+shopping: Available
+booking: Available
+cancel_refund: Available
+ancillaries:
+  - Baggage
+  - Seats
+fqtv: false
+status: Certification
 date: 2020-01-01T00:00:15.000Z
 layout: post
+status_hint: Awaiting certification process
 ---
