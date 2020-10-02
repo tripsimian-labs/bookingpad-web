@@ -44,6 +44,7 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Thumbnail", name: "thumb", widget: "image" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "body", widget: "markdown" }
 
   - label: "Features"
@@ -121,8 +122,8 @@ collections:
       - { label: "Plan Name", name: "title", widget: "string" }
       - { label: "Pricing Option 1", name: "price_main", widget: "string" }
       - { label: "Pricing Option 2", name: "price_secondary", widget: "string" }
-      - { label: "Add-ons", name: "addons", widget: "markdown"}
-      - { label: "Description", name: "body", widget: "markdown"}
+      - { label: "Add-ons", name: "addons", widget: "markdown", required: false}
+      - { label: "Description", name: "body", widget: "markdown", required: false}
   - label: "Customers"
     name: "customers"
     folder: "_customers/"
@@ -135,9 +136,9 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Customer Name", name: "title", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
-      - { label: "URL", name: "url", widget: "string" }
-      - { label: "Country", name: "country", widget: "string" }
-      - { label: "Description", name: "body", widget: "markdown" }
+      - { label: "URL", name: "url", widget: "string", required: false }
+      - { label: "Country", name: "country", widget: "string", required: false }
+      - { label: "Description", name: "body", widget: "markdown", required: false }
 
   - label: "Partners"
     name: "partners"
@@ -151,9 +152,9 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Partner Name", name: "title", widget: "string" }
       - { label: "Logo", name: "logo", widget: "image" }
-      - { label: "URL", name: "url", widget: "string" }
-      - { label: Sector, name: sector, widget: string }
-      - { label: "Description", name: "body", widget: "markdown" }
+      - { label: "URL", name: "url", widget: "string", required: false }
+      - { label: Sector, name: sector, widget: string, required: false }
+      - { label: "Description", name: "body", widget: "markdown", required: false }
 
   - label: "FAQ"
     name: "faqs"
