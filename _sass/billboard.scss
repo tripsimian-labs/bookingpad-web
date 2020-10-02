@@ -59,6 +59,7 @@
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 7px;
     box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
 
     img {
       margin: 0 auto;
@@ -66,7 +67,12 @@
       border-radius: 5px;
       border: 1px solid white;
     }
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.2);
+    }
   }
+
   .primaryButton {
     padding: 0.7rem 2rem;
     font-weight: 700;
