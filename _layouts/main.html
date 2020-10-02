@@ -24,6 +24,18 @@
   <script src="/assets/js/lightgallery.js"></script>
   <script src="/assets/js/lg-thumbnail.js"></script>
 
+  <script src="/assets/js/scroll.js"></script>
+  <script>
+    window.onload = function () {
+      scrollSpy('#main-menu', {
+        sectionClass: '.scrollspy',
+        menuActiveTarget: '.menu-item',
+        offset: 100
+      })
+    }
+  </script>
+
+
   <script>
     lightGallery(document.getElementById('lightgallery'), {
       mode: 'lg-slide',
