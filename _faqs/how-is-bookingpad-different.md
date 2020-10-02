@@ -1,7 +1,9 @@
 ---
 layout: faq
 title: How is Bookingpad different to the so called airline Agency Portals?
-date: 2020-08-20T16:49:17.894Z
+short: "Short story: Multi-airline Vs. Single airline. This applied to shopping,
+  booking, servicing and down-stream process."
+date: 2020-08-31T16:49:17.894Z
 ---
 There are existing solutions for direct distribution commonly called "Agency Portals" provided by airline groups (normally for free) such as:
 
