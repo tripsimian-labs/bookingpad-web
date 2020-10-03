@@ -1,13 +1,13 @@
 ---
-title: Modern and intuitive WEB interface for the travel consultant and the
+title: Modern and intuitive WEB interface both for the travel consultant and the
   corporate traveler
 image: /assets/uploads/imgfeat-02.svg
 layout: post
 ---
-Instead of relying on cryptic interfaces that require years of deep-tech exhaustive learning and big investments in training, adopt a fresh WEB GUI that enables your consultants to learn to use it in a matter of days.
+Our modern WEB GUI enables travel consultants to go through a minimal adoption curve that makes your agents up-and-running in a matter of minutes.
 
-A two-sides WEB platform which facilitates the participation of the corporate traveler and manager. We have introduced an approval process by the traveler(s) and manager.
+Furthermore, we are building a two-sides WEB platform that facilitates and streamlines the interactions and processes between the agents and the corporate traveler & manager.
 
-* Traveler(s) and manager(s) approval process based on WEB (mobile friendly) & email.
-* Traveler(s) self-management of traveler profiles, corporate manager *Coming Soon!*
-* Self/Corporate Booking Tool. *In progress!*
+* Traveler(s) and manager(s) approval process based on WEB (mobile friendly) & email. Ready*!*
+* Traveler profiles self-management, corporate self-management *Coming Soon!*
+* Self/Corporate Booking Tool. Coming soon*!*
