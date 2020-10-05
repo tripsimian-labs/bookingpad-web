@@ -19,17 +19,41 @@ strong {
   font-weight: 700;
 }
 
-.primaryButton {
+.button {
+  font-family: 'Mukta', sans-serif;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 1.3rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 9px;
   cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.secondaryButton {
+  color: $red;
+  border: 2px solid $red;
+  margin-top: 0.5rem;
+  background-color: white;
+
+  &:hover {
+    color: $redDark;
+    border-color: $redDark;
+  }
+}
+
+.primaryButton {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   background-color: $red;
   color: white;
-  padding: 0.87rem 1rem;
 
   &:hover {
     color: white;
@@ -73,8 +97,8 @@ strong {
       margin-left: 1rem;
     }
     & > a {
-      padding: .5em 0 .3em;
-      margin: 0 .5em;
+      padding: 0.5em 0 0.3em;
+      margin: 0 0.5em;
     }
   }
 }
