@@ -1,27 +1,38 @@
 ---
 layout: default
 ---
-<article class="layout narrow">
+<div id="regionMain">
+
   <div class="post">
-    <div class="post-info">
-      {% if page.date %}
-      <time datetime="{{ page.date }}">{{ page.date | date: "%d %B %Y" }}</time>
+    <div class="wrapper">
+      <div class="post-info">
+        {% if page.date %}
+        <time datetime="{{ page.date }}">{{ page.date | date: "%d %B %Y" }}</time>
+        {% endif %}
+      </div>
+
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-line"></div>
+      <div class="post-body">
+        {{ content }}
+      </div>
+
+      {% if page.comments %}
+      {% include disqus_comments.html %}
       {% endif %}
-    </div>
 
-    <h1 class="post-title">{{ page.title }}</h1>
-    <div class="post-line"></div>
-    <div class="post-body">
-      {{ content }}
+      <div class="pagination">
+        {% if page.next.url %}
+        <a href="{{ page.next.url }}" class="left arrow">&#8592;</a>
+        {% endif %}
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" class="right arrow">&#8594;</a>
+        {% endif %}
+
+        <a href="/posts/" class="top">See all posts</a>
+      </div>
     </div>
   </div>
 
-  <div class="pagination">
-    {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.url }}" class="left arrow">&#8592;</a>
-    {% endif %}
-    {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.url }}" class="right arrow">&#8594;</a>
-    {% endif %}
-  </div>
-</article>
+</div>
+</body>

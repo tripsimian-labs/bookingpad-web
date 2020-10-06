@@ -8,23 +8,21 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Bookingpad
 email: contact@bookingpad.net
 
 description: >- # this means to ignore newlines until "baseurl:"
   Bookingpad is the most advanced NDC-ready booking tool for travel agents.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://bookingpad.net" # the base hostname & protocol for your site, e.g.
+url: "https://bookingpad.net"
 twitter_username: Bookingpad
 github_username:  AirGateway
 
 include:
   - _redirects
+
+permalink: /:year-:month-:day/:title
+paginate: 5
 
 # Build settings
 markdown: kramdown
@@ -32,12 +30,36 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
 
 collections:
   posts:
     permalink: "/:collection/:path/"
     output: true
     layout: "post"
+  faqs:
+    permalink: "/:collection/:path/"
+    output: true
+    layout: "post"
+  gallery:
+    output: false
+  features:
+    output: true
+    permalink: "/:collection/:path/"
+  plans:
+    output: false
+    order:
+      - basic.md
+      - pro.md
+      - business.md
+  customers:
+    output: false
+  partners:
+    output: false
+  airlines:
+    output: false
+  providers:
+    output: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,0 +1,23 @@
+<div id="partners" class="homePartners section scrollspy">
+    <div class="wrapper">
+        <h2 class="sectionHeading">Partners</h2>
+        <div class="homePartnersBlurb">
+            <h3>Our Partners</h3>
+            <p>We aim to buld a Next-Gen travel ecosystem by partnering with the leading travel distribution companies</p>
+            <!-- <a href="#">See all our partners</a> -->
+        </div>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for partner in site.partners %}
+                    <li class="homePartnersItem splide__slide">
+                        <img src="{{ partner.logo }}" alt="Logo of {{ partner.name }}">
+                        <h4>{{ partner.name }}</h4>
+                        <p>{{ partner.sector }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

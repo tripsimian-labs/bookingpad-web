@@ -1,0 +1,30 @@
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 60px;
+    background: #ffffff;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+
+.menu-item {
+    text-decoration: none;
+    padding: 1rem 0;
+    color: inherit;
+    border-bottom: 2px solid transparent;
+    transition: all .3s;
+}
+
+.menu-item:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.menu-item.active {
+    color: $redDark;
+    border-bottom-color: $redDark;
+}
+

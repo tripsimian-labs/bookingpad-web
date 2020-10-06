@@ -1,0 +1,130 @@
+.homeAirlines {
+  display: block;
+  background-color: #e9f4ff;
+  padding: 2rem 1rem;
+
+  &Table {
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 100%;
+  margin: 0 auto;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+  th {
+    background-color: #2f2e41;
+    color: white;
+    padding: 0.8rem 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  td {
+    padding: 0.8rem 0.3rem;
+    vertical-align: middle;
+    line-height: 1;
+
+    svg {
+      opacity: 0.6;
+    }
+  }
+
+  tr {
+    background-color: rgba(255, 255, 255, 0.6);
+
+    &:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+      svg {
+        opacity: 1;
+      }
+    }
+
+    td {
+      &:first-child {
+        color: $redDark;
+
+        .provider {
+          &-text {
+            color: #808080;
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 0.4rem;
+            line-height: 1.2;
+            min-width: 140px;
+          }
+        }
+
+        a {
+          color: $red;
+          &:hover {
+            color: $redDark;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  col:first-child {
+    background-color: #cfe6fd;
+  }
+}
+
+.table-legend {
+  margin: 2rem 0 4rem;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    @media only screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media only screen and (min-width: 960px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      padding: 0.3rem 0;
+      opacity: 0.6;
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.tableProviders {
+  margin-top: 3rem;
+
+  td {
+    &.provider {
+      width: auto;
+      padding: 1rem 0.5rem;
+
+      @media only screen and (min-width: 960px) {
+        width: 25%;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.billboard {
+  display: block;
+  background-color: #e9f4ff;
+  padding: 1rem 1rem 3rem;
+  margin-top: 80px;
+
+  @media only screen and (min-width: 960px) {
+    padding-top: 2rem;
+  }
+
+  & * {
+    &::after,
+    &::before {
+      box-sizing: border-box;
+    }
+  }
+
+  &Grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media only screen and (min-width: 960px) {
+      grid-template-columns: 1fr 720px;
+      grid-column-gap: 3rem;
+    }
+  }
+
+  &Blurb {
+    text-align: center;
+    margin-bottom: 2rem;
+    order: 1;
+
+    @media only screen and (min-width: 960px) {
+      text-align: left;
+      margin-bottom: 0;
+      order: 0;
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      margin-top: 1.5rem;
+      line-height: 1.2;
+
+      @media only screen and (min-width: 960px) {
+        font-size: 2.5rem;
+      }
+    }
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      @media only screen and (min-width: 960px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &Media {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+
+    img {
+      margin: 0 auto;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid white;
+    }
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .primaryButton {
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+  }
+}

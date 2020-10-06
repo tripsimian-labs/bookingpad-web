@@ -1,0 +1,27 @@
+<section id="features" class="homeFeatures section scrollspy">
+    <div class="wrapper">
+        <h2 class="sectionHeading">Product Features</h2>
+        <div class="homeFeaturesGrid">
+            <div class="homeFeaturesList">
+
+                {% for feature in site.features %}
+                <div class="homeFeaturesItem">
+                    <div class="homeFeaturesImg">
+                        <img src="{{ feature.image }}" alt="">
+                    </div>
+                    <div class="homeFeaturesText">
+                        <h3>
+                            {{ feature.title }}
+                        </h3>
+                        <p>
+                            {{ feature.content }}
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            {%- include home_updates.html -%}
+        </div>
+    </div>
+</section>

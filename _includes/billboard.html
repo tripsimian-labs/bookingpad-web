@@ -1,0 +1,19 @@
+<section id="hero" class="billboard section scrollspy">
+    <div class="wrapper">
+        <div class="billboardGrid">
+            <div class="billboardBlurb">
+                <h3>
+                    {{ site.data.hero.billboard.body }}
+                </h3>
+                <h4 class="billboardSubtext">
+                    {{ site.data.hero.billboard.subtext }}
+                </h4>
+
+                <a href="#get-started" class="primaryButton button">{{ site.data.hero.billboard.button }}</a>
+            </div>
+            <div class="billboardMedia">
+                {%- include lightbox.html -%}
+            </div>
+        </div>
+    </div>
+</section>

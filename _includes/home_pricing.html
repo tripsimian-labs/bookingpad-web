@@ -1,0 +1,37 @@
+<section id="pricing" class="homePricing section scrollspy">
+    <div class="wrapper">
+        <h2 class="sectionHeading">Plans & Pricing</h2>
+        <div class="homePricingGrid">
+            {% for plan in site.plans %}
+            <div class="homePricingItem
+            {% if plan.title == "Medium" %}planPro spotlight
+            {% elsif plan.title == "Large" %}planBiz
+            {% endif %} ">
+                <div class="homePricingBlurb">
+                    <div class="homePricingHead">
+                        <h3>{{ plan.title }}</h3>
+                        <div class="homePricingRate digitBig">
+                            <span>{{ plan.price_main }}</span>
+                        </div>
+                        <div class="homePricingRate ">
+                            <span>{{ plan.price_secondary }}</span>
+                        </div>
+                    </div>
+                    <div class="homeFeaturesText">
+                        <p>
+                            {{ plan.content }}
+                        </p>
+                    </div>
+                </div>
+                <div class="homePricingCta">
+                    <a href="#get-started" class="primaryButton button">Get Started</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="homePricingFooterMessage">
+            <h2>NO SETUP/IMPLEMENTATION FEES</h2>
+            <p>We welcome our customers with a handshake, not with an invoice :)</p>
+        </div>
+    </div>
+</section>

@@ -1,6 +1,34 @@
-<footer class="site-footer">
-  <div class="site-footer">
-    <p>An <a href="https://airgateway.com/" target="new">AirGateway</a> Product - All rights reserved ©2019</p>
+<footer>
+  <img src="/assets/images/logoBookingpadFooter.svg" alt="">
+  <div class="copyrightFooter">
+    <p>An <a href="https://airgateway.com/" target="new">AirGateway</a> Product - All rights reserved ©2020</p>
   </div>
-
 </footer>
+<script src="/js/splide.min.js"></script>
+
+<script>
+  var elms = document.getElementsByClassName('splide');
+  for (var i = 0, len = elms.length; i < len; i++) {
+    new Splide(elms[i], {
+      type: 'loop',
+      perPage: 4,
+      breakpoints: {
+        768: {
+          perPage: 3,
+        },
+        640: {
+          perPage: 2,
+        },
+        414: {
+          perPage: 1,
+        },
+      },
+      autoplay: true,
+      interval: 2400,
+      arrows: false
+    }
+    ).mount();
+  }
+
+
+</script>

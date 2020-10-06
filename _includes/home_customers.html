@@ -1,0 +1,23 @@
+<section id="customers" class="homeCustomers section scrollspy">
+    <div class="wrapper">
+        <h2 class="sectionHeading">Customers</h2>
+        <div class="homeCustomersBlurb">
+            <h3>Our Customers</h3>
+            <p>Our valuable customers that have joined our journey to a differentiated Travel Tech strategy</p>
+            <!-- <a href="#">See all our customers</a> -->
+        </div>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for customer in site.customers %}
+                    <li class="homeCustomersItem splide__slide">
+                        <img src="{{ customer.logo }}" alt="">
+                        <h4>{{ customer.name }}</h4>
+                        <p>{{ customer.country }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
