@@ -8,6 +8,6 @@ Our modern WEB GUI enables travel consultants to go through a minimal adoption c
 
 Furthermore, we are building a two-sides WEB platform that facilitates and streamlines the interactions and processes between the agents and the corporate traveler & manager.
 
-* Traveler(s) and manager(s) approval process based on WEB (mobile friendly) & email. Ready*!*
-* Traveler profiles self-management, corporate self-management *Coming Soon!*
-* Self/Corporate Booking Tool. Coming soon*!*
+* Traveler(s) and manager(s) approval process based on WEB (mobile friendly) & email. *Ready!*
+* Traveler profiles self-management, corporate self-management *Coming Soon*
+* Self/Corporate Booking Tool. *Coming soon*
