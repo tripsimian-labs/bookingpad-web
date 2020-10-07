@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: v2020
+  branch: master
 media_folder: "assets/uploads"
 collections:
   - label: "Updates"
