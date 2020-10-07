@@ -1,6 +1,6 @@
 ---
 title: An API-enabled platform for third-parties integrations
-image: /assets/uploads/imgfeat-03.svg
+image: /assets/uploads/imgfeat-api.svg
 layout: post
 ---
 Bookingpad is an open platform that enables third-party players to interact with it. Our extremely simple API allows third-parties to access a number of functionalities on behalf of the agencies upon proper authorization:

@@ -1,7 +1,7 @@
 ---
 title: Modern and intuitive WEB interface both for the travel consultant and the
   corporate traveler
-image: /assets/uploads/imgfeat-02.svg
+image: /assets/uploads/imgfeat-ui.svg
 layout: post
 ---
 Our modern WEB GUI enables travel consultants to go through a minimal adoption curve that makes your agents up-and-running in a matter of minutes.

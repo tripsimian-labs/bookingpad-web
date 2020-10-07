@@ -22,7 +22,7 @@
 
     @media only screen and (min-width: 960px) {
       grid-gap: 4rem;
-      grid-template-columns: 180px 1fr;
+      grid-template-columns: 240px 1fr;
     }
 
     ul {
@@ -47,6 +47,13 @@
   }
   &Img {
     margin-bottom: 0.8rem;
+    img {
+      max-width: 50%;
+      @media only screen and (min-width: 960px) {
+
+        width: 100%;
+      }
+    }
   }
 
   h3 {

@@ -101,14 +101,21 @@ table {
   }
 
   ul {
-    display: flex;
-    width: 90%;
-    padding-top: 0.25rem;
-    padding-bottom: 0.5rem;
-    align-items: center;
-    justify-content: left;
     margin-bottom: 0.5rem;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      width: 90%;
+      padding-top: 0.25rem;
+      padding-bottom: 0.5rem;
+      align-items: center;
+      justify-content: left;
+    }
+
+    @media only screen and (min-width: 960px) {
+      width: 64%;
+    }
 
     &:first-of-type {
       border-top: 2px solid rgba(0, 0, 0, 0.08);
@@ -122,10 +129,6 @@ table {
       li {
         opacity: 0.8;
       }
-    }
-
-    @media only screen and (min-width: 736px) {
-      width: 60%;
     }
 
     li {
@@ -147,9 +150,15 @@ table {
       letter-spacing: 0.05rem;
       color: #808080;
       font-size: 0.8rem;
-      text-align: right;
+      text-align: left;
       padding-right: 1rem;
+      padding-top: 0;
       min-width: 5rem;
+
+      @media only screen and (min-width: 768px) {
+        text-align: right;
+        padding-top: 0.5rem;
+      }
     }
   }
 }
