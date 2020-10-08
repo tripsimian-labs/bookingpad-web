@@ -1,6 +1,6 @@
 ---
-image: /assets/uploads/fireshot-capture-021-airgateway-ndc-booking-tool-web.bookingpad.work.png
-thumb: /assets/uploads/fireshot-capture-021-airgateway-ndc-booking-tool-web.bookingpad.work.png
+image: /assets/uploads/bp-confirmation-fare-rules.png
+thumb: /assets/uploads/bp-thumb-confirmation-fare-rules.png
 title: Offer Confirmation and Fare Rules view
 date: 2020-10-06T12:12:57.949Z
 ---
