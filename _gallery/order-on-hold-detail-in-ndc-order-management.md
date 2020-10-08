@@ -1,6 +1,6 @@
 ---
-image: /assets/uploads/fireshot-capture-033-airgateway-ndc-booking-tool-web.bookingpad.work.png
-thumb: /assets/uploads/fireshot-capture-033-airgateway-ndc-booking-tool-web.bookingpad.work.png
+image: /assets/uploads/bp-order-onhold-details.png
+thumb: /assets/uploads/bp-thumb-order-onhold-details.png
 title: Order On-hold Detail in NDC Order Management
 date: 2020-10-08T15:12:34.804Z
 ---
