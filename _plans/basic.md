@@ -1,6 +1,6 @@
 ---
 title: Small
-price_main: NO monthly fees
+price_main: 50€ / mo. fee
 price_secondary: 1€ / order issued
 ---
 * Up to 5 agent accounts
