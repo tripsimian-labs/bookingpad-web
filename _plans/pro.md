@@ -7,5 +7,5 @@ price_secondary: 1€ / order issued
 
 ## ADD-ONs
 
-* Traveler Profiles Management System (450€/mo)
-* Reporting to Mid/Backoffice (450€/mo)
+* Traveler Profiles Management System (Free)
+* Reporting to Mid/Backoffice (Free)
