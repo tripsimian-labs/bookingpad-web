@@ -8,5 +8,5 @@ addons: ""
 
 ## ADD-ONs
 
-* Traveler Profiles Management System (250€/mo)
-* Reporting to Mid/Backoffice (250€/mo)
+* Traveler Profiles Management System (Free)
+* Reporting to Mid/Backoffice (Free)
