@@ -5,8 +5,11 @@ ticketing: Available
 date_change: true
 fares:
   - Public
+  - Private
+  - Corporate
 fop:
   - Cash
+  - Credit Card
 postsale:
   - Seats
   - Baggage
@@ -17,7 +20,7 @@ ancillaries:
   - Seats
   - Baggage
 fqtv: false
-status: Certification
+status: Live
 date: 2020-01-01T00:00:14.000Z
 layout: post
 status_hint: null
