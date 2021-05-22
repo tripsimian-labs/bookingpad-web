@@ -2,18 +2,23 @@
 title: KLM
 provider: KL
 ticketing: Available
-date_change: false
+date_change: -
 fares:
   - Public
+  - Private
+  - Corporate
 fop:
   - Cash
+  - Credit Card
 postsale:
   - Seats
+  - Baggage
 shopping: Available
 booking: Available
 cancel_refund: Available
 ancillaries:
-  - None
+  - Seats
+  - Baggage
 fqtv: false
 status: Certification
 date: 2020-01-01T00:00:13.000Z
